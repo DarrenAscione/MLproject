@@ -59,7 +59,7 @@ def testing_splitter(filename):
 				one_dataset = []
 	return total_dataset
 
-def emission_prob(filetest, filetrain, file_write):
+def emission_prob_Tagger(filetest, filetrain, file_write):
 	dataset = testing_splitter(filetest)
 	states_count = count_states(filetrain)
 	bjos = training_emission(filetrain, states_count)
@@ -104,12 +104,6 @@ test_file = "/Users/DarrenRetinaMBP/MLproject/POS/dev.in"
 correct_file = "/Users/DarrenRetinaMBP/MLproject/POS/dev.out"
 train_file = "/Users/DarrenRetinaMBP/MLproject/POS/train"
 save_file = "/Users/DarrenRetinaMBP/MLproject/POS/copy1 copy"
-predicted = emission_prob(test_file, train_file, save_file)
+predicted = emission_prob_Tagger(test_file, train_file, save_file)
 print accurarcy(correct_file, predicted)
-# states_count = count_states(train_file)
-# print training_emission(train_file, states_count)["VBP"][testing_splitter(test_file)[0][0]] >= 0
 
-
-# print emission_testing_data("/Users/DarrenRetinaMBP/MLproject/NPC/dev.in")
-
-# output_to_file("dev.out", "bjos")
