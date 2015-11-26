@@ -30,7 +30,8 @@ def training_emission(filename, states_count):
 	count_e = count_word(filename)
 	for key in count_e.keys():
 		for words in count_e[key].keys():
-			count_e[key][words] = count_e[key][words]*1.0 / (count_u[key] + 1) #TODO revise the counts
+			count_e[key][words] = count_e[key][words]*1.0 / (count_u[key] + 1) 
+			#TODO revise the counts
 	return count_e
 
 def output_to_file(file_read, file_write):
