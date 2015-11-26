@@ -1,14 +1,4 @@
-def count_states(filename):
-	dict = {}
-	with open(filename) as file:
-		data = file.readlines()
-		for line in data:
-			words = line.rstrip("\n").split(" ")
-			if len(words) != 1:
-				if words[1] not in dict.keys():
-					dict[words[1]] = 0
-				dict[words[1]] += 1
-	return dict
+
 
 def count_word(filename):
 	dict = {}
@@ -25,20 +15,22 @@ def count_word(filename):
 				dict[words[1]][words[0]] += 1
 	return dict
 
-def training_emission(filename, states_count):
-	count_u = states_count
-	count_e = count_word(filename)
-	for key in count_e.keys():
-		for words in count_e[key].keys():
-			count_e[key][words] = count_e[key][words]*1.0 / (count_u[key] + 1) 
-			#TODO revise the counts
-	return count_e
+count_states = lambda dict_word: sum(dict_word.values())
 
-def output_to_file(file_read, file_write):
+def gen_bjo(filename, mode="training"):
+	word_count = count_word(filename)
+	for key in word_count.keys():
+		for words in word_count[key].keys():
+			if mode == "training":
+				tag_count = count_states(word_count[key])
+			else:
+				tag_count = count_states(word_count[key]+1)
+			word_count[key][words] = word_count[key][words]*1.0/ tag_count
+	return word_count
+
+def output_to_file(emission, file_write):
 	with open("NPC/" + file_write, "a") as file:
-		emission = emission_prob("NPC/" + file_read)
 		for key in emission.keys():
-			print key
 			file.write("\n ------------------------------------- \n")
 			file.write("Emission State: %s\n"%(key))
 			for words in emission[key].keys():
@@ -62,7 +54,7 @@ def testing_splitter(filename):
 def emission_prob_Tagger(filetest, filetrain, file_write):
 	dataset = testing_splitter(filetest)
 	states_count = count_states(filetrain)
-	bjos = training_emission(filetrain, states_count)
+	bjos = gen_bjo(filetrain, mode = "training")
 	with open(file_write, "w") as file:
 		for sets in xrange(len(dataset)):
 			for words in dataset[sets]:
@@ -80,6 +72,12 @@ def emission_prob_Tagger(filetest, filetrain, file_write):
 				file.write("%s %s\n"%(words,temp_arg))
 			file.write("\n")
 	return file_write
+
+# def pos_tagger(filetest, filetrain):
+# 	tagged_list = []
+# 	dataset = testing_splitter(filetest)
+# 	bjos = gen_bjo(filetrain, mode = "training")
+
 
 def accuracy(original_file, predicted_file):
 	count = 0
@@ -102,7 +100,10 @@ def tag_extractor(filename):
 
 test_file = "POS/dev.in"
 correct_file = "POS/dev.out"
-train_file = "POS/train"
+train_file = "NPC/train"
 save_file = "POS/copy1.txt"
-predicted = emission_prob_Tagger(test_file, train_file, save_file)
-print accuracy(correct_file, predicted)
+# predicted = emission_prob_Tagger(test_file, train_file, save_file)
+# print accuracy(correct_file, predicted)
+
+output_to_file(gen_bjo(train_file), "emissionReadable")
+
