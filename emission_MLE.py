@@ -1,5 +1,3 @@
-
-
 def count_word(filename):
 	dict = {}
 	with open(filename) as file:
