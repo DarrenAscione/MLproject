@@ -46,7 +46,7 @@ allTags = ["X", "Y", "Z"]
 
 # list of sequences
 # each sequence is a Python list containing the words in the sequence
-sequences = [["a", "d"],["c", "b"]]
+sequences = [["a", "d"], ["c", "b"]]
 
 # output sequences corresponding to input sequences
 outputs = []
@@ -83,6 +83,7 @@ for sequence in sequences:
 					maxChoice = dpEntry
 			newDpTable.append(maxChoice.transit(tag,sequence[i +1]))
 		dpTable = newDpTable
+		
 	endingMax = -1
 	endMaxChoice = None
 	for dpEntry in dpTable:
