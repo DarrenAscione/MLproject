@@ -1,6 +1,8 @@
 #Structure of the count_word = {tag: {word: count, word: count}, tag:{word, count}}
 # training.py outputs 2 file: bjo file and count file
 
+from output_printer import output_to_file
+
 def count_word(filename):
 	dict = {}
 	with open(filename) as file:
@@ -21,25 +23,6 @@ def count_all_states(word_count):
 	for key in word_count.keys():
 		states[key] = sum(word_count[key].values())
 	return states
-
-def output_to_file(emission, file_write, mode="normal"):
-	if mode == "readable":
-		with open(file_write, "a") as file:
-			for key in emission.keys():
-				file.write("\n ------------------------------------- \n")
-				file.write("Emission State: %s\n"%(key))
-				for words in emission[key].keys():
-					file.write("%s: %f\n"%(words, emission[key][words]))
-				file.write("\n ------------------------------------- \n")
-	elif mode == "state":
-		with open(file_write, "a") as file:
-			for key in emission.keys():
-				file.write("%s %f\n"%(key, emission[key]))
-	else:
-		with open(file_write, "a") as file:
-			for key in emission.keys():
-				for words in emission[key].keys():
-					file.write("%s %s %f\n"%(key,words, emission[key][words]))
 
 # Computes the bjos
 def gen_bjo(word_count):

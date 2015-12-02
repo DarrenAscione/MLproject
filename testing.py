@@ -1,9 +1,11 @@
 #Structure of the count_word = {tag: {word: count, word: count}, tag:{word, count}}
 
+from output_printer import output_to_file, tagger
+
 def gen_bjos(state_count, filetest, emission_count):
 	states = {}
 	dict = {}
-	predicts = {}
+	predicts = {} #list of tag to unique words
 	# Read state count from file
 	with open(state_count, "r") as file:
 		data = file.readlines()
@@ -11,7 +13,6 @@ def gen_bjos(state_count, filetest, emission_count):
 			words = line.rstrip("\n").split(" ")
 			states[words[0]] = float(words[1])
 	for i in states.keys(): dict[i] = {}
-	# Iterate through test set
 	for words in filetest:
 		prob_list = check(emission_count, words)
 		if prob_list != {}: # word exist
@@ -23,10 +24,14 @@ def gen_bjos(state_count, filetest, emission_count):
 			predicted_tag = argmax(prob_list)
 			predicts[words] = predicted_tag
 		elif prob_list == {}: # word does not exist
+			temp = 0
+			argtemp = ""
 			for tags in states.keys():
 				dict[tags][words] = 1.0 / (states[tags] + 1)
-			# predicted_tag = min(states[tags] + 1)
-			# predicts[words] = predicted_tag
+				if dict[tags][words] >= temp:
+					temp = dict[tags][words]
+					argtemp = tags
+			predicts[words] = argtemp
 	return dict, predicts
 
 def testing_splitter(filename, mode):
@@ -43,7 +48,7 @@ def testing_splitter(filename, mode):
 					total_dataset.append(one_dataset)
 					one_dataset = []
 		return total_dataset
-	elif mode == "unique":
+	elif mode == "unique": # finds all unique word, saves time
 		data_set = []
 		with open(filename) as file:
 			data = file.readlines()
@@ -69,34 +74,11 @@ def argmax(alist):
 		if alist[key] == max(alist.values()):
 			return key
 
-def output_to_file(emission, file_write, mode="normal"):
-	if mode == "readable":
-		with open(file_write, "a") as file:
-			for key in emission.keys():
-				file.write("\n ------------------------------------- \n")
-				file.write("Emission State: %s\n"%(key))
-				for words in emission[key].keys():
-					file.write("%s: %f\n"%(words, emission[key][words]))
-				file.write("\n ------------------------------------- \n")
-	else:
-		with open(file_write, "a") as file:
-			for key in emission.keys():
-				for words in emission[key].keys():
-					file.write("%s %s %f\n"%(key,words, emission[key][words]))
-
-def tagger(predicts, file_write):
-	with open(file_write, "a") as file:
-			for keys in predicts.keys():
-				file.write("%s %s\n"%(keys,predicts[keys]))
-
-
-testing = "POS/dev.in"
-emission_count = "POS/emission_train_count.txt"
-state_count = "POS/emission_count.txt"
+testing = "NPC/dev.in"
+emission_count = "NPC/emission_train_count.txt"
+state_count = "NPC/emission_count.txt"
 filetest = testing_splitter(testing, mode="unique")
-# bjos, predicts = gen_bjos(state_count, filetest, emission_count)
-# # output_to_file(bjos, "POS/emission_testing.txt")
-
-
-# tagger(predicts, "POS/emission_testing_tags.txt")
+bjos, predicts = gen_bjos(state_count, filetest, emission_count)
+output_to_file(bjos, "NPC/emission_testing.txt")
+tagger(predicts, "NPC/emission_testing_tags.txt")
 
