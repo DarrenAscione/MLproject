@@ -62,7 +62,6 @@ class ViterbiSequence:
 			return self.probability * transmissions[lastTag][nextTag] * emissions[nextTag][nextEmission]
 		except KeyError:
 			return 0
-
 	def transit(self, nextTag, nextEmission):
 		nextStep = copy.deepcopy(self)
 		nextStep.probability = nextStep.probTransmission(nextTag, nextEmission)

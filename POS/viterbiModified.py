@@ -69,41 +69,81 @@ class ViterbiSequence:
 		nextStep.probability = nextStep.probTransmission(nextTag, nextEmission)
 		nextStep.sequence.append(nextTag)
 		return nextStep
+	def __str__(self):
+		return str(self.sequence)
 
-# list of top 10 sequences ending in a particular lastNode
+# list of top 10 sequences ending in a particular node
 class ViterbiNodeList:
-	def __init__(self, lastNode):
-		self.lastNode = lastNode
+	def __init__(self):
+		self.queuePointer = 0
 		self.nodeList = []
+	def __str__(self):
+		return str([str(i) for i in self.nodeList])
 	def push(self, sequence):
+		if not self.shouldPush(sequence):
+			return
 		if len(self.nodeList) >= 10:
 			self.nodeList = self.nodeList[:-1]
 		self.nodeList.append(sequence)
-		self.nodeList.sort(lambda x: -(x.probability))
+		self.nodeList.sort(key = lambda x: -(x.probability))
+	def shouldPush(self, sequenceProbability):
+		if len(self.nodeList) < 10:
+			return True
+		elif sequenceProbability == None:
+			return False
+		elif sequenceProbability > self.nodeList[-1]:
+			return True
+		elif sequenceProbability <= self.nodeList[-1]:
+			return False
 	def peek(self):
-		return self.nodeList[0]
+		if self.queuePointer >= len(self.nodeList):
+			return None
+		return self.nodeList[self.queuePointer]
+	def pop(self):
+		retVal = self.peek()
+		if retVal != None:
+			self.queuePointer += 1
+		return retVal
 
 for sequence in sequences:
-	dpTable = [ViterbiSequence("START")]
+	firstDpEntry = ViterbiNodeList()
+	firstDpEntry.push(ViterbiSequence("START"))
+	dpTable = [firstDpEntry]
 	for i in range(-1, len(sequence) -1):
+		# every entry in the table is a ViterbiNodeList containing the top 10 sequences ending in a certain tag
 		newDpTable= []
 		for tag in allTags:
-			positionMax = -1
-			maxChoice = None
-			for dpEntry in dpTable:
-				piValue = dpEntry.probTransmission(tag, sequence[i +1])
-				if piValue > positionMax:
-					positionMax = piValue
-					maxChoice = dpEntry
-			newDpTable.append(maxChoice.transit(tag,sequence[i +1]))
-		dpTable = newDpTable
-	endingMax = -1
-	endMaxChoice = None
-	for dpEntry in dpTable:
-		piValue = dpEntry.probTransmission("END", None)
-		if piValue > endingMax:
-			endingMax = piValue
-			endMaxChoice = dpEntry
-	outputs.append(endMaxChoice.transit("END", None))
+			# initialise a new ViterbiNodeList for each tag
+			newDpEntry = ViterbiNodeList()
+			hasValidSequences = True
+			while hasValidSequences:
+				hasValidSequences = False
+				# for every node list in the table
+				print len(dpTable)
+				for dpEntry in dpTable:
+					# if the top entry in the node list should be pushed to the node list
+					if dpEntry.peek() == None:
+						continue
+					# print tag, sequence[i +1], dpEntry.peek().probTransmission(tag, sequence[i +1]) 
+					if newDpEntry.shouldPush(dpEntry.peek().probTransmission(tag, sequence[i + 1])):
+						# pop off the top entry from the original DP table
+						popped = dpEntry.pop()
+						print i, tag, popped
+						newDpEntry.push(popped.transit(tag, sequence[i + 1]))
+						hasValidSequences = True
+			newDpTable.append(newDpEntry)
+			dpTable = newDpTable
+	lastNodeList = ViterbiNodeList()
+	hasValidSequences = True
+	while hasValidSequences:
+		hasValidSequences = False
+		for dpEntry in dpTable:
+			if dpEntry.peek() == None:
+				continue
+			if newDpEntry.shouldPush(dpEntry.peek().probTransmission("END", None)):
+				# pop off the top entry from the original DP table
+				lastNodeList.push(dpEntry.pop().transit("END", None))
+				hasValidSequences = True
+	outputs.append(lastNodeList)
 
-print outputs[0].sequence, outputs[0].probability
+# print outputs[0]
