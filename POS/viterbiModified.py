@@ -46,7 +46,7 @@ allTags = ["X", "Y", "Z"]
 
 # list of sequences
 # each sequence is a Python list containing the words in the sequence
-sequences = [["a", "d"], ["c", "b"]]
+sequences = [["a", "d", "a", "d", "a", "d"]]
 
 # output sequences corresponding to input sequences
 outputs = []
@@ -63,7 +63,6 @@ class ViterbiSequence:
 			return self.probability * transmissions[lastTag][nextTag] * emissions[nextTag][nextEmission]
 		except KeyError:
 			return 0
-
 	def transit(self, nextTag, nextEmission):
 		nextStep = copy.deepcopy(self)
 		nextStep.probability = nextStep.probTransmission(nextTag, nextEmission)
@@ -104,6 +103,8 @@ class ViterbiNodeList:
 		if retVal != None:
 			self.queuePointer += 1
 		return retVal
+	def reset(self):
+		self.queuePointer = 0
 
 for sequence in sequences:
 	firstDpEntry = ViterbiNodeList()
@@ -115,35 +116,28 @@ for sequence in sequences:
 		for tag in allTags:
 			# initialise a new ViterbiNodeList for each tag
 			newDpEntry = ViterbiNodeList()
-			hasValidSequences = True
-			while hasValidSequences:
-				hasValidSequences = False
-				# for every node list in the table
-				print len(dpTable)
-				for dpEntry in dpTable:
-					# if the top entry in the node list should be pushed to the node list
-					if dpEntry.peek() == None:
-						continue
-					# print tag, sequence[i +1], dpEntry.peek().probTransmission(tag, sequence[i +1]) 
+			# for every node list in the table
+			for dpEntry in dpTable:
+				while dpEntry.peek() != None:
 					if newDpEntry.shouldPush(dpEntry.peek().probTransmission(tag, sequence[i + 1])):
 						# pop off the top entry from the original DP table
 						popped = dpEntry.pop()
-						print i, tag, popped
 						newDpEntry.push(popped.transit(tag, sequence[i + 1]))
 						hasValidSequences = True
+					else:
+						break
+				dpEntry.reset()
 			newDpTable.append(newDpEntry)
-			dpTable = newDpTable
+		dpTable = newDpTable
 	lastNodeList = ViterbiNodeList()
-	hasValidSequences = True
-	while hasValidSequences:
-		hasValidSequences = False
-		for dpEntry in dpTable:
-			if dpEntry.peek() == None:
-				continue
+	for dpEntry in dpTable:
+		while dpEntry.peek() != None:
 			if newDpEntry.shouldPush(dpEntry.peek().probTransmission("END", None)):
 				# pop off the top entry from the original DP table
 				lastNodeList.push(dpEntry.pop().transit("END", None))
 				hasValidSequences = True
+			else:
+				break
 	outputs.append(lastNodeList)
 
-# print outputs[0]
+print outputs[0]
