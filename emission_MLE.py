@@ -104,4 +104,3 @@ save_file = "POS/copy1.txt"
 # print accuracy(correct_file, predicted)
 
 output_to_file(gen_bjo(train_file), "emissionReadable")
-

@@ -54,6 +54,7 @@ class ViterbiSequence:
 	def __init__(self, lastTag):
 		self.sequence = [lastTag]
 		self.probability = 1.0
+	
 	def probTransmission(self, nextTag, nextEmission):
 		lastTag = self.sequence[-1]
 		try:
@@ -69,6 +70,19 @@ class ViterbiSequence:
 		nextStep.sequence.append(nextTag)
 		return nextStep
 
+# list of top 10 sequences ending in a particular lastNode
+class ViterbiNodeList:
+	def __init__(self, lastNode):
+		self.lastNode = lastNode
+		self.nodeList = []
+	def push(self, sequence):
+		if len(self.nodeList) >= 10:
+			self.nodeList = self.nodeList[:-1]
+		self.nodeList.append(sequence)
+		self.nodeList.sort(lambda x: -(x.probability))
+	def peek(self):
+		return self.nodeList[0]
+
 for sequence in sequences:
 	dpTable = [ViterbiSequence("START")]
 	for i in range(-1, len(sequence) -1):
@@ -83,7 +97,6 @@ for sequence in sequences:
 					maxChoice = dpEntry
 			newDpTable.append(maxChoice.transit(tag,sequence[i +1]))
 		dpTable = newDpTable
-		
 	endingMax = -1
 	endMaxChoice = None
 	for dpEntry in dpTable:
