@@ -15,7 +15,8 @@ def output_to_file(emission, file_write, mode="normal"):
 		with open(file_write, "a") as file:
 			for key in emission.keys():
 				for words in emission[key].keys():
-					file.write("%s %s %f\n"%(key,words, emission[key][words]))
+					if emission[key][words] != 0:
+						file.write("%s %s %f\n"%(key,words, emission[key][words]))
 
 def tagger(predicts, file_write):
 	with open(file_write, "a") as file:
