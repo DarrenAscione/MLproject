@@ -18,4 +18,4 @@ def accuracy(original_file, predicted_file):
 			count += 1
 	return (count *1.0)/ len(predicted)
 
-print accuracy("NPC/dev.out","NPC/dev.Predict")
+print accuracy("NPC/dev.out","NPC/dev.p2.out")

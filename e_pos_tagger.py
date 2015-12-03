@@ -20,7 +20,7 @@ def tag_all(filetest, testing_tagger, file_write):
 			file.write("\n")
 
 
-filetest = "NPC/dev.in"
-testing_tagger = "NPC/emission_testing_tags.txt"
-tag_all(filetest, testing_tagger, "NPC/dev.Predict")
+filetest = "POS/dev.in"
+testing_tagger = "POS/emission_testing_tags.txt"
+tag_all(filetest, testing_tagger, "POS/dev.p2.out")
 

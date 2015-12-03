@@ -74,11 +74,11 @@ def argmax(alist):
 		if alist[key] == max(alist.values()):
 			return key
 
-testing = "NPC/dev.in"
-emission_count = "NPC/emission_train_count.txt"
-state_count = "NPC/emission_count.txt"
+testing = "POS/dev.in"
+emission_count = "POS/emission_train_count.txt"
+state_count = "POS/emission_count.txt"
 filetest = testing_splitter(testing, mode="unique")
 bjos, predicts = gen_bjos(state_count, filetest, emission_count)
-output_to_file(bjos, "NPC/emission_testing.txt")
-tagger(predicts, "NPC/emission_testing_tags.txt")
+output_to_file(bjos, "POS/emission_testing.txt")
+tagger(predicts, "POS/emission_testing_tags.txt")
 

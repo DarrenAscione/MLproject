@@ -35,14 +35,14 @@ def gen_bjo(word_count):
 	return dict
 
 
-training = "NPC/dev.out"
+training = "POS/train"
 word_count = count_word(training)
 bjo = gen_bjo(word_count)
 #Outputs readable format
-output_to_file(bjo, "NPC/emission_trainingReadable.txt", mode="readable")
+output_to_file(bjo, "POS/emission_trainingReadable.txt", mode="readable")
 #Outputs normal format (Emission Probability)
-output_to_file(bjo, "NPC/emission_training.txt")
+output_to_file(bjo, "POS/emission_training.txt")
 #Outputs normal format (Word count for each Tag)
-output_to_file(count_word(training), "NPC/emission_train_count.txt")
+output_to_file(count_word(training), "POS/emission_train_count.txt")
 # output_to_file(count_all_states(word_count), "POS/state_count.txt")
-output_to_file(count_all_states(word_count), "NPC/emission_count.txt", mode="state")
+output_to_file(count_all_states(word_count), "POS/emission_count.txt", mode="state")
