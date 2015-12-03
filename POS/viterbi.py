@@ -1,4 +1,4 @@
-import copy, math
+import copy, math, string
 def parseFile(fileName):
 	valueDict = {}
 	inFile = open(fileName, "r")
@@ -52,7 +52,7 @@ if __name__ == "__main__":
 	START = "START"
 	# model parameters
 	transmissions = parseFile("transition.txt")
-	emissions = parseFile("emission_testing.txt")
+	emissions = parseFile("emission_training.txt")
 
 	# list of all tags
 	allTags = emissions.keys()
@@ -60,8 +60,8 @@ if __name__ == "__main__":
 	# list of sequences
 	# each sequence is a Python list containing the words in the sequence
 	sequences = parseSequences("train")
-	# print transmissions["UH"], "\n---------"
-	print emissions["UH"], "\n---------"
+	# print transmissions["__START"], "\n---------"
+	# print emissions["UH"], "\n---------"
 	# print allTags, "\n---------"
 	# print sequences, "\n---------"
 	logTransmissions = {}
@@ -79,7 +79,7 @@ if __name__ == "__main__":
 	outputs = []
 
 	for sequence in sequences:
-		dpTable = [ViterbiSequence("START")]
+		dpTable = [ViterbiSequence("__START")]
 		for i in range(-1, len(sequence) -1):
 			newDpTable= []
 			for tag in allTags:
@@ -95,12 +95,25 @@ if __name__ == "__main__":
 		endingMax = None
 		endMaxChoice = None
 		for dpEntry in dpTable:
-			piValue = dpEntry.probTransmission("END", None)
+			piValue = dpEntry.probTransmission("__END", None)
 			if piValue >= endingMax:
+				# if piValue != None:
+				# 	print piValue, dpEntry.sequence
 				endingMax = piValue
 				endMaxChoice = dpEntry
-		outputs.append(endMaxChoice.transit("END", None))
+		endingState = endMaxChoice.transit("__END", None)
+		if endingState.logProbability == None:
+			for i in range(len(endingState.sequence) - 1):
+				try:
+					transmissions[endingState.sequence[i]][endingState.sequence[i+1]]
+					if i != 0:
+						emissions[endingState.sequence[i]][sequence[i+1]]
+				except KeyError:
+					print endingState.sequence[i], endingState.sequence[i + 1], sequence[i+1]
+					print string.join(endingState.sequence," "), string.join(sequence, " ")
+					break
+		outputs.append(endingState)
 
 	for i in outputs:
 		# pass
-		print i.sequence, math.exp(i.logProbability) if not i.logProbability is None else 0
+		print math.exp(i.logProbability) if not i.logProbability is None else 0
