@@ -1,3 +1,4 @@
+ TD
 @amcdavid TD
 all DT
 :/ TD
@@ -221,7 +222,7 @@ http://yhoo.it/aFG5Ue TD
 phone TD
 So UH
 stick TD
-Time NN
+Time NNP
 known JJ
 Nigel TD
 hold VBP
@@ -302,8 +303,8 @@ http://mtw.tl/lkfslx TD
 guys NNS
 excited JJ
 Really RB
-a DT
-Exclusive NN
+a TD
+Exclusive JJ
 fckn TD
 criticize TD
 remember VB
@@ -340,7 +341,7 @@ through IN
 during TD
 Q__AND__A TD
 still RB
-its PRP
+its PRP$
 y'all TD
 before IN
 RT RT
@@ -355,7 +356,7 @@ Galakin TD
 , ,
 emails TD
 better JJR
-feel VB
+feel VBP
 Fruit TD
 persist TD
 @SILVRSCREENSTAR TD
@@ -403,7 +404,7 @@ Thanks UH
 man UH
 went VBD
 Linkin TD
-mean VB
+mean VBP
 A DT
 Rocks TD
 everyone NN
@@ -462,12 +463,12 @@ Lingerie TD
 Won TD
 hoodie TD
 @NeilPen TD
-put VBP
+put VBN
 beginning NN
 guest TD
 Ugh TD
 mainland TD
-her PRP
+her PRP$
 Got TD
 September NNP
 could MD
@@ -534,7 +535,7 @@ murder TD
 KNOW TD
 way NN
 allegedly TD
-that DT
+that WDT
 gOd TD
 gym NN
 nobody NN
@@ -668,7 +669,7 @@ wanting TD
 Buch TD
 Stephen TD
 albums TD
-Running NN
+Running NNP
 slot NN
 We PRP
 upgrade TD
@@ -695,7 +696,7 @@ wearing VBG
 do VBP
 fabulous TD
 Lohan TD
-loved NN
+loved VBD
 banned TD
 watch VB
 Eats TD
@@ -819,7 +820,7 @@ had VBD
 ca MD
 jeans TD
 Lol UH
-2nd NN
+2nd CD
 )) TD
 #NFL TD
 Shout TD
@@ -843,7 +844,7 @@ Boxer TD
 damn TD
 TODAY NN
 interest TD
-Your NNP
+Your PRP$
 peeve TD
 doodles TD
 Mack TD
@@ -881,7 +882,7 @@ brat TD
 Yesss TD
 n CC
 n't RB
-while NN
+while IN
 droppin TD
 Tasty TD
 @thefutoncritic USR
@@ -1040,7 +1041,7 @@ know VBP
 Christchurch TD
 studio TD
 judge TD
-world NN
+world UH
 NICKI TD
 @Yeweezii TD
 lady NN
@@ -1079,7 +1080,7 @@ Seriously TD
 Gigli TD
 laughed TD
 spoke TD
-home NN
+home URL
 @christinamarks_ TD
 @gabbysueurban TD
 bless TD
@@ -1175,7 +1176,7 @@ Ball TD
 whom TD
 dalam TD
 http://hjv.dw.tc/Q0t2R TD
-there RB
+there EX
 lol UH
 my$ TD
 http://t.co/JfGm0uH TD
@@ -1248,7 +1249,7 @@ New NNP
 importing TD
 Ben TD
 compete TD
-shit NN
+shit JJ
 knows VBZ
 4.5 TD
 again RB
@@ -1277,7 +1278,7 @@ nice JJ
 SCM TD
 Great TD
 releasing TD
-'s VBZ
+'s POS
 monday NNP
 JAMAICA TD
 favourite TD
@@ -1313,6 +1314,7 @@ far RB
 starting TD
 having VBG
 basically RB
+ TD
 @amcdavid TD
 all DT
 :/ TD
@@ -1536,7 +1538,7 @@ http://yhoo.it/aFG5Ue TD
 phone TD
 So UH
 stick TD
-Time NN
+Time NNP
 known JJ
 Nigel TD
 hold VBP
@@ -1617,8 +1619,8 @@ http://mtw.tl/lkfslx TD
 guys NNS
 excited JJ
 Really RB
-a DT
-Exclusive NN
+a TD
+Exclusive JJ
 fckn TD
 criticize TD
 remember VB
@@ -1655,7 +1657,7 @@ through IN
 during TD
 Q__AND__A TD
 still RB
-its PRP
+its PRP$
 y'all TD
 before IN
 RT RT
@@ -1670,7 +1672,7 @@ Galakin TD
 , ,
 emails TD
 better JJR
-feel VB
+feel VBP
 Fruit TD
 persist TD
 @SILVRSCREENSTAR TD
@@ -1718,7 +1720,7 @@ Thanks UH
 man UH
 went VBD
 Linkin TD
-mean VB
+mean VBP
 A DT
 Rocks TD
 everyone NN
@@ -1777,12 +1779,12 @@ Lingerie TD
 Won TD
 hoodie TD
 @NeilPen TD
-put VBP
+put VBN
 beginning NN
 guest TD
 Ugh TD
 mainland TD
-her PRP
+her PRP$
 Got TD
 September NNP
 could MD
@@ -1849,7 +1851,7 @@ murder TD
 KNOW TD
 way NN
 allegedly TD
-that DT
+that WDT
 gOd TD
 gym NN
 nobody NN
@@ -1983,7 +1985,7 @@ wanting TD
 Buch TD
 Stephen TD
 albums TD
-Running NN
+Running NNP
 slot NN
 We PRP
 upgrade TD
@@ -2010,7 +2012,7 @@ wearing VBG
 do VBP
 fabulous TD
 Lohan TD
-loved NN
+loved VBD
 banned TD
 watch VB
 Eats TD
@@ -2134,7 +2136,7 @@ had VBD
 ca MD
 jeans TD
 Lol UH
-2nd NN
+2nd CD
 )) TD
 #NFL TD
 Shout TD
@@ -2158,7 +2160,7 @@ Boxer TD
 damn TD
 TODAY NN
 interest TD
-Your NNP
+Your PRP$
 peeve TD
 doodles TD
 Mack TD
@@ -2196,7 +2198,7 @@ brat TD
 Yesss TD
 n CC
 n't RB
-while NN
+while IN
 droppin TD
 Tasty TD
 @thefutoncritic USR
@@ -2355,7 +2357,7 @@ know VBP
 Christchurch TD
 studio TD
 judge TD
-world NN
+world UH
 NICKI TD
 @Yeweezii TD
 lady NN
@@ -2394,7 +2396,7 @@ Seriously TD
 Gigli TD
 laughed TD
 spoke TD
-home NN
+home URL
 @christinamarks_ TD
 @gabbysueurban TD
 bless TD
@@ -2490,7 +2492,7 @@ Ball TD
 whom TD
 dalam TD
 http://hjv.dw.tc/Q0t2R TD
-there RB
+there EX
 lol UH
 my$ TD
 http://t.co/JfGm0uH TD
@@ -2563,7 +2565,7 @@ New NNP
 importing TD
 Ben TD
 compete TD
-shit NN
+shit JJ
 knows VBZ
 4.5 TD
 again RB
@@ -2592,7 +2594,7 @@ nice JJ
 SCM TD
 Great TD
 releasing TD
-'s VBZ
+'s POS
 monday NNP
 JAMAICA TD
 favourite TD

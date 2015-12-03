@@ -18,17 +18,18 @@ def gen_bjos(state_count, filetest, emission_count):
 		if prob_list != {}: # word exist
 			for tags in states.keys():
 				if tags in prob_list.keys():
-					dict[tags][words] = prob_list[tags]/(states[tags] + 1)
+					prob_list[tags] = (prob_list[tags]*1.0)/(states[tags] + 1)
+					dict[tags][words] = prob_list[tags]
 				else:
 					dict[tags][words] = 0.0
 			predicted_tag = argmax(prob_list)
 			predicts[words] = predicted_tag
-		elif prob_list == {}: # word does not exist
+		else: # word does not exist
 			temp = 0
 			argtemp = ""
 			for tags in states.keys():
 				dict[tags][words] = 1.0 / (states[tags] + 1)
-				if dict[tags][words] >= temp:
+				if dict[tags][words] > temp:
 					temp = dict[tags][words]
 					argtemp = tags
 			predicts[words] = argtemp
@@ -36,8 +37,7 @@ def gen_bjos(state_count, filetest, emission_count):
 
 def testing_splitter(filename, mode):
 	if mode == "ALL":
-		one_dataset = []
-		total_dataset = []
+		one_dataset, total_dataset = [], []
 		with open(filename) as file:
 			data = file.readlines()
 			for line in data:
@@ -54,9 +54,8 @@ def testing_splitter(filename, mode):
 			data = file.readlines()
 			for line in data:
 				words = line.rstrip("\n")
-				if len(words) != 0:
-					if words not in data_set:
-						data_set.append(words)
+				if words != " " and words not in data_set:
+					data_set.append(words)
 		return data_set
 
 def check(filename, word):
@@ -71,14 +70,14 @@ def check(filename, word):
 
 def argmax(alist):
 	for key in alist.keys():
-		if alist[key] == max(alist.values()):
+		if alist[key] == min(alist.values()):
 			return key
 
-testing = "POS/dev.in"
-emission_count = "POS/emission_train_count.txt"
-state_count = "POS/emission_count.txt"
+testing = "NPC/dev.in"
+emission_count = "NPC/emission_train_count.txt"
+state_count = "NPC/emission_count.txt"
 filetest = testing_splitter(testing, mode="unique")
 bjos, predicts = gen_bjos(state_count, filetest, emission_count)
-output_to_file(bjos, "POS/emission_testing.txt")
-tagger(predicts, "POS/emission_testing_tags.txt")
+output_to_file(bjos, "NPC/emission_testing.txt")
+tagger(predicts, "NPC/emission_testing_tags.txt")
 

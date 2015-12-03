@@ -3,10 +3,10 @@ call VB
 mom TD
 2 CD
 let VB
-her PRP
+her PRP$
 know VBP
 it PRP
-'s VBZ
+'s POS
 almost TD
 3 UH
 . .
@@ -20,13 +20,13 @@ Mom TD
 took VBD
 the DT
 antenna TD
-home NN
+home URL
 today NN
 & CC
 connected TD
 it PRP
 at IN
-home NN
+home URL
 , ,
 finally RB
 . .
@@ -63,7 +63,7 @@ ago IN
 I PRP
 responded TD
 to TO
-a DT
+a TD
 angry JJ
 cardiologist TD
 whom TD
@@ -162,7 +162,7 @@ seems VBZ
 like IN
 you PRP
 had VBD
-a DT
+a TD
 fantastic TD
 time NN
 !!! .
@@ -175,7 +175,7 @@ ttys TD
 
 I PRP
 need VBP
-a DT
+a TD
 syringe TD
 of IN
 anything NN
@@ -207,9 +207,9 @@ the DT
 past NN
 week NN
 anything NN
-that DT
+that WDT
 i PRP
-loved NN
+loved VBD
 is VBZ
 now RB
 gone VBN
@@ -250,7 +250,7 @@ Eduardo TD
 Surita TD
 : :
 your PRP$
-a DT
+a TD
 freaking TD
 ... :
 http://tumblr.com/xmciuda0t TD
@@ -293,9 +293,9 @@ hate VBP
 when WRB
 people NNS
 do VBP
-shit NN
+shit JJ
 like IN
-that DT
+that WDT
 
 It PRP
 was VBD
@@ -318,7 +318,7 @@ old JJ
 lady NN
 for IN
 sharing TD
-her PRP
+her PRP$
 experience TD
 __AND__ CC
 advice TD
@@ -371,7 +371,7 @@ Game TD
 is VBZ
 droppin TD
 in IN
-a DT
+a TD
 month NN
 or CC
 so RB
@@ -396,7 +396,7 @@ http://tinyurl.com/2bhyuq7 TD
 
 @winashbrown TD
 If IN
-that DT
+that WDT
 auto TD
 URL TD
 shortening TD
@@ -408,10 +408,10 @@ stick TD
 with IN
 SD2 TD
 for IN
-a DT
-while NN
+a TD
+while IN
 - :
-that DT
+that WDT
 saves TD
 me PRP
 3 UH
@@ -435,7 +435,7 @@ RETWEET TD
 !!! .
 
 It PRP
-'s VBZ
+'s POS
 time NN
 to TO
 leave TD
@@ -447,7 +447,7 @@ roller TD
 coaster TD
 ride TD
 it PRP
-'s VBZ
+'s POS
 been VBN
 interesting JJ
 but CC
@@ -500,8 +500,8 @@ showin TD
 enough RB
 SKILLS TD
 . .
-that DT
-'s VBZ
+that WDT
+'s POS
 what WP
 we PRP
 call VB
@@ -541,7 +541,7 @@ but CC
 im PRP
 glad JJ
 it PRP
-'s VBZ
+'s POS
 Friday NNP
 today NN
 =) TD
@@ -594,7 +594,7 @@ went VBD
 on IN
 an DT
 Emporer TD
-'s VBZ
+'s POS
 New NNP
 Groove TD
 rampage TD
@@ -604,7 +604,7 @@ twitter NNP
 xD UH
 
 @OrionCards TD
-there RB
+there EX
 will MD
 be VB
 , ,
@@ -621,7 +621,7 @@ got VBD
 my PRP$
 place NN
 for IN
-2nd NN
+2nd CD
 year NN
 
 Still RB
@@ -644,7 +644,7 @@ before IN
 but CC
 it PRP
 was VBD
-a DT
+a TD
 short TD
 experience TD
 ( (
@@ -660,7 +660,7 @@ you PRP
 :o UH
 )) TD
 When WRB
-'s VBZ
+'s POS
 she PRP
 back RB
 again RB
@@ -698,7 +698,7 @@ is VBZ
 proving TD
 to TO
 be VB
-a DT
+a TD
 great JJ
 time NN
 to TO
@@ -717,13 +717,13 @@ Saying TD
 I PRP
 'm VBP
 having VBG
-a DT
+a TD
 bad JJ
 hair NN
 day NN
 " ''
 is VBZ
-a DT
+a TD
 huge JJ
 understatement TD
 today NN
@@ -772,7 +772,7 @@ Saturday NNP
 - :
 Benefits TD
 of IN
-a DT
+a TD
 Great TD
 #Coach TD
 
@@ -782,12 +782,12 @@ RT RT
 The DT
 exact TD
 day NN
-that DT
+that WDT
 I PRP
 wear VB
 shorts NNS
 and CC
-a DT
+a TD
 tee TD
 shirt NN
 everyone NN
@@ -805,7 +805,7 @@ Lindsay TD
 Lohan TD
 allegedly TD
 failed TD
-her PRP
+her PRP$
 drug TD
 test TD
 . .
@@ -816,14 +816,14 @@ fetch TD
 Quick TD
 , ,
 let VB
-'s VBZ
+'s POS
 all DT
-put VBP
+put VBN
 on IN
 our PRP$
 shocked TD
 faces TD
-that DT
+that WDT
 23 TD
 days NNS
 of IN
@@ -835,20 +835,20 @@ work NN
 
 i PRP
 want VBP
-a DT
+a TD
 bath TD
 but CC
 do VBP
 n't RB
 have VBP
-a DT
+a TD
 bath TD
 , ,
 shut TD
 up RP
 , ,
 sam TD
-'s VBZ
+'s POS
 coming VBG
 tomorrow NN
 and CC
@@ -864,7 +864,7 @@ so RB
 go VB
 away TD
 you PRP
-mean VB
+mean VBP
 people NNS
 
 RT RT
@@ -872,7 +872,7 @@ RT RT
 : :
 v NNP
 excited JJ
-that DT
+that WDT
 Director TD
 Nigel TD
 Cole NNP
@@ -910,7 +910,7 @@ Maybe RB
 @Littlesapling TD
 You PRP
 said VBD
-that DT
+that WDT
 last JJ
 week NN
 Ash TD
@@ -919,7 +919,7 @@ I PRP
 think VBP
 you PRP
 need VBP
-a DT
+a TD
 12 TD
 step TD
 program TD
@@ -930,7 +930,7 @@ Advice TD
 &gt; SYM
 First JJ
 time NN
-home NN
+home URL
 buyer TD
 with IN
 several JJ
@@ -951,15 +951,15 @@ re TD
 http://bit.ly/hgMKjS TD
 
 @yeastieboys TD
-that DT
-'s VBZ
+that WDT
+'s POS
 terrible TD
 . .
 I PRP
 ca MD
 n't RB
 believe VB
-its PRP
+its PRP$
 been VBN
 going VBG
 on IN
@@ -976,11 +976,11 @@ I PRP
 dont VBP
 think VBP
 it PRP
-'s VBZ
+'s POS
 as IN
 bad JJ
 down RP
-there RB
+there EX
 . .
 
 Small TD
@@ -1055,11 +1055,11 @@ be VB
 happier TD
 . .
 Ending TD
-a DT
+a TD
 crappy TD
 week NN
 on IN
-a DT
+a TD
 good JJ
 note TD
 is VBZ
@@ -1113,7 +1113,7 @@ lol UH
 . .
 
 ahaha UH
-that DT
+that WDT
 just RB
 made VBD
 my PRP$
@@ -1191,11 +1191,11 @@ do VBP
 n't RB
 really RB
 have VBP
-a DT
+a TD
 favourite TD
 . .
 It PRP
-'s VBZ
+'s POS
 starting TD
 to TO
 taste TD
@@ -1217,14 +1217,14 @@ later RB
 Far TD
 be VB
 it PRP
-that DT
+that WDT
 the DT
 week NN
 should MD
 pass TD
 without TD
 noting TD
-that DT
+that WDT
 it PRP
 was VBD
 60 CD
@@ -1261,7 +1261,7 @@ issues TD
 . .
 He PRP
 held VBD
-a DT
+a TD
 knife TD
 at IN
 mom TD
@@ -1270,7 +1270,7 @@ I PRP
 can MD
 STILL TD
 remember VB
-that DT
+that WDT
 ... :
 =/ TD
 
@@ -1336,7 +1336,7 @@ together RB
 . .
 The DT
 film TD
-'s VBZ
+'s POS
 releasing TD
 on IN
 Feb NNP
@@ -1344,7 +1344,7 @@ Feb NNP
 4th TD
 . .
 It PRP
-'s VBZ
+'s POS
 really RB
 good JJ
 . .
@@ -1394,7 +1394,7 @@ thou( TD
 RT RT
 @thefutoncritic USR
 : :
-Exclusive NN
+Exclusive JJ
 : :
 FOX NNP
 to TO
@@ -1409,7 +1409,7 @@ late-night JJ
 slot NN
 ; :
 " ''
-Running NN
+Running NNP
 Wilde NNP
 " ''
 one-hour JJ
@@ -1429,14 +1429,14 @@ all DT
 the DT
 real JJ
 women TD
-that DT
+that WDT
 hold VBP
 they PRP
 man UH
 down RP
 when WRB
 he PRP
-'s VBZ
+'s POS
 doin VBG
 what WP
 he PRP
@@ -1448,7 +1448,7 @@ make VB
 it PRP
 in IN
 this DT
-world NN
+world UH
 ! .
 RESPECT TD
 T NNP
@@ -1471,7 +1471,7 @@ to TO
 help VB
 someone NN
 order TD
-a DT
+a TD
 phone TD
 ) )
 #metropcs TD
@@ -1510,7 +1510,7 @@ to TO
 St NNP
 . .
 Patty TD
-'s VBZ
+'s POS
 Day NNP
 Party NNP
 Tonight NNP
@@ -1542,12 +1542,12 @@ Intellectual TD
 I PRP
 bet TD
 ppl TD
-that DT
+that WDT
 design TD
 book NN
 covers TD
 for IN
-a DT
+a TD
 living VBG
 hate VBP
 when WRB
@@ -1556,10 +1556,10 @@ say VBP
 do VBP
 n't RB
 judge TD
-a DT
+a TD
 book NN
 by IN
-its PRP
+its PRP$
 cover TD
 
 I PRP
@@ -1580,7 +1580,7 @@ http://tinyurl.com/yek3sya TD
 when WRB
 i PRP
 compliment TD
-her PRP
+her PRP$
 she PRP
 wo MD
 n't RB
@@ -1613,7 +1613,7 @@ tonight NN
 
 How WRB
 about IN
-a DT
+a TD
 great JJ
 improv TD
 comedy TD
@@ -1629,11 +1629,11 @@ it PRP
 when WRB
 people NNS
 untag TD
-there RB
+there EX
 selfs TD
 from IN
 pictures TD
-that DT
+that WDT
 no DT
 ones TD
 even RB
@@ -1657,7 +1657,7 @@ tweet NN
 
 @FirstLadyEve TD
 have VBP
-a DT
+a TD
 dating TD
 show NN
 with IN
@@ -1793,7 +1793,7 @@ care TD
 if IN
 I PRP
 do VBP
-a DT
+a TD
 countdown TD
 to TO
 #wku TD
@@ -1813,7 +1813,7 @@ mom TD
 wuz TD
 pushy TD
 in IN
-there RB
+there EX
 , ,
 damn TD
 ~December*18th~ TD
@@ -1827,7 +1827,7 @@ BELIEBER TD
 shoutout TD
 for IN
 @rchristelyn.....@rchristeyn....@rchristelyn...she TD
-'s VBZ
+'s POS
 one CD
 of IN
 my PRP$
@@ -1843,7 +1843,7 @@ Good UH
 Morning UH
 ! .
 Have VB
-a DT
+a TD
 pleasant TD
 and CC
 happy JJ
@@ -1908,13 +1908,13 @@ lol UH
 
 Just RB
 got VBD
-home NN
+home URL
 from IN
 school NN
 . .
 :D UH
 it PRP
-'s VBZ
+'s POS
 friday NNP
 guys NNS
 !, TD
@@ -1924,7 +1924,7 @@ Good UH
 morning NN
 ! .
 Have VB
-a DT
+a TD
 Good UH
 day NN
 :) UH
@@ -1939,7 +1939,7 @@ The DT
 only JJ
 way NN
 for IN
-a DT
+a TD
 relationship TD
 to TO
 survive TD
@@ -1979,7 +1979,7 @@ you PRP
 , ,
 does VBZ
 n't RB
-mean VB
+mean VBP
 I PRP
 will MD
 - :
@@ -2013,7 +2013,7 @@ play TD
 Her TD
 husband TD
 is VBZ
-a DT
+a TD
 ... :
 http://yhoo.it/bX9l33 TD
 
@@ -2036,9 +2036,9 @@ hope VBP
 he PRP
 did VBD
 n't RB
-mean VB
+mean VBP
 ' ''
-shit NN
+shit JJ
 my PRP$
 son UH
 listens TD
@@ -2080,7 +2080,7 @@ RT RT
 londonland TD
 : :
 They PRP
-put VBP
+put VBN
 bacon TD
 on IN
 everything NN
@@ -2112,7 +2112,7 @@ as IN
 we PRP
 are VBP
 taking VBG
-a DT
+a TD
 good JJ
 rest VB
 from IN
@@ -2203,7 +2203,7 @@ shouts TD
 !! .
 While TD
 he PRP
-'s VBZ
+'s POS
 ... :
 
 ; :
@@ -2211,7 +2211,7 @@ I PRP
 can MD
 upgrade TD
 to TO
-a DT
+a TD
 BlackBerry TD
 in IN
 November NNP
@@ -2313,7 +2313,7 @@ time NN
 is VBZ
 it PRP
 over IN
-there RB
+there EX
 ? .
 
 Happy JJ
@@ -2327,7 +2327,7 @@ brother TD
 @xHangmanx TD
 !!! .
 He PRP
-'s VBZ
+'s POS
 20 TD
 today NN
 ! .
@@ -2343,7 +2343,7 @@ man UH
 2011 TD
 first JJ
 time NN
-home NN
+home URL
 buyer TD
 incentives TD
 in IN
@@ -2352,7 +2352,7 @@ CA TD
 : :
 2011 TD
 First JJ
-Time NN
+Time NNP
 Home NN
 Buyer TD
 Incentives TD
@@ -2426,7 +2426,7 @@ era TD
 got VBD
 off RP
 to TO
-a DT
+a TD
 good JJ
 start VB
 last JJ
@@ -2439,7 +2439,7 @@ will MD
 try TD
 to TO
 snap TD
-a DT
+a TD
 f TD
 ... :
 http://bit.ly/bSS914 TD
@@ -2451,7 +2451,7 @@ RT RT
 @GeeSPOT_ TD
 : :
 does VBZ
-a DT
+a TD
 new JJ
 ep TD
 of IN
@@ -2469,7 +2469,7 @@ morning NN
 for IN
 Oklahoma TD
 State NNP
-'s VBZ
+'s POS
 Darrell TD
 Williams TD
 . .
@@ -2547,16 +2547,16 @@ up RP
 
 @mfeige TD
 it PRP
-'s VBZ
+'s POS
 on IN
-a DT
+a TD
 Saturday NNP
 though TD
 . .
 So UH
-that DT
-'s VBZ
-a DT
+that WDT
+'s POS
+a TD
 thing NN
 . .
 
@@ -2581,7 +2581,7 @@ tweeps TD
 . .
 have VBP
 'll MD
-a DT
+a TD
 fabulous TD
 day NN
 .... :
@@ -2636,7 +2636,7 @@ hold VBP
 
 I PRP
 have VBP
-a DT
+a TD
 test TD
 tomorrow NN
 , ,
@@ -2679,7 +2679,7 @@ sunday NNP
 Wow TD
 , ,
 i PRP
-feel VB
+feel VBP
 so RB
 much RB
 better JJR
@@ -2702,7 +2702,7 @@ summer TD
 and CC
 call VB
 it PRP
-a DT
+a TD
 night NN
 :\ TD
 
@@ -2727,7 +2727,7 @@ uggghh TD
 @Yeweezii TD
 Jst TD
 lock TD
-her PRP
+her PRP$
 outside IN
 4 CD
 d TD
@@ -2744,7 +2744,7 @@ time NN
 GaGa TD
 played TD
 here RB
-a DT
+a TD
 few JJ
 weeks NNS
 back RB
@@ -2760,9 +2760,9 @@ show NN
 . .
 God NNP
 bless TD
-her PRP
+her PRP$
 for IN
-that DT
+that WDT
 . .
 
 Got TD
@@ -2783,7 +2783,7 @@ How WRB
 to TO
 Deal NN
 When WRB
-Your NNP
+Your PRP$
 Crush TD
 Is VBZ
 Taken TD
@@ -2807,7 +2807,7 @@ lowercase TD
 track TD
 names TD
 and CC
-shit NN
+shit JJ
 
 ThAnK TD
 gOd TD
@@ -2825,7 +2825,7 @@ confirm TD
 to TO
 , ,
 winning TD
-a DT
+a TD
 Nokia TD
 5800 TD
 ? .
@@ -2877,7 +2877,7 @@ http://blogs.thescore.com/nfl/2010/09/17/pizzolaw2/ TD
 i PRP
 think VBP
 it PRP
-'s VBZ
+'s POS
 better JJR
 to TO
 go VB
