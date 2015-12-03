@@ -60,10 +60,6 @@ if __name__ == "__main__":
 	# list of sequences
 	# each sequence is a Python list containing the words in the sequence
 	sequences = parseSequences("train")
-	# print transmissions["__START"], "\n---------"
-	# print emissions["UH"], "\n---------"
-	# print allTags, "\n---------"
-	# print sequences, "\n---------"
 	logTransmissions = {}
 	for key1 in transmissions:
 		logTransmissions[key1] = {}
@@ -97,23 +93,10 @@ if __name__ == "__main__":
 		for dpEntry in dpTable:
 			piValue = dpEntry.probTransmission("__END", None)
 			if piValue >= endingMax:
-				# if piValue != None:
-				# 	print piValue, dpEntry.sequence
 				endingMax = piValue
 				endMaxChoice = dpEntry
 		endingState = endMaxChoice.transit("__END", None)
-		if endingState.logProbability == None:
-			for i in range(len(endingState.sequence) - 1):
-				try:
-					transmissions[endingState.sequence[i]][endingState.sequence[i+1]]
-					if i != 0:
-						emissions[endingState.sequence[i]][sequence[i+1]]
-				except KeyError:
-					print endingState.sequence[i], endingState.sequence[i + 1], sequence[i+1]
-					print string.join(endingState.sequence," "), string.join(sequence, " ")
-					break
 		outputs.append(endingState)
 
 	for i in outputs:
-		# pass
 		print math.exp(i.logProbability) if not i.logProbability is None else 0
