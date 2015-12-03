@@ -1,4 +1,4 @@
-#Structure of the count_word = {tag: {word: count, word: count}, tag:{word, count}}
+# Structure of the count_word = {tag: {word: count, word: count}, tag:{word, count}}
 # training.py outputs 2 file: bjo file and count file
 
 from output_printer import output_to_file

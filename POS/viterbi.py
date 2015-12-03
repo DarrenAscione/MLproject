@@ -1,94 +1,106 @@
-import copy
-START = "START"
-# model parameters
-transmissions = {
-				"START": {
-						"X": 0.5,
-						"Z": 0.5,
-					},
-				"X": {
-						"X": 0.33,
-						"Z": 0.33,
-						"END": 0.33,
-					},
-				"Y": {
-						"X": 0.25,
-						"END": 0.75,
-					},
-				"Z": {
-						"X": 1.0 / 7,
-						"Y": 4.0 / 7,
-						"Z": 1.0 / 7,
-						"END": 1.0 / 7,
-					}
-				}
-emissions = {
-				"X": {
-						"a": 3.0/7,
-						"b": 2.0/7,
-						"c": 2.0/7,
-					},
-				"Y": {
-						"a": 0.5,
-						"c": 0.25,
-						"d": 0.25,
-					},
-				"Z": {
-						"a": 1.0/7,
-						"b": 4.0/7,
-						"c": 1.0/7,
-						"d": 1.0/7,
-					}
-			}
+import copy, math
+def parseFile(fileName):
+	valueDict = {}
+	inFile = open(fileName, "r")
+	fileLines = inFile.readlines()
+	inFile.close()
+	for line in fileLines:
+		splitList = line.split(" ")
+		if not splitList[0] in valueDict:
+			valueDict[splitList[0]] = {}
+		valueDict[splitList[0]][splitList[1]] = float(splitList[2])
+	return valueDict
 
-# list of all tags
-allTags = ["X", "Y", "Z"]
+def parseSequences(fileName, tags=True):
+	inFile = open(fileName, "r")
+	fileLines = inFile.readlines()
+	inFile.close()
+	valueList = []
+	newSequence = []
+	for line in fileLines:
+		if tags:
+			line = line.split(" ")[0]
+		line = line.strip()
+		if len(line) > 0:
+			newSequence.append(line)
+		elif len(line) == 0:
+			valueList.append(newSequence)
+			newSequence = []
+	return valueList
 
-# list of sequences
-# each sequence is a Python list containing the words in the sequence
-sequences = [["a", "d"],["c", "b"]]
-
-# output sequences corresponding to input sequences
-outputs = []
 class ViterbiSequence:
 	def __init__(self, lastTag):
 		self.sequence = [lastTag]
-		self.probability = 1.0
+		self.logProbability = 0.0
 	def probTransmission(self, nextTag, nextEmission):
 		lastTag = self.sequence[-1]
 		try:
+			if self.logProbability == None:
+				return None
 			if nextEmission == None:
-				return self.probability * transmissions[lastTag][nextTag]	
-			return self.probability * transmissions[lastTag][nextTag] * emissions[nextTag][nextEmission]
+				return self.logProbability + logTransmissions[lastTag][nextTag]	
+			return self.logProbability + logTransmissions[lastTag][nextTag] + logEmissions[nextTag][nextEmission]
 		except KeyError:
-			return 0
+			return None
 	def transit(self, nextTag, nextEmission):
 		nextStep = copy.deepcopy(self)
-		nextStep.probability = nextStep.probTransmission(nextTag, nextEmission)
+		nextStep.logProbability = nextStep.probTransmission(nextTag, nextEmission)
 		nextStep.sequence.append(nextTag)
 		return nextStep
 
-for sequence in sequences:
-	dpTable = [ViterbiSequence("START")]
-	for i in range(-1, len(sequence) -1):
-		newDpTable= []
-		for tag in allTags:
-			positionMax = -1
-			maxChoice = None
-			for dpEntry in dpTable:
-				piValue = dpEntry.probTransmission(tag, sequence[i +1])
-				if piValue > positionMax:
-					positionMax = piValue
-					maxChoice = dpEntry
-			newDpTable.append(maxChoice.transit(tag,sequence[i +1]))
-		dpTable = newDpTable
-	endingMax = -1
-	endMaxChoice = None
-	for dpEntry in dpTable:
-		piValue = dpEntry.probTransmission("END", None)
-		if piValue > endingMax:
-			endingMax = piValue
-			endMaxChoice = dpEntry
-	outputs.append(endMaxChoice.transit("END", None))
+if __name__ == "__main__":
+	START = "START"
+	# model parameters
+	transmissions = parseFile("transition.txt")
+	emissions = parseFile("emission_testing.txt")
 
-print outputs[0].sequence, outputs[0].probability
+	# list of all tags
+	allTags = emissions.keys()
+
+	# list of sequences
+	# each sequence is a Python list containing the words in the sequence
+	sequences = parseSequences("train")
+	# print transmissions["UH"], "\n---------"
+	print emissions["UH"], "\n---------"
+	# print allTags, "\n---------"
+	# print sequences, "\n---------"
+	logTransmissions = {}
+	for key1 in transmissions:
+		logTransmissions[key1] = {}
+		for key2 in transmissions[key1]:
+			logTransmissions[key1][key2] = math.log(transmissions[key1][key2])
+	logEmissions = {}
+	for key1 in emissions:
+		logEmissions[key1] = {}
+		for key2 in emissions[key1]:
+			logEmissions[key1][key2] = math.log(emissions[key1][key2])
+
+	# output sequences corresponding to input sequences
+	outputs = []
+
+	for sequence in sequences:
+		dpTable = [ViterbiSequence("START")]
+		for i in range(-1, len(sequence) -1):
+			newDpTable= []
+			for tag in allTags:
+				positionMax = None
+				maxChoice = None
+				for dpEntry in dpTable:
+					piValue = dpEntry.probTransmission(tag, sequence[i +1])
+					if piValue >= positionMax:
+						positionMax = piValue
+						maxChoice = dpEntry
+				newDpTable.append(maxChoice.transit(tag,sequence[i +1]))
+			dpTable = newDpTable
+		endingMax = None
+		endMaxChoice = None
+		for dpEntry in dpTable:
+			piValue = dpEntry.probTransmission("END", None)
+			if piValue >= endingMax:
+				endingMax = piValue
+				endMaxChoice = dpEntry
+		outputs.append(endMaxChoice.transit("END", None))
+
+	for i in outputs:
+		# pass
+		print i.sequence, math.exp(i.logProbability) if not i.logProbability is None else 0
