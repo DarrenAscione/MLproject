@@ -28,6 +28,23 @@ def parseSequences(fileName, tags=True):
 			newSequence = []
 	return valueList
 
+def viterbiTagger(outputs, inFilename, outFilename, tags=True):
+	inFile = open(inFilename, "r")
+	inFileLines = inFile.readlines()
+	inFile.close()
+	outFile = open(outFilename, "w")
+	inFilePointer = 0
+	for output in outputs:
+		for tag in output.sequence[1:-1]:
+			line = inFileLines[inFilePointer].strip()
+			if tags:
+				line = line.split(" ")[0]
+			outFile.write("{0} {1}\n".format(line, tag))
+			inFilePointer += 1
+		outFile.write("\n")
+		inFilePointer += 1
+	outFile.close()
+
 class ViterbiSequence:
 	def __init__(self, lastTag):
 		self.sequence = [lastTag]
@@ -52,14 +69,14 @@ if __name__ == "__main__":
 	START = "START"
 	# model parameters
 	transmissions = parseFile("transition.txt")
-	emissions = parseFile("emission_training.txt")
+	emissions = parseFile("emission_testing.txt")
 
 	# list of all tags
 	allTags = emissions.keys()
 
 	# list of sequences
 	# each sequence is a Python list containing the words in the sequence
-	sequences = parseSequences("train")
+	sequences = parseSequences("dev.in")
 	logTransmissions = {}
 	for key1 in transmissions:
 		logTransmissions[key1] = {}
@@ -97,6 +114,6 @@ if __name__ == "__main__":
 				endMaxChoice = dpEntry
 		endingState = endMaxChoice.transit("__END", None)
 		outputs.append(endingState)
-
-	for i in outputs:
-		print math.exp(i.logProbability) if not i.logProbability is None else 0
+		viterbiTagger(outputs, "dev.in", "p3_viterbi_test.txt")
+	# for i in outputs:
+	# 	print math.exp(i.logProbability) if not i.logProbability is None else 0

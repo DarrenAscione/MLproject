@@ -18,4 +18,5 @@ def accuracy(original_file, predicted_file):
 			count += 1
 	return (count *1.0)/ len(predicted)
 
-print accuracy("NPC/dev.out","NPC/dev.p2.out")
+for i in range(10):
+	print accuracy("POS/Part 4/p4_viterbi_{0}.txt".format(i),"POS/dev.out")
