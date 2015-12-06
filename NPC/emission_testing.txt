@@ -1,3 +1,4 @@
+I-NP  0.000055
 I-NP raining 0.000055
 I-NP soloud 0.000055
 I-NP four 0.000164
@@ -4628,6 +4629,7 @@ I-NP yourblog 0.000055
 I-NP baobei 0.001036
 I-NP whhhyyy 0.000055
 I-NP alienates 0.000055
+B-NP  0.000026
 B-NP soloud 0.000026
 B-NP yellow 0.000078
 B-NP friend's 0.000078
@@ -9151,6 +9153,7 @@ B-NP baobei 0.000522
 B-NP whhhyyy 0.000026
 B-NP alienates 0.000026
 B-NP Eman 0.000078
+O  0.000005
 O raining 0.000074
 O soloud 0.000005
 O yellow 0.000005
@@ -16717,6 +16720,7 @@ O baobei 0.000044
 O whhhyyy 0.000005
 O alienates 0.000005
 O Eman 0.000025
+I-NP  0.000055
 I-NP raining 0.000055
 I-NP soloud 0.000055
 I-NP four 0.000164
@@ -21347,6 +21351,7 @@ I-NP yourblog 0.000055
 I-NP baobei 0.001036
 I-NP whhhyyy 0.000055
 I-NP alienates 0.000055
+B-NP  0.000026
 B-NP soloud 0.000026
 B-NP yellow 0.000078
 B-NP friend's 0.000078
@@ -25870,6 +25875,7 @@ B-NP baobei 0.000522
 B-NP whhhyyy 0.000026
 B-NP alienates 0.000026
 B-NP Eman 0.000078
+O  0.000005
 O raining 0.000074
 O soloud 0.000005
 O yellow 0.000005

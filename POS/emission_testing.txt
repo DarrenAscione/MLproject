@@ -1,3 +1,4 @@
+PRP$  0.009901
 PRP$ @amcdavid 0.009901
 PRP$ :/ 0.009901
 PRP$ Mood 0.009901
@@ -815,6 +816,7 @@ PRP$ responded 0.009901
 PRP$ Sleep 0.009901
 PRP$ #dreams 0.009901
 PRP$ starting 0.009901
+VBG  0.007576
 VBG @amcdavid 0.007576
 VBG :/ 0.007576
 VBG Mood 0.007576
@@ -1638,6 +1640,7 @@ VBG Sleep 0.007576
 VBG #dreams 0.007576
 VBG starting 0.007576
 VBG having 0.007576
+VBD  0.008850
 VBD @amcdavid 0.008850
 VBD :/ 0.008850
 VBD Mood 0.008850
@@ -2457,6 +2460,7 @@ VBD responded 0.008850
 VBD Sleep 0.008850
 VBD #dreams 0.008850
 VBD starting 0.008850
+VBN  0.018182
 VBN @amcdavid 0.018182
 VBN :/ 0.018182
 VBN Mood 0.018182
@@ -3268,6 +3272,7 @@ VBN responded 0.018182
 VBN Sleep 0.018182
 VBN #dreams 0.018182
 VBN starting 0.018182
+HT  0.016949
 HT @amcdavid 0.016949
 HT :/ 0.016949
 HT Mood 0.016949
@@ -4072,6 +4077,7 @@ HT responded 0.016949
 HT Sleep 0.016949
 HT #dreams 0.016949
 HT starting 0.016949
+,  0.008000
 , @amcdavid 0.008000
 , :/ 0.008000
 , Mood 0.008000
@@ -4877,6 +4883,7 @@ HT starting 0.016949
 , Sleep 0.008000
 , #dreams 0.008000
 , starting 0.008000
+''  0.026316
 '' @amcdavid 0.026316
 '' :/ 0.026316
 '' Mood 0.026316
@@ -5684,6 +5691,7 @@ HT starting 0.016949
 '' Sleep 0.026316
 '' #dreams 0.026316
 '' starting 0.026316
+CC  0.007463
 CC @amcdavid 0.007463
 CC :/ 0.007463
 CC Mood 0.007463
@@ -6500,6 +6508,7 @@ CC responded 0.007463
 CC Sleep 0.007463
 CC #dreams 0.007463
 CC starting 0.007463
+VBP  0.004926
 VBP @amcdavid 0.004926
 VBP :/ 0.004926
 VBP Mood 0.004926
@@ -7346,6 +7355,7 @@ VBP responded 0.004926
 VBP Sleep 0.004926
 VBP #dreams 0.004926
 VBP starting 0.004926
+WDT  0.200000
 WDT @amcdavid 0.200000
 WDT :/ 0.200000
 WDT Mood 0.200000
@@ -8152,6 +8162,7 @@ WDT responded 0.200000
 WDT Sleep 0.200000
 WDT #dreams 0.200000
 WDT starting 0.200000
+USR  0.005435
 USR @amcdavid 0.005435
 USR :/ 0.005435
 USR Mood 0.005435
@@ -8957,6 +8968,7 @@ USR responded 0.005435
 USR Sleep 0.005435
 USR #dreams 0.005435
 USR starting 0.005435
+JJ  0.003484
 JJ @amcdavid 0.003484
 JJ :/ 0.003484
 JJ Mood 0.003484
@@ -9806,6 +9818,7 @@ JJ Sleep 0.003484
 JJ time 0.003484
 JJ #dreams 0.003484
 JJ starting 0.003484
+WP  0.066667
 WP @amcdavid 0.066667
 WP :/ 0.066667
 WP Mood 0.066667
@@ -10612,6 +10625,7 @@ WP responded 0.066667
 WP Sleep 0.066667
 WP #dreams 0.066667
 WP starting 0.066667
+VBZ  0.007752
 VBZ @amcdavid 0.007752
 VBZ :/ 0.007752
 VBZ Mood 0.007752
@@ -11430,6 +11444,7 @@ VBZ responded 0.007752
 VBZ Sleep 0.007752
 VBZ #dreams 0.007752
 VBZ starting 0.007752
+DT  0.002959
 DT @amcdavid 0.002959
 DT all 0.023669
 DT :/ 0.002959
@@ -12251,6 +12266,7 @@ DT responded 0.002959
 DT Sleep 0.002959
 DT #dreams 0.002959
 DT starting 0.002959
+RT  0.013514
 RT @amcdavid 0.013514
 RT :/ 0.013514
 RT Mood 0.013514
@@ -13056,6 +13072,7 @@ RT responded 0.013514
 RT Sleep 0.013514
 RT #dreams 0.013514
 RT starting 0.013514
+RP  0.021277
 RP @amcdavid 0.021277
 RP :/ 0.021277
 RP Mood 0.021277
@@ -13866,6 +13883,7 @@ RP responded 0.021277
 RP Sleep 0.021277
 RP #dreams 0.021277
 RP starting 0.021277
+NN  0.001309
 NN @amcdavid 0.001309
 NN :/ 0.001309
 NN Mood 0.001309
@@ -14773,6 +14791,7 @@ NN Sleep 0.001309
 NN time 0.031414
 NN #dreams 0.001309
 NN starting 0.001309
+)  0.052632
 ) @amcdavid 0.052632
 ) :/ 0.052632
 ) Mood 0.052632
@@ -15578,6 +15597,7 @@ NN starting 0.001309
 ) Sleep 0.052632
 ) #dreams 0.052632
 ) starting 0.052632
+(  0.066667
 ( @amcdavid 0.066667
 ( :/ 0.066667
 ( Mood 0.066667
@@ -16383,6 +16403,7 @@ NN starting 0.001309
 ( Sleep 0.066667
 ( #dreams 0.066667
 ( starting 0.066667
+FW  0.250000
 FW @amcdavid 0.250000
 FW :/ 0.250000
 FW Mood 0.250000
@@ -17187,6 +17208,7 @@ FW responded 0.250000
 FW Sleep 0.250000
 FW #dreams 0.250000
 FW starting 0.250000
+POS  0.055556
 POS @amcdavid 0.055556
 POS :/ 0.055556
 POS Mood 0.055556
@@ -17992,6 +18014,7 @@ POS responded 0.055556
 POS Sleep 0.055556
 POS #dreams 0.055556
 POS starting 0.055556
+.  0.002907
 . @amcdavid 0.002907
 . :/ 0.002907
 . Mood 0.002907
@@ -18805,6 +18828,7 @@ POS starting 0.055556
 . Sleep 0.002907
 . #dreams 0.002907
 . starting 0.002907
+TO  0.010204
 TO @amcdavid 0.010204
 TO :/ 0.010204
 TO Mood 0.010204
@@ -19612,6 +19636,7 @@ TO responded 0.010204
 TO Sleep 0.010204
 TO #dreams 0.010204
 TO starting 0.010204
+PRP  0.002445
 PRP @amcdavid 0.002445
 PRP :/ 0.002445
 PRP Mood 0.002445
@@ -20442,6 +20467,7 @@ PRP responded 0.002445
 PRP Sleep 0.002445
 PRP #dreams 0.002445
 PRP starting 0.002445
+RB  0.004016
 RB @amcdavid 0.004016
 RB :/ 0.004016
 RB Mood 0.004016
@@ -21290,6 +21316,7 @@ RB far 0.008032
 RB #dreams 0.004016
 RB starting 0.004016
 RB basically 0.004016
+TD  0.500000
 TD @amcdavid 0.500000
 TD :/ 0.500000
 TD Mood 0.500000
@@ -22095,6 +22122,7 @@ TD responded 0.500000
 TD Sleep 0.500000
 TD #dreams 0.500000
 TD starting 0.500000
+:  0.003704
 : @amcdavid 0.003704
 : :/ 0.003704
 : Mood 0.003704
@@ -22909,6 +22937,7 @@ TD starting 0.500000
 : Sleep 0.003704
 : #dreams 0.003704
 : starting 0.003704
+NNS  0.005848
 NNS @amcdavid 0.005848
 NNS :/ 0.005848
 NNS Mood 0.005848
@@ -23727,6 +23756,7 @@ NNS responded 0.005848
 NNS Sleep 0.005848
 NNS #dreams 0.005848
 NNS starting 0.005848
+NNP  0.001942
 NNP @amcdavid 0.001942
 NNP :/ 0.001942
 NNP Mood 0.001942
@@ -24581,6 +24611,7 @@ NNP Sleep 0.001942
 NNP At 0.001942
 NNP #dreams 0.001942
 NNP starting 0.001942
+VB  0.004115
 VB @amcdavid 0.004115
 VB :/ 0.004115
 VB Mood 0.004115
@@ -25427,6 +25458,7 @@ VB responded 0.004115
 VB Sleep 0.004115
 VB #dreams 0.004115
 VB starting 0.004115
+WRB  0.016393
 WRB @amcdavid 0.016393
 WRB :/ 0.016393
 WRB Mood 0.016393
@@ -26236,6 +26268,7 @@ WRB responded 0.016393
 WRB Sleep 0.016393
 WRB #dreams 0.016393
 WRB starting 0.016393
+URL  0.010753
 URL @amcdavid 0.010753
 URL :/ 0.010753
 URL Mood 0.010753
@@ -27043,6 +27076,7 @@ URL responded 0.010753
 URL Sleep 0.010753
 URL #dreams 0.010753
 URL starting 0.010753
+RBR  0.142857
 RBR @amcdavid 0.142857
 RBR :/ 0.142857
 RBR Mood 0.142857
@@ -27848,6 +27882,7 @@ RBR responded 0.142857
 RBR Sleep 0.142857
 RBR #dreams 0.142857
 RBR starting 0.142857
+CD  0.009901
 CD @amcdavid 0.009901
 CD :/ 0.009901
 CD Mood 0.009901
@@ -28672,6 +28707,7 @@ CD responded 0.009901
 CD Sleep 0.009901
 CD #dreams 0.009901
 CD starting 0.009901
+EX  0.166667
 EX @amcdavid 0.166667
 EX :/ 0.166667
 EX Mood 0.166667
@@ -29478,6 +29514,7 @@ EX responded 0.166667
 EX Sleep 0.166667
 EX #dreams 0.166667
 EX starting 0.166667
+IN  0.002165
 IN @amcdavid 0.002165
 IN all 0.002165
 IN :/ 0.002165
@@ -30323,6 +30360,7 @@ IN Sleep 0.002165
 IN At 0.002165
 IN #dreams 0.002165
 IN starting 0.002165
+MD  0.014706
 MD @amcdavid 0.014706
 MD :/ 0.014706
 MD Mood 0.014706
@@ -31138,6 +31176,7 @@ MD responded 0.014706
 MD Sleep 0.014706
 MD #dreams 0.014706
 MD starting 0.014706
+NNPS  0.333333
 NNPS @amcdavid 0.333333
 NNPS :/ 0.333333
 NNPS Mood 0.333333
@@ -31942,6 +31981,7 @@ NNPS responded 0.333333
 NNPS Sleep 0.333333
 NNPS #dreams 0.333333
 NNPS starting 0.333333
+JJS  0.071429
 JJS @amcdavid 0.071429
 JJS :/ 0.071429
 JJS Mood 0.071429
@@ -32749,6 +32789,7 @@ JJS responded 0.071429
 JJS Sleep 0.071429
 JJS #dreams 0.071429
 JJS starting 0.071429
+JJR  0.076923
 JJR @amcdavid 0.076923
 JJR :/ 0.076923
 JJR Mood 0.076923
@@ -33556,6 +33597,7 @@ JJR responded 0.076923
 JJR Sleep 0.076923
 JJR #dreams 0.076923
 JJR starting 0.076923
+SYM  0.200000
 SYM @amcdavid 0.200000
 SYM :/ 0.200000
 SYM Mood 0.200000
@@ -34362,6 +34404,7 @@ SYM responded 0.200000
 SYM Sleep 0.200000
 SYM #dreams 0.200000
 SYM starting 0.200000
+UH  0.005128
 UH @amcdavid 0.005128
 UH :/ 0.005128
 UH Mood 0.005128
@@ -35209,6 +35252,7 @@ UH responded 0.005128
 UH Sleep 0.005128
 UH #dreams 0.005128
 UH starting 0.005128
+PRP$  0.009901
 PRP$ @amcdavid 0.009901
 PRP$ :/ 0.009901
 PRP$ Mood 0.009901
@@ -36026,6 +36070,7 @@ PRP$ responded 0.009901
 PRP$ Sleep 0.009901
 PRP$ #dreams 0.009901
 PRP$ starting 0.009901
+VBG  0.007576
 VBG @amcdavid 0.007576
 VBG :/ 0.007576
 VBG Mood 0.007576
@@ -36849,6 +36894,7 @@ VBG Sleep 0.007576
 VBG #dreams 0.007576
 VBG starting 0.007576
 VBG having 0.007576
+VBD  0.008850
 VBD @amcdavid 0.008850
 VBD :/ 0.008850
 VBD Mood 0.008850
@@ -37668,6 +37714,7 @@ VBD responded 0.008850
 VBD Sleep 0.008850
 VBD #dreams 0.008850
 VBD starting 0.008850
+VBN  0.018182
 VBN @amcdavid 0.018182
 VBN :/ 0.018182
 VBN Mood 0.018182
@@ -38479,6 +38526,7 @@ VBN responded 0.018182
 VBN Sleep 0.018182
 VBN #dreams 0.018182
 VBN starting 0.018182
+HT  0.016949
 HT @amcdavid 0.016949
 HT :/ 0.016949
 HT Mood 0.016949
@@ -39283,6 +39331,7 @@ HT responded 0.016949
 HT Sleep 0.016949
 HT #dreams 0.016949
 HT starting 0.016949
+,  0.008000
 , @amcdavid 0.008000
 , :/ 0.008000
 , Mood 0.008000
@@ -40088,6 +40137,7 @@ HT starting 0.016949
 , Sleep 0.008000
 , #dreams 0.008000
 , starting 0.008000
+''  0.026316
 '' @amcdavid 0.026316
 '' :/ 0.026316
 '' Mood 0.026316
@@ -40895,6 +40945,7 @@ HT starting 0.016949
 '' Sleep 0.026316
 '' #dreams 0.026316
 '' starting 0.026316
+CC  0.007463
 CC @amcdavid 0.007463
 CC :/ 0.007463
 CC Mood 0.007463
@@ -41711,6 +41762,7 @@ CC responded 0.007463
 CC Sleep 0.007463
 CC #dreams 0.007463
 CC starting 0.007463
+VBP  0.004926
 VBP @amcdavid 0.004926
 VBP :/ 0.004926
 VBP Mood 0.004926
@@ -42557,6 +42609,7 @@ VBP responded 0.004926
 VBP Sleep 0.004926
 VBP #dreams 0.004926
 VBP starting 0.004926
+WDT  0.200000
 WDT @amcdavid 0.200000
 WDT :/ 0.200000
 WDT Mood 0.200000
@@ -43363,6 +43416,7 @@ WDT responded 0.200000
 WDT Sleep 0.200000
 WDT #dreams 0.200000
 WDT starting 0.200000
+USR  0.005435
 USR @amcdavid 0.005435
 USR :/ 0.005435
 USR Mood 0.005435
@@ -44168,6 +44222,7 @@ USR responded 0.005435
 USR Sleep 0.005435
 USR #dreams 0.005435
 USR starting 0.005435
+JJ  0.003484
 JJ @amcdavid 0.003484
 JJ :/ 0.003484
 JJ Mood 0.003484
@@ -45017,6 +45072,7 @@ JJ Sleep 0.003484
 JJ time 0.003484
 JJ #dreams 0.003484
 JJ starting 0.003484
+WP  0.066667
 WP @amcdavid 0.066667
 WP :/ 0.066667
 WP Mood 0.066667
@@ -45823,6 +45879,7 @@ WP responded 0.066667
 WP Sleep 0.066667
 WP #dreams 0.066667
 WP starting 0.066667
+VBZ  0.007752
 VBZ @amcdavid 0.007752
 VBZ :/ 0.007752
 VBZ Mood 0.007752
@@ -46641,6 +46698,7 @@ VBZ responded 0.007752
 VBZ Sleep 0.007752
 VBZ #dreams 0.007752
 VBZ starting 0.007752
+DT  0.002959
 DT @amcdavid 0.002959
 DT all 0.023669
 DT :/ 0.002959
@@ -47462,6 +47520,7 @@ DT responded 0.002959
 DT Sleep 0.002959
 DT #dreams 0.002959
 DT starting 0.002959
+RT  0.013514
 RT @amcdavid 0.013514
 RT :/ 0.013514
 RT Mood 0.013514
@@ -48267,6 +48326,7 @@ RT responded 0.013514
 RT Sleep 0.013514
 RT #dreams 0.013514
 RT starting 0.013514
+RP  0.021277
 RP @amcdavid 0.021277
 RP :/ 0.021277
 RP Mood 0.021277
@@ -49077,6 +49137,7 @@ RP responded 0.021277
 RP Sleep 0.021277
 RP #dreams 0.021277
 RP starting 0.021277
+NN  0.001309
 NN @amcdavid 0.001309
 NN :/ 0.001309
 NN Mood 0.001309
@@ -49984,6 +50045,7 @@ NN Sleep 0.001309
 NN time 0.031414
 NN #dreams 0.001309
 NN starting 0.001309
+)  0.052632
 ) @amcdavid 0.052632
 ) :/ 0.052632
 ) Mood 0.052632
@@ -50789,6 +50851,7 @@ NN starting 0.001309
 ) Sleep 0.052632
 ) #dreams 0.052632
 ) starting 0.052632
+(  0.066667
 ( @amcdavid 0.066667
 ( :/ 0.066667
 ( Mood 0.066667
@@ -51594,6 +51657,7 @@ NN starting 0.001309
 ( Sleep 0.066667
 ( #dreams 0.066667
 ( starting 0.066667
+FW  0.250000
 FW @amcdavid 0.250000
 FW :/ 0.250000
 FW Mood 0.250000
@@ -52398,6 +52462,7 @@ FW responded 0.250000
 FW Sleep 0.250000
 FW #dreams 0.250000
 FW starting 0.250000
+POS  0.055556
 POS @amcdavid 0.055556
 POS :/ 0.055556
 POS Mood 0.055556
@@ -53203,6 +53268,7 @@ POS responded 0.055556
 POS Sleep 0.055556
 POS #dreams 0.055556
 POS starting 0.055556
+.  0.002907
 . @amcdavid 0.002907
 . :/ 0.002907
 . Mood 0.002907
@@ -54016,6 +54082,7 @@ POS starting 0.055556
 . Sleep 0.002907
 . #dreams 0.002907
 . starting 0.002907
+TO  0.010204
 TO @amcdavid 0.010204
 TO :/ 0.010204
 TO Mood 0.010204
@@ -54823,6 +54890,7 @@ TO responded 0.010204
 TO Sleep 0.010204
 TO #dreams 0.010204
 TO starting 0.010204
+PRP  0.002445
 PRP @amcdavid 0.002445
 PRP :/ 0.002445
 PRP Mood 0.002445
@@ -55653,6 +55721,7 @@ PRP responded 0.002445
 PRP Sleep 0.002445
 PRP #dreams 0.002445
 PRP starting 0.002445
+RB  0.004016
 RB @amcdavid 0.004016
 RB :/ 0.004016
 RB Mood 0.004016
@@ -56501,6 +56570,7 @@ RB far 0.008032
 RB #dreams 0.004016
 RB starting 0.004016
 RB basically 0.004016
+TD  0.500000
 TD @amcdavid 0.500000
 TD :/ 0.500000
 TD Mood 0.500000
@@ -57306,6 +57376,7 @@ TD responded 0.500000
 TD Sleep 0.500000
 TD #dreams 0.500000
 TD starting 0.500000
+:  0.003704
 : @amcdavid 0.003704
 : :/ 0.003704
 : Mood 0.003704
@@ -58120,6 +58191,7 @@ TD starting 0.500000
 : Sleep 0.003704
 : #dreams 0.003704
 : starting 0.003704
+NNS  0.005848
 NNS @amcdavid 0.005848
 NNS :/ 0.005848
 NNS Mood 0.005848
@@ -58938,6 +59010,7 @@ NNS responded 0.005848
 NNS Sleep 0.005848
 NNS #dreams 0.005848
 NNS starting 0.005848
+NNP  0.001942
 NNP @amcdavid 0.001942
 NNP :/ 0.001942
 NNP Mood 0.001942
@@ -59792,6 +59865,7 @@ NNP Sleep 0.001942
 NNP At 0.001942
 NNP #dreams 0.001942
 NNP starting 0.001942
+VB  0.004115
 VB @amcdavid 0.004115
 VB :/ 0.004115
 VB Mood 0.004115
@@ -60638,6 +60712,7 @@ VB responded 0.004115
 VB Sleep 0.004115
 VB #dreams 0.004115
 VB starting 0.004115
+WRB  0.016393
 WRB @amcdavid 0.016393
 WRB :/ 0.016393
 WRB Mood 0.016393
@@ -61447,6 +61522,7 @@ WRB responded 0.016393
 WRB Sleep 0.016393
 WRB #dreams 0.016393
 WRB starting 0.016393
+URL  0.010753
 URL @amcdavid 0.010753
 URL :/ 0.010753
 URL Mood 0.010753
@@ -62254,6 +62330,7 @@ URL responded 0.010753
 URL Sleep 0.010753
 URL #dreams 0.010753
 URL starting 0.010753
+RBR  0.142857
 RBR @amcdavid 0.142857
 RBR :/ 0.142857
 RBR Mood 0.142857
@@ -63059,6 +63136,7 @@ RBR responded 0.142857
 RBR Sleep 0.142857
 RBR #dreams 0.142857
 RBR starting 0.142857
+CD  0.009901
 CD @amcdavid 0.009901
 CD :/ 0.009901
 CD Mood 0.009901
@@ -63883,6 +63961,7 @@ CD responded 0.009901
 CD Sleep 0.009901
 CD #dreams 0.009901
 CD starting 0.009901
+EX  0.166667
 EX @amcdavid 0.166667
 EX :/ 0.166667
 EX Mood 0.166667
@@ -64689,6 +64768,7 @@ EX responded 0.166667
 EX Sleep 0.166667
 EX #dreams 0.166667
 EX starting 0.166667
+IN  0.002165
 IN @amcdavid 0.002165
 IN all 0.002165
 IN :/ 0.002165
@@ -65534,6 +65614,7 @@ IN Sleep 0.002165
 IN At 0.002165
 IN #dreams 0.002165
 IN starting 0.002165
+MD  0.014706
 MD @amcdavid 0.014706
 MD :/ 0.014706
 MD Mood 0.014706
@@ -66349,6 +66430,7 @@ MD responded 0.014706
 MD Sleep 0.014706
 MD #dreams 0.014706
 MD starting 0.014706
+NNPS  0.333333
 NNPS @amcdavid 0.333333
 NNPS :/ 0.333333
 NNPS Mood 0.333333
@@ -67153,6 +67235,7 @@ NNPS responded 0.333333
 NNPS Sleep 0.333333
 NNPS #dreams 0.333333
 NNPS starting 0.333333
+JJS  0.071429
 JJS @amcdavid 0.071429
 JJS :/ 0.071429
 JJS Mood 0.071429
@@ -67960,6 +68043,7 @@ JJS responded 0.071429
 JJS Sleep 0.071429
 JJS #dreams 0.071429
 JJS starting 0.071429
+JJR  0.076923
 JJR @amcdavid 0.076923
 JJR :/ 0.076923
 JJR Mood 0.076923
@@ -68767,6 +68851,7 @@ JJR responded 0.076923
 JJR Sleep 0.076923
 JJR #dreams 0.076923
 JJR starting 0.076923
+SYM  0.200000
 SYM @amcdavid 0.200000
 SYM :/ 0.200000
 SYM Mood 0.200000
@@ -69573,6 +69658,7 @@ SYM responded 0.200000
 SYM Sleep 0.200000
 SYM #dreams 0.200000
 SYM starting 0.200000
+UH  0.005128
 UH @amcdavid 0.005128
 UH :/ 0.005128
 UH Mood 0.005128
