@@ -1,4 +1,12 @@
 import copy, math, string
+
+START = "__START"
+END = "__END"
+transmissionFileName = "POS/transition.txt"
+emissionsFileName = "POS/emission_testing.txt"
+sequenceFileName = "POS/dev.in"
+outputFileFormat = "POS/Part 4/p4_viterbi_{0}.txt"
+
 def parseFile(fileName):
 	valueDict = {}
 	inFile = open(fileName, "r")
@@ -44,13 +52,6 @@ def viterbiTagger(outputs, inFilename, outFilename, rank, tags=True):
 		outFile.write("\n")
 		inFilePointer += 1
 	outFile.close()
-
-START = "__START"
-END = "__END"
-transmissionFileName = "POS/transition.txt"
-emissionsFileName = "POS/emission_testing.txt"
-sequenceFileName = "POS/dev.in"
-outputFileFormat = "POS/Part 4/p4_viterbi_{0}.txt"
 
 if __name__ == "__main__":
 	class ViterbiSequence:
