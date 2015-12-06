@@ -1,68 +1,89 @@
 import numpy as np
-import sklearn.metrics as met
-from itertools import izip
+#this is to test the code, using sklearn to make random classification and label
+from sklearn.datasets import make_classification
+from sklearn.preprocessing import LabelBinarizer
 
-def sigmoid(X):
-	return 1.0/(1 + np.e ** (-1.0*X))
+###--- Usage:
+###-----Training the model:
+###---  train(Xtrain, Ytrain, itrs=500, learn_rate=0.1, reg=1e-4, momentum=0.9, proj_layer_size=50)
+###--- X_train's dimension: (Number_of_data_point, number_of_feature)
+###--- Y_train's dimension: (Number_of_data_point, number_of_tags)
+###---- For example: if we have 43 tags, each Yi would look like [0 0 0 0 0 0 0 0 0...... 0 1 0 0 0 0 0] 
+###-----(1 on the correct tag, 0 for everything else)
 
-#---- Soft max function: use for multiclass logi
-def softMax(W, b, x):
-	vect = np.exp(np.add(np.dot(x, W.T),b))
-	return vect.T/np.sum(vect, axis = 1)
+#set up transform matrix so that it is consistent for train & predict
+Transform_matrix = None
 
-class Logit(object):
+def sigmoid(A, x):
+	return np.hstack(((1+np.exp(-np.dot(A, x)))**-1,1))
 
-	#Predictor function:
-	def predict(self, x):
-		return softMax(self.W, self.b, x)
+def basismap(A,X):
+	dim_new = sigmoid(A,X[0,:]).shape[0]
+	Xn = np.zeros((X.shape[0], dim_new))
+	for i,xi in enumerate(X):
+		Xn[i,:] = sigmoid(A,xi)
+	return Xn
 
-	#return the labels
-	def lable(self, y):
-	    return self.labels[y];
+#gradient with regularizer
+def gradient(Xn, Y, reg, W):
+	Yh = softmax(np.dot(Xn, W.T))
+	return -np.dot(Y.T-Yh.T,Xn)/Xn.shape[0] + reg*W
+
+#run the optimization, return the model parameter
+def train(X, Y, itrs=100, learn_rate=0.1, reg=0.1,
+		momentum=0.5, report_cost=False, proj_layer_size=10):
+	"""
+	Fit the model. 
+	itrs - number of iterations to run
+	learn_rate - size of step to use for gradient descent
+	reg - regularization penalty
+	momentum - weight of the previous gradient in the update step
+	proj_layer_size - number of dimensions in the projection (mixing) layer. Higher -> more variance
+	"""
+	global Transform_matrix
+	#first map to a new basis
+
+	A = X[np.random.permutation(X.shape[0])[:proj_layer_size],:]
+	Transform_matrix = A
+	Xn = basismap(A,X)
 	
-	#map the input to its labels
-	def classify(self,x):
-		#indices of data/label
-		indices = self.predict(x).argmax(axis = 1)
-		return map(self.lable, indices)
+	#initial weight
+	W = np.random.uniform(-0.1, 0.1, (Y.shape[1], Xn.shape[1]))
 
-	#check accuracy of model, returning the error
-	def validate(self, x, y):
-		#classify input
-		prediction = self.classify(x)
-		#error score
-		return 1.0 - met.accuracy_score(y, prediction)
+	#optimize
+	costs = []
+	previous_grad = np.zeros(W.shape) #used in momentum
+	for i in range(itrs):
+		grad = gradient(Xn, Y, reg, W) #compute gradient
+		W = W - learn_rate*(grad + momentum*previous_grad) #take a step, use previous gradient as well.
+		previous_grad = grad
+	return W
 
-	#return negative loglikelihood
-	def nll(self, params):
-		#training data
-		x,y = self.args
+def softmax(Z):
+	#returns sigmoid elementwise
+	Z = np.maximum(Z, -1e3)
+	Z = np.minimum(Z, 1e3)
+	numerator = np.exp(Z)
+	return numerator / np.sum(numerator, axis=1).reshape((-1,1))
 
-		self.update_params(params)
-		sigmoid_activation = softMax(self.W, self.b, x)
-		index = [range(0, np.shape(sigmoid_activation)[0]), y]
-		p=sigmoid_activation[index]
-		return -np.mean(np.log(p))
-
-	#gradient computation, single data sample
-	def comp_grad(self, out, x, y):
-		out = (np.reshape(out, (np.shape(out)[0], 1)))
-		out[y] -= 1
-		W = out * x.T
-		return np.vstack((W.T, out.flatten()))
-
-	#gradient computation, all input samples
-	def gradients(self, params = None):
-		x,y = self.args
-
-		self.update_params(params)
-		sigmoid_activation = softMax(self.W, self.b, x)
-		e = [ self.comp_grad(a,c,b) for a, c,b in izip(sigmoid_activation,y,x)]
-		return np.mean(e, axis = 0).T.flatten()
-
-	
+def predict(X, W):
+	Xn = basismap(Transform_matrix,X)
+	return softmax(np.dot(Xn, W.T))
 
 
 
 
+###############--------------------- Test code------------------------#######
+# X,Y = make_classification(n_features=20, n_informative=6, n_redundant=14,
+# 						n_repeated=0, n_classes=5, n_clusters_per_class=3,n_samples=400)
+# lb = LabelBinarizer()
+# Y = lb.fit_transform(Y)
+
+# print X.shape
+# print Y.shape
+
+# m = train(X[:300,:], Y[:300,:], itrs=500, learn_rate=0.1, reg=1e-4, momentum=0.9, 
+# 			proj_layer_size=50)
+# print Y
+#print m #this is the parameter of our prediction (i.e like y_predicted = AX etc...)
 
