@@ -11,13 +11,15 @@ def parseFile(fileName):
 		valueDict[splitList[0]][splitList[1]] = float(splitList[2])
 	return valueDict
 
-def parseTransmissions(fileName):
+def parseTransmissions(fileName, regular_ignore= 0.00001):
 	valueDict = {}
 	inFile = open(fileName, "r")
 	fileLines = inFile.readlines()
 	inFile.close()
 	for line in fileLines:
 		splitList = line.split(" ")
+		if float(splitList[3]) == regular_ignore:
+			continue
 		if not splitList[0] in valueDict:
 			valueDict[splitList[0]] = {}
 		if not splitList[1] in valueDict[splitList[0]]:
@@ -100,13 +102,13 @@ class ViterbiSequence:
 	def probTransmission(self, nextTag, nextEmission):
 		lastTag = self.sequence[-1]
 		secondLastTag = self.sequence[-2]
+		probabilityChain = 0
 		try:
 			if self.logProbability == None:
 				return None
 			if nextEmission == None:
 				return self.logProbability + logTransmissions[secondLastTag][lastTag][nextTag]	
 			else:
-				probabilityChain = 0
 				for regex in regexFeatures:
 					if compiled[regex].match(nextEmission):
 						if regexFeatures[regex][nextTag] is None:
@@ -114,6 +116,10 @@ class ViterbiSequence:
 						probabilityChain += regexFeatures[regex][nextTag]
 				return self.logProbability + logTransmissions[secondLastTag][lastTag][nextTag] + logEmissions[nextTag][nextEmission] + probabilityChain
 		except KeyError:
+			try:
+				return self.logProbability + math.log(REGULARISED_PROB) + logEmissions[nextTag][nextEmission] + probabilityChain
+			except KeyError:
+				return None
 			return None
 	def transit(self, nextTag, nextEmission):
 		nextStep = copy.deepcopy(self)
@@ -124,8 +130,9 @@ class ViterbiSequence:
 if __name__ == "__main__":
 	FEATURE_PROB_IN = "regularised_feature_probs.txt"
 	START = "START"
+	REGULARISED_PROB = 0.00001
 	# model parameters
-	transmissions = parseTransmissions("transition_2nd_order.txt")
+	transmissions = parseTransmissions("transition_2nd_order.txt", REGULARISED_PROB)
 	emissions = parseFile("part5_emission_testing.txt")
 	regexFeatures = parse_feature_probs(FEATURE_PROB_IN)
 	compiled = {}
@@ -168,14 +175,28 @@ if __name__ == "__main__":
 					print i, key1, key2
 					if not key2 in newDpTable:
 						newDpTable[key2] = {}
-					for tag in allTags:
+					allNone = True
+					for tag in transmissions[key2]:
 						positionMax = None
 						maxChoice = None
 						piValue = dpTable[key1][key2].probTransmission(tag, sequence[i +1])
 						if piValue >= positionMax:
 							positionMax = piValue
 							maxChoice = dpTable[key1][key2]
+							if piValue != None:
+								allNone = False
 						newDpTable[key2][tag] = maxChoice.transit(tag,sequence[i +1])
+					if allNone:
+						for tag in allTags:
+							positionMax = None
+							maxChoice = None
+							piValue = dpTable[key1][key2].probTransmission(tag, sequence[i +1])
+							if piValue >= positionMax:
+								positionMax = piValue
+								maxChoice = dpTable[key1][key2]
+								if piValue != None:
+									allNone = False
+							newDpTable[key2][tag] = maxChoice.transit(tag,sequence[i +1])
 				dpTable = newDpTable
 		endingMax = None
 		endMaxChoice = None
@@ -190,5 +211,5 @@ if __name__ == "__main__":
 		progress += 1
 		print progress 
 		viterbiTagger(outputs, "../dev.in", "p5_viterbi_2nd_order.txt")
-	os.system("diff -u " + "p5_viterbi_test.txt " + "../dev.out" + ">difference.txt")
+	os.system("diff -u " + "p5_viterbi_test.txt " + "../dev.out" + ">difference_2nd_order.txt")
 	print accuracy("p5_viterbi_2nd_order", "../dev.out")
