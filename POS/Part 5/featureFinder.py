@@ -6,7 +6,7 @@ Words starting with @: @\S+
 Words starting with #: #.+
 Words starting with http://: http://.+
 Alphanumerics.Alphanumerics: [a-zA-Z0-9]+\.[a-zA-Z0-9]+
-Multiple punctuation marks: [.!?;,'"]+
+Multiple punctuation marks that ARE NOT ...: (?!\.\.\.)[.!?;,\'"]+
 Capitalised words: [A-Z][a-z]+
 Words ending in 'ing': [a-zA-Z]+ing
 Words ending in 'ion':[a-zA-Z]+ion
@@ -23,7 +23,7 @@ REGEXES = [
 		r'^#.+$',
 		r'^http://.+$',
 		r'^[a-zA-Z0-9]+\.[a-zA-Z0-9]+$',
-		r'^[.!?;,\'"]+$',
+		r'^(?!\.\.\.)[.!?;,\'"]+$',
 		r'^[A-Z][a-z]+$',
 		r'^[a-zA-Z]+ing$',
 		r'^[a-zA-Z]+ion$',
@@ -53,6 +53,22 @@ for line in in_lines:
 			count_dict[REGEXES[i]][tag] += 1
 			count_dict[REGEXES[i]][ALL] += 1
 
+def regularise(prob_dict, regularised_prob = 0.001):
+	allPOS_file = open("../allPOS", "r")
+	allPOS = []
+	for line in allPOS_file:
+		allPOS.append(line.strip())
+	allPOS_file.close()
+	for regex in prob_dict:
+		num_missing = len(allPOS) - len(prob_dict[regex].keys())
+		fitting_factor = 1 - num_missing * regularised_prob
+		for POS in allPOS:
+			if not POS in prob_dict[regex]:
+				prob_dict[regex][POS] = regularised_prob
+			elif POS in prob_dict[regex]:
+				prob_dict[regex][POS] *= fitting_factor
+	return prob_dict
+
 prob_dict = {}
 for regex in count_dict:
 	prob_dict[regex] = {}
@@ -60,9 +76,18 @@ for regex in count_dict:
 		if tag is ALL:
 			continue
 		prob_dict[regex][tag] = count_dict[regex][tag] / count_dict[regex][ALL]
+
 with open(out_file, "w") as out_fileF:
 	for regex in prob_dict:
 		out_fileF.write(regex + "\n")
 		for tag in prob_dict[regex]:
+			out_fileF.write("{0} {1}\n".format(tag, prob_dict[regex][tag]))	
+		out_fileF.write("-------------\n")
+
+with open("regularised_" + out_file, "w") as out_fileF:
+	regularised_dict = regularise(prob_dict)
+	for regex in regularised_dict:
+		out_fileF.write(regex + "\n")
+		for tag in regularised_dict[regex]:
 			out_fileF.write("{0} {1}\n".format(tag, prob_dict[regex][tag]))	
 		out_fileF.write("-------------\n")

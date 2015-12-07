@@ -71,8 +71,6 @@ def predict(X, W):
 	return softmax(np.dot(Xn, W.T))
 
 
-
-
 ###############--------------------- Test code------------------------#######
 # X,Y = make_classification(n_features=20, n_informative=6, n_redundant=14,
 # 						n_repeated=0, n_classes=5, n_clusters_per_class=3,n_samples=400)
