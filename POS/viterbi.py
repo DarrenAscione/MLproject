@@ -2,10 +2,10 @@ import copy, math, string
 
 START = "__START"
 END = "__END"
-transmissionFileName = "POS/transition.txt"
-emissionsFileName = "POS/emission_testing.txt"
-sequenceFileName = "POS/dev.in"
-outputFileName = "POS/p3_viterbi_test.txt"
+transmissionFileName = "transition.txt"
+emissionsFileName = "Part 3/emission_training.txt"
+sequenceFileName = "train"
+outputFileName = "p3_viterbi_train2.txt"
 
 def parseFile(fileName):
 	valueDict = {}
@@ -121,6 +121,6 @@ if __name__ == "__main__":
 				endMaxChoice = dpEntry
 		endingState = endMaxChoice.transit(END, None)
 		outputs.append(endingState)
-		viterbiTagger(outputs, sequenceFileName, outputFileName)
+	viterbiTagger(outputs, sequenceFileName, outputFileName)
 	# for i in outputs:
 	# 	print math.exp(i.logProbability) if not i.logProbability is None else 0

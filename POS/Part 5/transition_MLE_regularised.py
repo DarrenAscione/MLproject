@@ -49,4 +49,8 @@ for y in transitionCounts:
 		else:
 			prob = REGULARISED_PROB
 		outFile.write("{0} {1} {2}\n".format(y, x, prob))
+	try:
+		outFile.write("{0} {1} {2}\n".format(y, END, float(transitionCounts[y][END]) / transitionCounts[y]["all"] ))
+	except KeyError:
+		pass
 outFile.close()

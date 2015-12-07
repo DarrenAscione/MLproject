@@ -20,12 +20,12 @@ def extractState(line):
 		return END
 	return line.split(" ")[1]
 
-inFile = open("NPC/train", "r")
+inFile = open("POS/train", "r")
 lines = inFile.readlines()
 lines = map(lambda x: x.strip(), lines)
 inFile.close()
-outFile = open("NPC/transition.txt", "w")
-outFileReadable = open("NPC/transitionReadable.txt", "w")
+outFile = open("POS/transition.txt", "w")
+outFileReadable = open("POS/transitionReadable.txt", "w")
 
 prevState = START
 for line in lines:

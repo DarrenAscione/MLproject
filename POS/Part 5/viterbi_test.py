@@ -1,4 +1,4 @@
-import copy, math, string
+import copy, math, string, re, os
 def parseFile(fileName):
 	valueDict = {}
 	inFile = open(fileName, "r")
@@ -45,6 +45,40 @@ def viterbiTagger(outputs, inFilename, outFilename, tags=True):
 		inFilePointer += 1
 	outFile.close()
 
+def parse_feature_probs(feature_prob):
+	fp_dict = {}
+	fp_file = open(feature_prob, "r")
+	fp_lines = fp_file.readlines()
+	fp_file.close()
+	for line in fp_lines:
+		regex, tag, prob = line.strip().split(" ")
+		if not regex in fp_dict:
+			fp_dict[regex] = {}
+		try:	
+			fp_dict[regex][tag] = math.log(float(prob))
+		except ValueError:
+			fp_dict[regex][tag] = None
+	return fp_dict
+
+def tag_extractor(filename):
+	alist = []
+	with open(filename, "r") as file:
+		data = file.readlines()
+		for line in data:
+			words = line.rstrip("\n").split(" ")
+			if len(words) != 1:
+				alist.append(words[1])
+	return alist
+
+def accuracy(original_file, predicted_file):
+	count = 0
+	originals = tag_extractor(original_file)
+	predicted = tag_extractor(predicted_file)
+	for tag in xrange(len(originals)):
+		if originals[tag] == predicted[tag]:
+			count += 1
+	return (count *1.0)/ len(predicted)
+
 class ViterbiSequence:
 	def __init__(self, lastTag):
 		self.sequence = [lastTag]
@@ -56,7 +90,15 @@ class ViterbiSequence:
 				return None
 			if nextEmission == None:
 				return self.logProbability + logTransmissions[lastTag][nextTag]	
-			return self.logProbability + logTransmissions[lastTag][nextTag] + logEmissions[nextTag][nextEmission]
+			else:
+				probabilityChain = 0
+				for regex in regexFeatures:
+					if compiled[regex].match(nextEmission):
+						if regexFeatures[regex][nextTag] is None:
+							return None
+						probabilityChain += regexFeatures[regex][nextTag]
+						# print nextEmission, nextTag, regex
+				return self.logProbability + logTransmissions[lastTag][nextTag] + logEmissions[nextTag][nextEmission] + probabilityChain
 		except KeyError:
 			return None
 	def transit(self, nextTag, nextEmission):
@@ -66,10 +108,15 @@ class ViterbiSequence:
 		return nextStep
 
 if __name__ == "__main__":
+	FEATURE_PROB_IN = "regularised_feature_probs.txt"
 	START = "START"
 	# model parameters
 	transmissions = parseFile("transition.txt")
 	emissions = parseFile("part5_emission_testing.txt")
+	regexFeatures = parse_feature_probs(FEATURE_PROB_IN)
+	compiled = {}
+	for regex in regexFeatures:
+		compiled[regex] = re.compile(regex)
 
 	# list of all tags
 	allTags = emissions.keys()
@@ -114,6 +161,8 @@ if __name__ == "__main__":
 				endMaxChoice = dpEntry
 		endingState = endMaxChoice.transit("__END", None)
 		outputs.append(endingState)
-		viterbiTagger(outputs, "../dev.in", "p5_viterbi_test.txt")
-	# for i in outputs:
-	# 	print math.exp(i.logProbability) if not i.logProbability is None else 0
+		# if endingState.logProbability is None:
+		# 	print endingState.sequence, sequence
+	viterbiTagger(outputs, "../dev.in", "p5_viterbi_test.txt")
+	os.system("diff -u " + "p5_viterbi_test.txt " + "../dev.out" + ">difference.txt")
+	print accuracy("p5_viterbi_test.txt","../dev.out")

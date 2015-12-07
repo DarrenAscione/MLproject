@@ -15,6 +15,9 @@ Words ending in 'ly':[a-zA-Z]+ly
 Words ending in 'ity':[a-zA-Z]+ity
 Number followed by 'am' or 'pm': [0-9]+[pa]m
 Number: [0-9]+
+Words ending in 's': .+s
+All alphabetical: [a-zA-Z]+
+Colon followed by other characters: :.+
 """
 train_file = "../train"
 out_file = "feature_probs.txt"
@@ -25,13 +28,16 @@ REGEXES = [
 		r'^[a-zA-Z0-9]+\.[a-zA-Z0-9]+$',
 		r'^(?!\.\.\.)[.!?;,\'"]+$',
 		r'^[A-Z][a-z]+$',
-		r'^[a-zA-Z]+ing$',
-		r'^[a-zA-Z]+ion$',
-		r'^[a-zA-Z]+ed$',
-		r'^[a-zA-Z]+ly$',
-		r'^[a-zA-Z]+ity$',
-		r'^[0-9]+[pa]m$',
+		r'^[a-zA-Z]+[iI][nN][gG]$',
+		r'^[a-zA-Z]+[iI][oO][nN]$',
+		r'^[a-zA-Z]+[eE][dD]$',
+		r'^[a-zA-Z]+[lL][yY]$',
+		r'^[a-zA-Z]+[iI][tT][yY]$',
+		r'^[0-9]+[pPaA][mM]$',
 		r'^[0-9]+$',
+		r'^.+[sS]$',
+		r'^[a-zA-Z]+$',
+		r'^:.+$',
 ]
 ALL = "ALL"
 COMPILED = [re.compile(regex) for regex in REGEXES]
@@ -53,7 +59,7 @@ for line in in_lines:
 			count_dict[REGEXES[i]][tag] += 1
 			count_dict[REGEXES[i]][ALL] += 1
 
-def regularise(prob_dict, regularised_prob = 0.001):
+def regularise(prob_dict, regularisation_strength = 0.01):
 	allPOS_file = open("../allPOS", "r")
 	allPOS = []
 	for line in allPOS_file:
@@ -61,10 +67,14 @@ def regularise(prob_dict, regularised_prob = 0.001):
 	allPOS_file.close()
 	for regex in prob_dict:
 		num_missing = len(allPOS) - len(prob_dict[regex].keys())
+		regularised_prob = regularisation_strength / num_missing
 		fitting_factor = 1 - num_missing * regularised_prob
 		for POS in allPOS:
 			if not POS in prob_dict[regex]:
-				prob_dict[regex][POS] = regularised_prob
+				if POS == "UH":
+					prob_dict[regex][POS] = 1e-6000
+				else:
+					prob_dict[regex][POS] = regularised_prob
 			elif POS in prob_dict[regex]:
 				prob_dict[regex][POS] *= fitting_factor
 	return prob_dict
@@ -79,15 +89,11 @@ for regex in count_dict:
 
 with open(out_file, "w") as out_fileF:
 	for regex in prob_dict:
-		out_fileF.write(regex + "\n")
 		for tag in prob_dict[regex]:
-			out_fileF.write("{0} {1}\n".format(tag, prob_dict[regex][tag]))	
-		out_fileF.write("-------------\n")
+			out_fileF.write("{0} {1} {2}\n".format(regex, tag, prob_dict[regex][tag]))	
 
 with open("regularised_" + out_file, "w") as out_fileF:
-	regularised_dict = regularise(prob_dict)
+	regularised_dict = regularise(prob_dict, 1e-30)
 	for regex in regularised_dict:
-		out_fileF.write(regex + "\n")
 		for tag in regularised_dict[regex]:
-			out_fileF.write("{0} {1}\n".format(tag, prob_dict[regex][tag]))	
-		out_fileF.write("-------------\n")
+			out_fileF.write("{0} {1} {2}\n".format(regex, tag, prob_dict[regex][tag]))	

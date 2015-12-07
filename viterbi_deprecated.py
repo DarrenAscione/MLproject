@@ -114,6 +114,6 @@ if __name__ == "__main__":
 				endMaxChoice = dpEntry
 		endingState = endMaxChoice.transit("__END", None)
 		outputs.append(endingState)
-		viterbiTagger(outputs, "dev.in", "p3_viterbi_test.txt")
+	viterbiTagger(outputs, "dev.in", "p3_viterbi_test.txt")
 	# for i in outputs:
 	# 	print math.exp(i.logProbability) if not i.logProbability is None else 0
