@@ -1676,9 +1676,9 @@ ur PRP$
 intrest NN
 like IN
 @willdemps USR
-my$ UH
-on UH
-will UH
+my$ NN
+on IN
+will MD
 
 Annoying NN
 : :

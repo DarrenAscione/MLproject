@@ -71,10 +71,7 @@ def regularise(prob_dict, regularisation_strength = 0.01):
 		fitting_factor = 1 - num_missing * regularised_prob
 		for POS in allPOS:
 			if not POS in prob_dict[regex]:
-				if POS == "UH":
-					prob_dict[regex][POS] = 1e-6000
-				else:
-					prob_dict[regex][POS] = regularised_prob
+				prob_dict[regex][POS] = regularised_prob
 			elif POS in prob_dict[regex]:
 				prob_dict[regex][POS] *= fitting_factor
 	return prob_dict

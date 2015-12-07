@@ -24,6 +24,8 @@ def extractState(line):
 
 all_pos_file = open("../allPOS", "r")
 all_pos = [line.strip() for line in all_pos_file.readlines()]
+all_pos.append(END)
+all_pos.append(START)
 all_pos_file.close()
 inFile = open("../train", "r")
 lines = inFile.readlines()

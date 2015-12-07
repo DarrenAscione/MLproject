@@ -26,6 +26,8 @@ def extractState(line):
 
 all_pos_file = open("../allPOS", "r")
 all_pos = [line.strip() for line in all_pos_file.readlines()]
+all_pos.append(START)
+all_pos.append(END)
 all_pos_file.close()
 inFile = open("../train", "r")
 lines = inFile.readlines()
@@ -45,18 +47,24 @@ for line in lines:
 		prevprevState = prevState
 		prevState = currState
 
-for z in transitionCounts:
-	for y in transitionCounts[z]:
-		missing_tag_count = ALL_POS_COUNT - len(transitionCounts[z][y].keys())
-		fitting_factor = 1 - missing_tag_count * REGULARISED_PROB
-		for x in all_pos:
-			if x in transitionCounts[z][y]:
-				prob = fitting_factor * float(transitionCounts[z][y][x]) / transitionCounts[z][y]["all"] 
-			else:
-				prob = REGULARISED_PROB
-			outFile.write("{0} {1} {2} {3}\n".format(z, y, x, prob))
-		try:
-			outFile.write("{0} {1} {2} {3}\n".format(z, y, END, float(transitionCounts[z][y][END]) / transitionCounts[z][y]["all"] ))
-		except KeyError:
-			pass
+for z in all_pos:
+	for y in all_pos:
+		if not z in transitionCounts:
+			continue
+		if y in transitionCounts[z]:
+			missing_tag_count = ALL_POS_COUNT - len(transitionCounts[z][y].keys())
+			fitting_factor = 1 - missing_tag_count * REGULARISED_PROB
+			for x in all_pos:
+				if x in transitionCounts[z][y]:
+					prob = fitting_factor * float(transitionCounts[z][y][x]) / transitionCounts[z][y]["all"] 
+				else:
+					prob = REGULARISED_PROB
+				outFile.write("{0} {1} {2} {3}\n".format(z, y, x, prob))
+			try:
+				outFile.write("{0} {1} {2} {3}\n".format(z, y, END, float(transitionCounts[z][y][END]) / transitionCounts[z][y]["all"] ))
+			except KeyError:
+				outFile.write("{0} {1} {2} {3}\n".format(z, y, x, REGULARISED_PROB))
+		else:
+			for x in all_pos:
+				outFile.write("{0} {1} {2} {3}\n".format(z, y, x, REGULARISED_PROB))
 outFile.close()
