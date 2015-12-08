@@ -1,4 +1,4 @@
---- p5_viterbi_2nd_order.txt	2015-12-08 16:04:22.000000000 +0800
+--- p5_viterbi_2nd_order.txt	2015-12-08 17:09:48.000000000 +0800
 +++ ../dev.out	2015-12-07 20:46:31.000000000 +0800
 @@ -1,5 +1,5 @@
 -Gotta NNP
@@ -519,7 +519,7 @@
  n't RB
 -showin PRP
 -enough RB
--SKILLS NN
+-SKILLS NNP
 +showin VBG
 +enough JJ
 +SKILLS NNS
@@ -1744,8 +1744,7 @@
 +N'T RB
 +HAVE VB
  MY PRP$
--EARPHONES NN
-+EARPHONES NNS
+ EARPHONES NNS
  I PRP
 -GUESS VBZ
 +GUESS VBP

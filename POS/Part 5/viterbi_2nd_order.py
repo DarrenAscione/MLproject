@@ -119,6 +119,10 @@ class ViterbiSequence:
 			return self.logProbability + logTransitions[lastTag][nextTag] + logEmissions[nextTag][nextEmission] + logPenalties[secondLastTag][lastTag][nextTag] + probabilityChain
 	def transit(self, nextTag, nextEmission):
 		nextStep = copy.deepcopy(self)
+		# if nextEmission is not None:
+			# if compiled[r'^.+(?!\')[sS]$'].match(nextEmission):
+			# 	if nextTag == "NN" or nextTag == "NNP":
+			# 		nextTag = "NNS"
 		nextStep.logProbability = nextStep.probTransmission(nextTag, nextEmission)
 		nextStep.sequence.append(nextTag)
 		return nextStep

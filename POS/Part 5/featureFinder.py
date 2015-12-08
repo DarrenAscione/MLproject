@@ -46,6 +46,7 @@ REGEXES = [
 		r'^[(one)(two)(three)(four)(five)(six)(seven)(eight)(nine)(ten)]$',
 		r'^[tT][hH][eE]$',
 		r'^[dD][oO]$',
+		r'^[A-Z].+[sS]$',
 ]
 ALL = "ALL"
 COMPILED = [re.compile(regex) for regex in REGEXES]
