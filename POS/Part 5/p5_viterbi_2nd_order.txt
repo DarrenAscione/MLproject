@@ -16,7 +16,7 @@ out RP
 in IN
 15 CD
 . .
-Mom PRP
+Mom NNP
 took VBD
 the DT
 antenna NN
@@ -259,7 +259,7 @@ Driving NN
 , ,
 driving NNP
 , ,
-driving NNP
+driving NN
 away NN
 to TO
 Phil NNP
@@ -2091,7 +2091,7 @@ Bacon NNP
 cereal NNP
 is VBZ
 up RP
-next IN
+next JJ
 http://hjv.dw.tc/Q0t2R URL
 
 NHL NNP
@@ -2231,7 +2231,7 @@ come VBP
 Bday NN
 party NN
 for IN
-@SILVRSCREENSTAR NN
+@SILVRSCREENSTAR USR
 then IN
 hp6 NN
 with IN
@@ -2293,9 +2293,9 @@ your PRP$
 
 NO UH
 Saints NNP
-R NNP
+R NN
 . .
-Buch PRP
+Buch NNP
 might MD
 come VB
 back RB
@@ -2383,7 +2383,7 @@ n CC
 Monsters NNP
 , ,
 tweet NN
-@defpenradio NN
+@defpenradio USR
 and CC
 ask VBP
 them PRP
@@ -2490,7 +2490,7 @@ f PRP
 ... :
 
 Good UH
-start VBP
+start VB
 for IN
 sharks DT
 tonight NN
@@ -2527,7 +2527,7 @@ what WP
 i PRP
 believe VB
 , ,
-picked NNP
+picked JJ
 up RP
 my PRP$
 guitar NN
@@ -2551,7 +2551,7 @@ it PRP
 on IN
 a DT
 Saturday NNP
-though NNP
+though NN
 . .
 So UH
 that WDT
@@ -2579,7 +2579,7 @@ good JJ
 morning NN
 tweeps NN
 . .
-have VB
+have VBP
 'll MD
 a DT
 fabulous NN
@@ -2812,7 +2812,7 @@ shit JJ
 ThAnK NNP
 gOd NNP
 ItS NNP
-fRiDaY NNP
+fRiDaY NN
 !! .
 
 http://bit.ly/aTTQYq URL
@@ -2947,7 +2947,7 @@ Ky NNP
 barang NNP
 aja NNP
 maen NNP
-nitip NNP
+nitip NN
 ".. .
 Hahaha NNP
 .. :

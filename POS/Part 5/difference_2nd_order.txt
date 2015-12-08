@@ -1,4 +1,4 @@
---- p5_viterbi_2nd_order.txt	2015-12-08 19:08:48.000000000 +0800
+--- p5_viterbi_2nd_order.txt	2015-12-08 19:10:34.000000000 +0800
 +++ ../dev.out	2015-12-08 17:55:01.000000000 +0800
 @@ -1,5 +1,5 @@
 -Gotta NN
@@ -21,7 +21,7 @@
  in IN
  15 CD
  . .
--Mom PRP
+-Mom NNP
 +Mom NN
  took VBD
  the DT
@@ -272,7 +272,7 @@
 -driving NNP
 +driving VBG
  , ,
--driving NNP
+-driving NN
 -away NN
 +driving VBG
 +away RB
@@ -2098,8 +2098,7 @@
 +cereal NN
  is VBZ
  up RP
--next IN
-+next JJ
+ next JJ
  http://hjv.dw.tc/Q0t2R URL
  
  NHL NNP
@@ -2236,12 +2235,9 @@
  . .
  &lt; UH
  3 UH
-@@ -2231,9 +2231,9 @@
- Bday NN
- party NN
+@@ -2233,7 +2233,7 @@
  for IN
--@SILVRSCREENSTAR NN
-+@SILVRSCREENSTAR USR
+ @SILVRSCREENSTAR USR
  then IN
 -hp6 NN
 +hp6 NNP
@@ -2304,11 +2300,10 @@
  
  NO UH
  Saints NNP
--R NNP
+-R NN
 +R VBP
  . .
--Buch PRP
-+Buch NNP
+ Buch NNP
  might MD
  come VB
  back RB
@@ -2399,9 +2394,8 @@
 +Monsters NNPS
  , ,
 -tweet NN
--@defpenradio NN
 +tweet VB
-+@defpenradio USR
+ @defpenradio USR
  and CC
 -ask VBP
 +ask VB
@@ -2493,7 +2487,7 @@
  ... :
  
 -Good UH
--start VBP
+-start VB
 +Good JJ
 +start NN
  for IN
@@ -2542,7 +2536,7 @@
 -believe VB
 +believe VBP
  , ,
--picked NNP
+-picked JJ
 +picked VBD
  up RP
  my PRP$
@@ -2567,7 +2561,7 @@
  on IN
  a DT
  Saturday NNP
--though NNP
+-though NN
 +though RB
  . .
 -So UH
@@ -2597,7 +2591,8 @@
 +morning UH
 +tweeps NNS
  . .
- have VB
+-have VBP
++have VB
  'll MD
  a DT
 -fabulous NN
@@ -2868,8 +2863,9 @@
 +ThAnK VB
  gOd NNP
 -ItS NNP
+-fRiDaY NN
 +ItS PRP
- fRiDaY NNP
++fRiDaY NNP
  !! .
  
  http://bit.ly/aTTQYq URL
@@ -2981,13 +2977,12 @@
 -barang NNP
 -aja NNP
 -maen NNP
--nitip NNP
--".. .
--Hahaha NNP
 +barang VBG
 +aja JJ
 +maen NN
-+nitip NN
+ nitip NN
+-".. .
+-Hahaha NNP
 +".. O
 +Hahaha UH
  .. :
