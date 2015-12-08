@@ -3,7 +3,7 @@ transitionCounts = {}
 START = "__START"
 END = "__END"
 ALL_POS_COUNT = 43
-REGULARISED_PROB = 0.001
+REGULARISED_PROB = 0.001 #0.001
 
 def pushTransition(prevState, currState):
 	global transitionCounts

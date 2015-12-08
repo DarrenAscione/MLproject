@@ -29,7 +29,7 @@ def gen_bjos(state_count, filetest, emission_count):
 			temp = 0
 			argtemp = ""
 			for tags in states.keys():
-				dict[tags][words] = 1 / 43#states[tags] / all_state_count 
+				dict[tags][words] = 1 / 43 #states[tags] / all_state_count 
 				if dict[tags][words] > temp:
 					temp = dict[tags][words]
 					argtemp = tags
