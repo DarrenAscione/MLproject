@@ -34,7 +34,7 @@ finally RB
 QUAKE USR
 : :
 Mag NNP
-4.5 NNP
+4.5 CD
 , ,
 Saturday NNP
 , ,
@@ -42,7 +42,7 @@ September NNP
 18 CD
 2010 CD
 at IN
-10:03 NN
+10:03 CD
 am VBP
 ( (
 NZST) NN
@@ -1523,8 +1523,8 @@ drink IN
 Specials NNP
 too RB
 .. :
-tex DT
-980-333-3923 NN
+tex NNP
+980-333-3923 CD
 to TO
 get VB
 on IN
@@ -2377,7 +2377,7 @@ on IN
 the DT
 1s NN
 n CC
-2s NN
+2s NNP
 !! .
 
 Monsters NNP
@@ -2844,7 +2844,7 @@ Jan NNP
 . .
 22 CD
 , ,
-4:30 NN
+4:30 CD
 to TO
 ??. .
 Contact NNP

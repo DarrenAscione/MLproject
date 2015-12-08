@@ -1,3198 +1,3198 @@
---- p5_viterbi_test.txt	2015-12-08 02:27:17.000000000 +0800
-+++ ../dev.out	2015-12-07 20:46:31.000000000 +0800
-@@ -1,5 +1,5 @@
--Gotta NNP
--call NN
-+Gotta VBP
-+call VB
- mom NN
- 2 TO
- let VB
-@@ -7,7 +7,7 @@
- know VBP
- it PRP
- 's VBZ
--almost NNP
-+almost RB
- 3 CD
- . .
- Yli NNP
-@@ -16,14 +16,14 @@
- in IN
- 15 CD
- . .
--Mom PRP
-+Mom NN
- took VBD
- the DT
- antenna NN
- home NN
- today NN
- & CC
--connected NN
-+connected VBD
- it PRP
- at IN
- home NN
-@@ -33,8 +33,8 @@
  
- QUAKE NN
- : :
--Mag NNP
--4.5 NN
-+Mag NN
-+4.5 CD
- , ,
- Saturday NNP
- , ,
-@@ -42,14 +42,14 @@
- 18 CD
- 2010 CD
- at IN
--10:03 PRP
--am VBP
--( UH
-+10:03 CD
-+am NN
-+( (
- NZST) NNP
- , ,
- 20 CD
- km NN
--south-west NN
-+south-west JJ
- of IN
- Christchurch NNP
- . .
-@@ -58,23 +58,23 @@
  
- @DrHubaEvaluator USR
- Not RB
--long JJ
--ago IN
-+long RB
-+ago RB
- I PRP
--responded NN
-+responded VBD
- to TO
- a DT
- angry JJ
- cardiologist NN
--whom IN
-+whom WP
- I PRP
- have VBP
--known JJ
--yrs NN
-+known VBN
-+yrs NNS
- . .
- when WRB
- he PRP
--spit NN
-+spit VBP
- venom NN
- to TO
- the DT
-@@ -83,44 +83,44 @@
- I PRP
- did VBD
- it PRP
--+ .
-++ SYM
  
--Football NNP
-+Football NN
- game NN
- tonight NN
- with IN
--mariaelena NN
-+mariaelena NNP
- , ,
- sarah NNP
- , ,
- and CC
--brittany NN
-+brittany NNP
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  ! .
--Mood NNP
-+Mood NN
- : :
- excited JJ
+ ! .
+ ! .
+ ! .
+ ! .
+ ! .
+ ! .
+ ! .
+ ! .
+ ! .
+ ! .
+ ! .
+ ! .
+ ! .
+ ! .
+ ! .
+ ! .
+ ! .
+ ! .
+ ! .
+ ! .
+ ! .
  !! .
--GOO NN
--WB NN
--WILDCATS NN
-+GOO VB
-+WB NNP
-+WILDCATS NNP
- ! .
- 
--good JJ
--afternoon NN
-+good UH
-+afternoon UH
- 
--Good NNP
-+Good JJ
- day NN
- looking VBG
- for IN
- software NN
- n CC
--usb NNP
--drivers NNP
-+usb NN
-+drivers NNS
- http://f.ast.ly/DfxRf URL
- 
- Friday NNP
- Night NNP
--Eats NNP
-+Eats NNPS
- http://twitpic.com/2pdvtr URL
- 
- RT RT
-@@ -135,20 +135,20 @@
- to TO
- go VB
- back RB
--live VBP
-+live RB
- on IN
- Ustream NNP
- later RB
- tonight NN
- 
--Lingerie NNP
--football NNP
--league NNP
-+Lingerie NN
-+football NN
-+league NN
- come VB
- on IN
- tonight NN
- 
--Fabulous NNP
-+Fabulous JJ
- day NN
- on IN
- the DT
-@@ -157,21 +157,21 @@
- http://twitpic.com/38c0c6 URL
- 
- @gabbysueurban USR
--WELL NN
-+WELL UH
- seems VBZ
- like IN
- you PRP
- had VBD
- a DT
--fantastic NN
-+fantastic JJ
- time NN
+ !! .
+ !! .
+ !! .
+ !! .
+ !! .
+ !! .
+ !! .
+ !! .
+ !! .
+ !! .
  !!! .
- lol UH
--MISSED JJ
--YAH NN
-+MISSED VBD
-+YAH PRP
- ! .
- :) UH
--ttys NNP
-+ttys UH
- 
- I PRP
- need VBP
-@@ -196,85 +196,85 @@
- 
- I PRP
- have VBP
--lost VBD
-+lost VBN
- everything NN
--importing NN
-+importing JJ
- in IN
- my PRP$
- life NN
- within IN
- the DT
--past NN
-+past JJ
- week NN
- anything NN
--that IN
-+that WDT
- i PRP
--loved NN
-+loved VBD
- is VBZ
- now RB
- gone VBN
- 
- I PRP
- hate VBP
--Sun NN
--Cleaners NN
-+Sun NNP
-+Cleaners NNP
- , ,
- they PRP
- hemmed VBD
- my PRP$
- pants NNS
- too RB
--short NN
-+short JJ
- . .
- #dammit HT
- 
--Day NNP
-+Day NN
- One CD
- : :
--Ten NNP
-+Ten CD
- things NNS
- you PRP
- want VBP
- to TO
- say VB
- to TO
--ten DT
-+ten CD
- different JJ
- people NNS
- right RB
- now RB
- - :
--1 CD
-+1 LS
- ) )
- Eduardo NNP
- Surita NNP
- : :
- your PRP
- a DT
--freaking NN
-+freaking JJ
- ... :
- http://tumblr.com/xmciuda0t URL
- 
--Driving NN
-+Driving VBG
- , ,
--driving NNP
-+driving VBG
- , ,
--driving NN
--away NN
-+driving VBG
-+away RB
- to TO
- Phil NNP
- . .
--Tasty NNP
-+Tasty JJ
- dinner NN
- tonight NN
- with IN
- the DT
--Society NN
-+Society NNP
- of IN
--Mining NN
-+Mining NNP
- and CC
- Metallurgy NNP
--Engineers NNP
-+Engineers NNPS
- . .
- 
- #oneofmyfollowers HT
-@@ -295,7 +295,7 @@
- do VBP
- shit NN
- like IN
--that RB
-+that DT
- 
- It PRP
- was VBD
-@@ -307,18 +307,18 @@
- my PRP$
- life NN
- .. :
--thanks NN
-+thanks NNS
- to TO
- some DT
- people NNS
- and CC
- the DT
--unknown NN
-+unknown JJ
- old JJ
- lady NN
- for IN
--sharing NN
--her PRP
-+sharing VBG
-+her PRP$
- experience NN
- __AND__ CC
- advice NN
-@@ -332,11 +332,11 @@
- today NN
- so IN
- I PRP
--better RB
--post NN
-+better MD
-+post VB
- something NN
- . .
--There EX
-+There UH
- . .
- 
- tomorrow NN
-@@ -348,44 +348,44 @@
- I PRP
- 'm VBP
- so RB
--anxious DT
--beacuse NN
-+anxious JJ
-+beacuse IN
- of IN
- tomorrow NN
--omg NN
-+omg UH
- :/ UH
- 
- @_Kinghoopa USR
- the DT
--one NN
--thats DT
--out RP
-+one CD
-+thats WDT
-+out JJ
- now RB
- is VBZ
- free JJ
- ... :
- Father NN
- to TO
--tha NNP
--Game NNP
-+tha DT
-+Game NN
- is VBZ
--droppin NN
-+droppin VBG
- in IN
- a DT
- month NN
- or CC
- so RB
--.. .
-+.. :
- 
- Rep NNP
- . .
- Bono NNP
--Mack NN
-+Mack NNP
- to TO
--criticize NNP
--fellow NNP
--desert NNP
--dweller NNP
-+criticize VB
-+fellow JJ
-+desert NN
-+dweller NN
- Barbara NNP
- Boxer NNP
- at IN
-@@ -401,28 +401,28 @@
- URL NN
- shortening NN
- could MD
--work NN
-+work VB
- I PRP
- might MD
- stick VB
- with IN
--SD2 NN
-+SD2 NNP
- for IN
- a DT
- while NN
- - :
--that DT
--saves NN
-+that IN
-+saves VBZ
- me PRP
- 3 CD
- or CC
- 4 CD
--steps NN
-+steps NNS
- when WRB
- I PRP
- am VBP
- tweeting VBG
--links NN
-+links NNS
- 
- RT RT
- @malikismusic USR
-@@ -431,51 +431,51 @@
- ALL DT
- DAY NN
+ !!! .
+ !!! .
+ !!! .
  !!!! .
--RETWEET NN
-+RETWEET VB
- !!! .
- 
- It PRP
- 's VBZ
- time NN
- to TO
--leave NN
-+leave VB
- . .
- Thanks NNS
- for IN
- the DT
- roller NN
- coaster NN
--ride IN
-+ride NN
- it PRP
- 's VBZ
- been VBN
- interesting JJ
- but CC
--excruciatingly NNP
--painful NN
-+excruciatingly RB
-+painful JJ
- !! .
- 
- RT RT
- @mrdaveyd USR
- : :
--PG&lt;E DT
--donated NN
--35G NN
-+PG&lt;E NNP
-+donated VBD
-+35G CD
- to TO
--state DT
-+state NN
- committe NN
- chairman NN
--investigating NN
-+investigating VBG
- them PRP
- 1day NN
- after IN
- explosion NN
- in IN
- #sanBrunofire HT
---Who NN
-+-Who WP
- is VBZ
- still RB
--defendi NN
-+defendi VBG
- ... :
- 
- RT RT
-@@ -484,28 +484,28 @@
- yo UH
- , ,
- too RB
--many NNS
--kidz RB
-+many JJ
-+kidz NNS
- be VB
--gettin DT
-+gettin VBG
- high NN
--all IN
-+all DT
- the DT
- time NN
- but CC
- they PRP
- ai VBP
- n't RB
--showin NN
--enough RB
--SKILLS NN
-+showin VBG
-+enough JJ
-+SKILLS NNS
- . .
- that DT
- 's VBZ
- what WP
- we PRP
--call NN
--fakin IN
-+call VBP
-+fakin VBG
- the DT
- funk NN
- ! .
-@@ -515,17 +515,17 @@
- RT RT
- @HippoArmy USR
- : :
--Thousands NNP
-+Thousands NNS
- of IN
- angry JJ
--masturbators NN
--marched NN
-+masturbators NNS
-+marched VBD
- against IN
- Christine NNP
- O'Donnell NNP
- today NN
- http://bit.ly/9nTWQw URL
--Seriously NNP
-+Seriously UH
- . .
- 
- @DottyDizzot USR
-@@ -533,7 +533,7 @@
- nice JJ
- , ,
- im PRP
--sdill NN
-+sdill RB
- at IN
- work NN
- =( UH
-@@ -544,9 +544,9 @@
- 's VBZ
- Friday NNP
- today NN
--=) .
-+=) UH
- 
--Sleep NNP
-+Sleep VB
- . .
- Tomorrow NN
- is VBZ
-@@ -563,7 +563,7 @@
- have VBP
- work NN
- . .
--Ugh NNP
-+Ugh UH
- . .
- I PRP
- have VBP
-@@ -575,7 +575,7 @@
- am VBP
- doing VBG
- homework NN
--sunday NNP
-+sunday NN
- . .
- 
- RT RT
-@@ -585,26 +585,26 @@
- . .
- 6 CD
- . .
--2011 UH
-+2011 CD
- . .
--The NNP
-+The DT
- day NN
--@owlcity NN
-+@owlcity USR
- went VBD
- on IN
- an DT
--Emporer NN
--'s POS
-+Emporer NNP
-+'s NNP
- New NNP
- Groove NNP
- rampage NN
- through IN
--twitter NNP
-+twitter NN
- . .
- xD UH
- 
- @OrionCards USR
--there RB
-+there EX
- will MD
- be VB
- , ,
-@@ -630,72 +630,72 @@
- last JJ
- night NN
- . .
--Dointhemost NNP
--. .
-+Dointhemost URL
-+. URL
- com URL
- 
- @mekamoe927 USR
- I PRP
- 've VBP
--had VBD
--one NN
--before IN
-+had VBN
-+one CD
-+before RB
- , ,
- but CC
- it PRP
- was VBD
- a DT
--short NN
-+short JJ
- experience NN
- ( (
--double NN
-+double JJ
- entendre NN
--intended) NN
-+intended) VBD
- . .
- 
- @IzzieZac USR
--Told NN
-+Told VBD
- you PRP
- !! .
- :o UH
--)) .
-+)) UH
- When WRB
--'s VBZ
-+'s PRP
- she PRP
- back RB
- again RB
- ? .
- 
- @hime8644 USR
--LOL NN
--theres NN
-+LOL UH
-+theres EX
- always RB
- some DT
- good JJ
--vids NN
-+vids NNS
- I PRP
--didnt RB
-+didnt VBD
- see VB
--before IN
-+before RB
- like IN
- this DT
- one NN
--XD NNP
-+XD UH
- --- SYM
- &gt; SYM
- http://www.youtube.com/watch?v=8zJKZJ7TGlU URL
- OMG UH
--*DROOLS* .
-+*DROOLS* UH
- 
- With IN
- record NN
- low JJ
- interest NN
--rates NN
-+rates NNS
- , ,
--2011 NNP
-+2011 CD
- is VBZ
--proving NN
-+proving VBG
- to TO
- be VB
- a DT
-@@ -703,16 +703,16 @@
- time NN
- to TO
- buy VB
--real JJ
-+real NN
- estate NN
- in IN
- the DT
--lower NN
-+lower JJR
- mainland NN
- . .
- http://bit.ly/h4wiIs URL
- 
--Saying NN
-+Saying VBG
- " ''
- I PRP
- 'm VBP
-@@ -736,27 +736,27 @@
- my PRP$
- hair NN
- has VBZ
--EVER NN
--looked NN
-+EVER RB
-+looked VBN
- this DT
--disheveled NN
-+disheveled JJ
- ! .
- 
- @toukie_s USR
--i'mgoing NN
-+i'mgoing VBG
- to TO
- sleep VB
- , ,
- not RB
- feeling VBG
--very NN
-+very RB
- well RB
- , ,
- see VB
- you PRP
- tomorrow NN
- 
--Great NN
-+Great JJ
- #COACHING HT
- - :
- Mike NNP
-@@ -765,72 +765,72 @@
- Green NNP
- Bay NNP
- Packers NNP
--fitted NN
-+fitted VBD
- for IN
--rings NNP
-+rings NNS
- Saturday NNP
- - :
--Benefits NNP
-+Benefits NNS
- of IN
- a DT
--Great NN
-+Great JJ
- #Coach HT
- 
- RT RT
- @ItsTheTeenLife USR
- : :
--The NNP
--exact NNP
-+The DT
-+exact JJ
- day NN
- that IN
- I PRP
--wear VB
-+wear VBP
- shorts NNS
- and CC
- a DT
- tee NN
- shirt NN
- everyone NN
--shows NNS
--up IN
-+shows VBZ
-+up RP
- wearing VBG
--hoodies NN
-+hoodies NNS
- and CC
--jeans NN
-+jeans NNS
- . .
- -_- UH
- #ItsTheTeenLife HT
- 
- Lindsay NNP
- Lohan NNP
--allegedly NNP
--failed NNP
-+allegedly RB
-+failed VBD
- her PRP$
- drug NN
- test NN
- . .
- So RB
- not RB
--fetch NN
-+fetch JJ
- . .
--Quick NNP
-+Quick RB
- , ,
- let VB
--'s VBZ
-+'s POS
- all DT
--put VBN
-+put VBP
- on IN
- our PRP$
--shocked NN
--faces NN
-+shocked JJ
-+faces NNS
- that IN
- 23 CD
- days NNS
- of IN
--rehab PRP
-+rehab NN
- did VBD
- n't RB
--work NN
-+work VB
- ! .
- 
- i PRP
-@@ -838,49 +838,49 @@
- a DT
- bath NN
- but CC
--do VB
-+do VBP
- n't RB
- have VB
- a DT
- bath NN
- , ,
--shut NNP
--up NN
-+shut VB
-+up RP
- , ,
- sam NNP
- 's VBZ
- coming VBG
- tomorrow NN
- and CC
--steve NN
-+steve NNP
- and CC
--tanya PRP
-+tanya NNP
- will MD
- be VB
--round NN
-+round RB
- at IN
- 10am CD
--so CC
-+so IN
- go VB
--away IN
-+away RB
- you PRP
--mean VBP
-+mean JJ
- people NNS
- 
- RT RT
- @TricycleTheatre USR
- : :
--v NNP
-+v RB
- excited JJ
- that IN
--Director NNP
-+Director NN
- Nigel NNP
- Cole NNP
- will MD
--join NN
-+join VB
- our PRP$
--Made VBD
--in IN
-+Made NNP
-+in NNP
- Dagenham NNP
- Q__AND__A NN
- next JJ
-@@ -892,17 +892,17 @@
- http://bit.ly/cNOeyS URL
- 
- @yourjessica USR
--'ll PRP
--do VBP
-+'ll MD
-+do VB
- it PRP
- tomorrow NN
- . .
--Possibly NNP
-+Possibly RB
- . .
--Most JJS
--likely NNP
-+Most RBS
-+likely RB
- . .
--Hopefully NNP
-+Hopefully RB
- . .
- Maybe RB
- :) UH
-@@ -913,7 +913,7 @@
- that DT
- last JJ
- week NN
--Ash NN
-+Ash NNP
- . .
- I PRP
- think VBP
-@@ -925,8 +925,8 @@
- program NN
- . .
- 
--Mortgage NNP
--Advice NNP
-+Mortgage NN
-+Advice NN
- &gt; SYM
- First JJ
- time NN
-@@ -942,7 +942,7 @@
- and CC
- I PRP
- are VBP
--beginning NN
-+beginning VBG
- to TO
- look VB
- at IN
-@@ -951,20 +951,20 @@
- http://bit.ly/hgMKjS URL
- 
- @yeastieboys USR
--that DT
-+that WDT
- 's VBZ
--terrible NN
-+terrible JJ
- . .
- I PRP
- ca MD
- n't RB
- believe VB
- its PRP
--been VBP
-+been VBN
- going VBG
--on IN
-+on RP
- so RB
--long JJ
-+long RB
- . .
- My PRP$
- parents NNS
-@@ -974,33 +974,33 @@
- but CC
- I PRP
- dont VBP
--think VBP
-+think VB
- it PRP
- 's VBZ
--as IN
-+as RB
- bad JJ
- down IN
- there RB
- . .
- 
--Small NNP
-+Small JJ
- Biz NNP
- Tech NNP
- Tour NNP
- 2010 CD
--Launches NNP
-+Launches VBZ
- Five CD
--City NNP
--Tour NNP
-+City NN
-+Tour NN
- MONTCLAIR NNP
- N.J. NNP
- ...: :
--The NNP
--all IN
-+The DT
-+all DT
- day NN
- event NN
--features NN
--America's... :
-+features VBZ
-+America's... NNP
- http://tinyurl.com/28hd9fu URL
- #fb HT
- 
-@@ -1015,18 +1015,18 @@
- the DT
- weather NN
- is VBZ
--KINDA DT
-+KINDA RB
- nice JJ
- outside IN
- today NN
- 
--Every NNP
-+Every DT
- year NN
- , ,
- i PRP
- realize VBP
- how WRB
--lame NN
-+lame JJ
- i PRP
- was VBD
- last JJ
-@@ -1040,23 +1040,23 @@
- *kisses VBZ
- your PRP$
- ass**sneezes NN
--after* .
-+after* RB
- Lol UH
- 
- It PRP
- is VBZ
- Friday NNP
- afternoon NN
--adn IN
-+adn CC
- I PRP
- could MD
- n't RB
- be VB
--happier NN
-+happier JJR
- . .
--Ending NN
-+Ending VBG
- a DT
--crappy NN
-+crappy JJ
- week NN
- on IN
- a DT
-@@ -1070,45 +1070,45 @@
- RT RT
- @djlogansama USR
- : :
--Tonight NNP
-+Tonight RB
- on IN
- the DT
- show NN
- : :
--JUST NNP
--LANDED NNP
--BACK NNP
--FROM NNP
-+JUST RB
-+LANDED VBD
-+BACK RB
-+FROM IN
- JAMAICA NNP
- Badness NNP
- in IN
- the DT
- studio NN
--spinning NN
-+spinning VBG
- 2 CD
--exclusive NN
-+exclusive JJ
- new JJ
--tunes NN
-+tunes NNS
- 
- I PRP
- need VBP
- to TO
--draw DT
--FASTER NN
-+draw VB
-+FASTER JJR
- . .
- I PRP
- 'm VBP
- gonna VBG
--scan IN
-+scan VB
- two CD
- weeks NNS
--worth NN
-+worth JJ
- of IN
--doodles NN
-+doodles NNS
- to TO
- get VB
- going VBG
--, .
-+, ,
- lol UH
- . .
- 
-@@ -1118,7 +1118,7 @@
- made VBD
- my PRP$
- day NN
--xDlmfao NN
-+xDlmfao UH
  !!!! .
- 
- @JaeChartaye USR
-@@ -1132,31 +1132,31 @@
- Town NNP
- might MD
- be VB
--one NN
-+one CD
- of IN
- the DT
- best JJS
--movies NN
-+movies NNS
- I PRP
- have VBP
- seen VBN
- all DT
- year NN
- . .
--So UH
-+So RB
- , ,
- so RB
- good JJ
- . .
--And NNP
--do VBP
-+And CC
-+do VB
- n't RB
--worry IN
-+worry VB
- Ben NNP
- , ,
- we PRP
- already RB
--forgave IN
-+forgave VBP
- you PRP
- for IN
- Gigli NNP
-@@ -1164,18 +1164,18 @@
- Really RB
- . .
- 
--spent IN
-+spent VBP
- all DT
- day NN
--entering NN
--sweepstakes NN
-+entering VBG
-+sweepstakes NNS
- ... :
--lets VBZ
-+lets VBP
- hope VBP
- it PRP
--works VBP
-+works VBZ
- out RP
--=D .
-+=D UH
- 
- @BexsterBexster USR
- @shinobi32768 USR
-@@ -1183,11 +1183,11 @@
- 've VBP
- been VBN
- having VBG
--soup IN
-+soup NN
- all DT
- week NN
- , ,
--do VB
-+do VBP
- n't RB
- really RB
- have VB
-@@ -1196,10 +1196,10 @@
- . .
- It PRP
- 's VBZ
--starting NN
-+starting VBG
- to TO
--taste DT
--pretty NN
-+taste VB
-+pretty RB
- much RB
- the DT
- same JJ
-@@ -1207,23 +1207,23 @@
- 
- Korean NNP
- War NNP
--spy NNP
--rivalries NNP
--persist NNP
-+spy NN
-+rivalries NNS
-+persist VBP
- 60 CD
- years NNS
--later RB
-+later JJ
- : :
--Far NNP
-+Far RB
- be VB
- it PRP
- that IN
- the DT
- week NN
- should MD
--pass NN
--without NN
--noting NN
-+pass VB
-+without IN
-+noting VBG
- that IN
- it PRP
- was VBD
-@@ -1237,19 +1237,19 @@
- anniversary NN
- to TO
- my PRP$
--wonderful NN
-+wonderful JJ
- wife NN
--@lizwoodring NN
-+@lizwoodring USR
- !!! .
- 
- @JoshRamsayArmy USR
--Kay NN
-+Kay NNP
- sorry JJ
- ... :
- Well UH
- my PRP$
- dad NN
--lest NN
-+lest VBP
- when WRB
- i PRP
- was VBD
-@@ -1257,7 +1257,7 @@
- . .
- He PRP
- has VBZ
--issues NN
-+issues NNS
- . .
- He PRP
- held VBD
-@@ -1268,30 +1268,30 @@
- . .
- I PRP
- can MD
--STILL VB
-+STILL RB
- remember VB
--that IN
-+that DT
- ... :
--=/ URL
-+=/ UH
- 
--Man UH
-+Man NN
- gets VBZ
- 20 CD
- years NNS
- in IN
--murder DT
-+murder NN
- plot NN
- against IN
- judge NN
- http://bit.ly/agB9iL URL
- 
--Tryna PRP
--Get VBP
-+Tryna VBG
-+Get VB
- Into IN
- Something NN
--Tonight NNP
-+Tonight NN
- 
--CHILLIN RT
-+CHILLIN VBG
- @LIVE USR
- TONIGHT NN
- ! .
-@@ -1306,7 +1306,7 @@
- goin VBG
- off RP
- at IN
--liquids DT
-+liquids NNP
- tomorrow NN
- i PRP
- might MD
-@@ -1316,7 +1316,7 @@
- the DT
- last JJ
- group NN
--dalam NN
-+dalam VB
- lab NN
- , ,
- for IN
-@@ -1331,17 +1331,17 @@
- Hilfiger NNP
- are VBP
- now RB
--working NN
-+working VBG
- together RB
- . .
--The NNP
--film NNP
--'s VBZ
--releasing NN
-+The DT
-+film NN
-+'s POS
-+releasing VBG
- on IN
- Feb NNP
- . .
--4th UH
-+4th CD
- . .
- It PRP
- 's VBZ
-@@ -1349,36 +1349,36 @@
- good JJ
- . .
- 
--Aggressive NNP
--Kids NNP
-+Aggressive JJ
-+Kids NNS
- With IN
- ADHD NNP
--May NNP
-+May MD
- Not RB
--Need NNP
--Antipsychotic NNP
--Meds NNP
-+Need VB
-+Antipsychotic JJ
-+Meds NNS
- http://t.co/JfGm0uH URL
- 
- every DT
- year NN
--your PRP
-+your POS
- " ''
- bestfriend NN
- " ''
--get VB
--yo UH
--ass JJ
-+get VBP
-+yo PRP$
-+ass NN
- in IN
--trouble DT
--smdh NN
-+trouble NN
-+smdh UH
- #doinme HT
- 
- Today NN
--I PRP
--justt NN
--felt NN
--special NN
-+I NNP
-+justt RB
-+felt VBD
-+special JJ
- forr IN
- no DT
- reason NN
-@@ -1386,9 +1386,9 @@
- 3 UH
- . .
- It PRP
--wass DT
-+wass VBD
- cool JJ
--thou( NN
-+thou( RB
- : :
- 
- RT RT
-@@ -1422,17 +1422,17 @@
- RT RT
- @JANKYJ818 USR
- : :
--Shout NNP
--out IN
--2 CD
--all IN
-+Shout VB
-+out RP
-+2 TO
-+all DT
- the DT
- real JJ
--women NN
--that IN
-+women NNS
-+that WDT
- hold VBP
--they PRP
--man UH
-+they PRP$
-+man NN
- down IN
- when WRB
- he PRP
-@@ -1450,8 +1450,8 @@
- this DT
- world NN
- ! .
--RESPECT NNP
--T NNP
-+RESPECT VB
-+T NN
- ... :
- 
- MetroPCS NNP
-@@ -1459,18 +1459,18 @@
- the DT
- worst JJS
- customer NN
--service IN
-+service NN
- I PRP
- 've VBP
--experienced NN
-+experienced VBN
- in IN
--months NNP
-+months NNS
- ( (
- trying VBG
- to TO
- help VB
- someone NN
--order IN
-+order VB
- a DT
- phone NN
- ) )
-@@ -1478,14 +1478,14 @@
- #fail HT
- 
- @rattleknackers USR
--amusing NN
-+amusing JJ
- ? .
- This DT
- is VBZ
- some DT
- of IN
- the DT
--greatest NN
-+greatest JJS
- music NN
- of IN
- all DT
-@@ -1495,36 +1495,36 @@
- foot NN
- has VBZ
- n't RB
--stopped JJ
--tapping NN
-+stopped VBN
-+tapping VBG
- all DT
- night NN
- 
- Do VB
- n't RB
--miss VBP
-+miss VB
- our PRP$
--Half NNP
--Way NNP
-+Half JJ
-+Way NN
- to TO
- St NNP
- . .
- Patty NNP
--'s POS
-+'s NNP
- Day NNP
--Party NNP
--Tonight NNP
-+Party NN
-+Tonight NN
- ! .
- We PRP
- 're VBP
- having VBG
- crazy JJ
- drink NN
--Specials NN
-+Specials NNS
- too RB
- .. :
--tex DT
--980-333-3923 NN
-+tex VB
-+980-333-3923 CD
- to TO
- get VB
- on IN
-@@ -1536,26 +1536,26 @@
- Stephen NNP
- , ,
- the DT
--Intellectual NN
-+Intellectual NNP
- . .
- @bbhess USR
- I PRP
--bet NN
--ppl IN
-+bet VBP
-+ppl NNS
- that DT
--design NN
-+design VB
- book NN
--covers NN
-+covers NNS
- for IN
- a DT
--living VBG
-+living NN
- hate VBP
- when WRB
- people NNS
- say VBP
--do VB
-+do VBP
- n't RB
--judge IN
-+judge VB
- a DT
- book NN
- by IN
-@@ -1563,7 +1563,7 @@
- cover NN
- 
- I PRP
--sold IN
-+sold VBD
- an DT
- image NN
- today NN
-@@ -1585,7 +1585,7 @@
- wo MD
- n't RB
- believe VB
--mee NN
-+mee PRP
- &lt; UH
- 3 UH
- 
-@@ -1604,9 +1604,9 @@
- 're VBP
- getting VBG
- " ''
--white NN
-+white JJ
- boy NN
--wasted NN
-+wasted VBN
- " ''
- tonight NN
- ! .
-@@ -1620,7 +1620,7 @@
- night NN
- with IN
- the DT
--family NNP
-+family NN
- ? .
- http://nctphoenix.com/showtimes.html URL
- 
-@@ -1628,11 +1628,11 @@
- it PRP
- when WRB
- people NNS
--untag IN
-+untag VBP
- there PRP$
--selfs NN
-+selfs PRP
- from IN
--pictures NN
-+pictures NNS
- that IN
- no DT
- ones NN
-@@ -1642,16 +1642,16 @@
- look VB
- at IN
- ! .
--- :
--. URL
--- :
-+- UH
-+. UH
-+- UH
- @_Rhiann USR
- 
- when WRB
- did VBD
--@thecodysimpson NN
--last JJ
--tweet NN
-+@thecodysimpson USR
-+last RB
-+tweet VBZ
- ,? .
- ;) UH
- 
-@@ -1662,75 +1662,75 @@
- show NN
- with IN
- @ogochocinco USR
--evry NN
-+evry JJ
- week NN
- 'll MD
- compete VB
- with IN
--sum NNP
--hawt NNP
--dude NNP
--2 CD
--keep IN
-+sum DT
-+hawt JJ
-+dude NN
-+2 TO
-+keep VB
- ur PRP$
- intrest NN
- like IN
- @willdemps USR
--my$ NN
-+my$ PRP$
- on IN
- will MD
- 
--Annoying NN
-+Annoying JJ
- : :
- when WRB
- my PRP$
- boss NN
--complains NN
-+complains VBZ
- people NNS
- do VBP
- n't RB
--respond NN
-+respond VB
- to TO
--emails DT
--ASAP NN
--&lt; UH
-+emails NNS
-+ASAP RB
-+&lt; CC
- yet CC
- I PRP
- always RB
--do VB
-+do VBP
- , ,
- yet CC
- she PRP
- never RB
--responds NN
-+responds VBZ
- to TO
- me PRP
--ASAP NN
-+ASAP RB
- ! .
- 
--Ugh NN
-+Ugh UH
- I PRP
--DO VB
--N'T NN
--HAVE IN
-+DO VBP
-+N'T RB
-+HAVE VB
- MY PRP$
--EARPHONES NN
-+EARPHONES NNS
- I PRP
- GUESS VBP
- I PRP
--WO IN
--N'T DT
--B NN
--TALKING NN
-+WO MD
-+N'T RB
-+B VB
-+TALKING VBG
- AND CC
--DRIVING NN
-+DRIVING VBG
- TODAY NN
--LOL NN
-+LOL UH
- .... :
--Excuses NNP
--Excuses NNP
--Excuses NNP
--SMH NNP
-+Excuses NNS
-+Excuses NNS
-+Excuses NNS
-+SMH UH
- 
- I PRP
- just RB
-@@ -1742,12 +1742,12 @@
- makes VBZ
- you PRP
- go VBP
--live VBP
-+live VB
- with IN
- your PRP$
- dad NN
--Scooter NN
--Braun NN
-+Scooter NNP
-+Braun NNP
- , ,
- your PRP$
- life NN
-@@ -1756,31 +1756,31 @@
- got VBD
- : :
- Part NN
--7 UH
-+7 CD
- ! .
- Try VB
- it PRP
- : :
- http://tinyurl.com/27r2pdz URL
- 
--Must PRP
--say VBP
--iPhone PRP
-+Must MD
-+say VB
-+iPhone NN
- is VBZ
--more JJ
--accurate NN
-+more RBR
-+accurate JJ
- . .
--Wasnt NNP
--brought NN
--up IN
--here RB
--though NN
-+Wasnt VBD
-+brought VBN
-+up RP
-+here IN
-+though RB
- , ,
- Wrawby NNP
- is VBZ
- where WRB
- I PRP
--spent VBP
-+spent VBD
- 18 CD
- years NNS
- of IN
-@@ -1788,8 +1788,8 @@
- life NN
- . .
- 
--y'all DT
--care NN
-+y'all PRP
-+care VBP
- if IN
- I PRP
- do VBP
-@@ -1801,7 +1801,7 @@
- ? .
- ok UH
- , ,
--no DT
-+no UH
- ? .
- 26 CD
- days NNS
-@@ -1810,20 +1810,20 @@
- ! .
- my PRP$
- mom NN
--wuz NN
--pushy NN
-+wuz VBD
-+pushy JJ
- in IN
- there RB
- , ,
--damn NNP
--~December*18th~ .
-+damn UH
-+~December*18th~ NNP
- 
- time NN
- to TO
- help VB
- our PRP$
--fellow NN
--BELIEBER NN
-+fellow JJ
-+BELIEBER NNP
- shoutout NN
- for IN
- @rchristelyn.....@rchristeyn....@rchristelyn...she USR
-@@ -1831,7 +1831,7 @@
- one NN
- of IN
- my PRP$
--bestfriends NN
-+bestfriends NNS
- on IN
- our PRP$
- school NN
-@@ -1839,27 +1839,27 @@
- RT RT
- @ericjohnsalut USR
- " ''
--Good NNP
-+Good UH
- Morning UH
- ! .
- Have VB
- a DT
--pleasant NN
-+pleasant JJ
- and CC
- happy JJ
- day NN
--!" :
-+!" .
- http://dlvr.it/5Rh4w URL
- 
- @Elinor_Althani USR
--ahhhh PRP
-+ahhhh UH
- reading VBG
--, .
-+, ,
- still RB
- i PRP
- did VBD
- n't RB
--finish IN
-+finish VB
- my PRP$
- book NN
- =( UH
-@@ -1892,18 +1892,18 @@
- Saturday NNP
- morning NN
- and CC
--tht DT
-+tht WDT
- would MD
- ntake VB
- all DT
- day NN
- lol UH
--so RB
--id RB
-+so UH
-+id PRP
- be VB
--cutting NN
-+cutting VBG
- it PRP
--close NN
-+close JJ
- lol UH
- 
- Just RB
-@@ -1915,21 +1915,21 @@
- :D UH
- it PRP
- 's VBZ
--friday NNP
-+friday NN
- guys NNS
  !, .
- 
- @2kjdream USR
--Good NNP
-+Good JJ
- morning NN
- ! .
- Have VB
- a DT
--Good NNP
-+Good JJ
- day NN
- :) UH
- from IN
--JPN NN
-+JPN NNP
- . .
- 
- RT RT
-@@ -1942,7 +1942,7 @@
- a DT
- relationship NN
- to TO
--survive NN
-+survive VB
- is VBZ
- when WRB
- no DT
-@@ -1983,35 +1983,35 @@
- I PRP
- will MD
- - :
--all IN
-+all DT
- the DT
- time NN
- . .
- 
--Trying NN
-+Trying VBG
- Something NN
--New NNP
--In NNP
--Bed NNP
--( UH
-+New JJ
-+In IN
-+Bed NN
-+( (
- You PRP
--Game NN
-+Game JJ
- ? .
- ) )
- : :
--Someone NNP
--wrote IN
-+Someone NN
-+wrote VBD
- me PRP
- last JJ
- week NN
- about IN
--wanting NN
-+wanting VBG
- to TO
--role DT
--play NN
-+role VB
-+play VB
- . .
--Her NNP
--husband NNP
-+Her PRP$
-+husband NN
- is VBZ
- a DT
- ... :
-@@ -2019,18 +2019,18 @@
- 
- My PRP$
- dad NN
--laughed NN
-+laughed VBD
- when WRB
- he PRP
--read NN
-+read VBD
- about IN
- Linkin NNP
- Park NNP
--being NN
--classified NN
-+being VBG
-+classified VBN
- under IN
+ " ''
+ " ''
+ " ''
+ " ''
+ " ''
+ " ''
+ " ''
+ #bittersweet HT
+ #Coach HT
+ #COACHING HT
+ #dammit HT
+ #doinme HT
+ #dreams HT
+ #education HT
+ #fail HT
+ #fb HT
+ #ItsTheTeenLife HT
+ #NFL HT
+ #oneofmyfollowers HT
+ #sanBrunofire HT
+ #teamchino HT
+ & CC
+ &gt; SYM
+ &gt; SYM
+ &lt; UH
+ &lt; UH
  ' ''
--rap-rock'. IN
-+rap-rock'. NN
- I PRP
- hope VBP
- he PRP
-@@ -2038,32 +2038,32 @@
- n't RB
- mean VB
  ' ''
--shit JJ
-+shit UH
- my PRP$
--son UH
--listens NNP
--to'. .
-+son NN
-+listens VBZ
-+to'. TO
- 
- For IN
- code NN
- I PRP
+ ' ''
+ ' ''
+ 'll MD
+ 'm VBP
+ 'm VBP
+ 'm VBP
+ 'm VBP
+ 're VBP
+ 're VBP
+ 's VBZ
+ 's VBZ
+ 's VBZ
+ 's VBZ
+ 's VBZ
+ 's VBZ
+ 's VBZ
+ 's VBZ
+ 's VBZ
+ 's VBZ
+ 's VBZ
+ 's VBZ
+ 's VBZ
+ 's VBZ
+ 's VBZ
  've VBP
--written DT
--since NN
--Sept NN
-+written VBN
-+since IN
-+Sept NNP
- ' ''
--09 NNP
-+09 CD
+ 've VBP
+ 've VBP
+ 've VBP
+ ( (
+ ( (
+ ( (
+ ) )
+ ) )
+ ) )
+ ) )
+ *kisses VBZ
  , ,
- the DT
- delay NN
--between NN
--commit NN
-+between IN
-+commit VBZ
- to TO
--SCM NN
-+SCM NNP
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ , ,
+ ,? .
+ - :
+ - :
+ - :
+ - :
+ - :
+ - :
+ - :
+ - :
+ - :
+ - :
+ --- SYM
+ -_- UH
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ . .
+ .. :
+ .. :
+ .. :
+ .. :
+ .. :
+ .. :
+ ... :
+ ... :
+ ... :
+ ... :
+ ... :
+ ... :
+ ... :
+ ... :
+ ... :
+ ... :
+ ... :
+ ... :
+ ... :
+ ... :
+ ... :
+ ... :
+ ... :
+ ... :
+ ... :
+ .... :
+ .... :
+ .... :
+ ..... :
+ ...: :
+ 10am CD
+ 15 CD
+ 18 CD
+ 18 CD
+ 1day NN
+ 2 CD
+ 2 CD
+ 2 TO
+ 20 CD
+ 20 CD
+ 20 CD
+ 20 CD
+ 2010 CD
+ 2010 CD
+ 22 CD
+ 23 CD
+ 26 CD
+ 2910 CD
+ 3 CD
+ 3 CD
+ 3 UH
+ 3 UH
+ 3 UH
+ 30 CD
+ 4 CD
+ 5800 CD
+ 6 CD
+ 60 CD
+ 8 CD
+ : :
+ : :
+ : :
+ : :
+ : :
+ : :
+ : :
+ : :
+ : :
+ : :
+ : :
+ : :
+ : :
+ : :
+ : :
+ : :
+ : :
+ : :
+ : :
+ : :
+ : :
+ : :
+ : :
+ : :
+ : :
+ : :
+ :) UH
+ :) UH
+ :) UH
+ :) UH
+ :-D UH
+ :/ UH
+ :\ UH
+ :D UH
+ :o UH
+ ;) UH
+ =( UH
+ =( UH
+ ? .
+ ? .
+ ? .
+ ? .
+ ? .
+ ? .
+ ? .
+ ? .
+ ? .
+ ? .
+ ?? .
+ ??. .
+ @2kjdream USR
+ @_Kinghoopa USR
+ @_Rhiann USR
+ @azkuro USR
+ @bbhess USR
+ @BexsterBexster USR
+ @christinamarks_ USR
+ @ConorMc_Ginty USR
+ @cstatus USR
+ @djlogansama USR
+ @DottyDizzot USR
+ @DrHubaEvaluator USR
+ @Elinor_Althani USR
+ @ericjohnsalut USR
+ @Exclusively_T USR
+ @firecore USR
+ @gabbysueurban USR
+ @GeeSPOT_ USR
+ @hime8644 USR
+ @HippoArmy USR
+ @ItsTheTeenLife USR
+ @IzzieZac USR
+ @JaeChartaye USR
+ @JANKYJ818 USR
+ @JasonKingYahoo USR
+ @JoshRamsayArmy USR
+ @Kristi_Taylor USR
+ @LIVE USR
+ @malikismusic USR
+ @mekamoe927 USR
+ @mfeige USR
+ @mrdaveyd USR
+ @ogochocinco USR
+ @OrionCards USR
+ @rattleknackers USR
+ @rchristelyn.....@rchristeyn....@rchristelyn...she USR
+ @riesranty USR
+ @shinobi32768 USR
+ @The_Score USR
+ @toukie_s USR
+ @TricycleTheatre USR
+ @willdemps USR
+ @yeastieboys USR
+ @Yeweezii USR
+ @yourjessica USR
+ __AND__ CC
+ a DT
+ a DT
+ a DT
+ a DT
+ a DT
+ a DT
+ a DT
+ a DT
+ a DT
+ a DT
+ a DT
+ a DT
+ a DT
+ a DT
+ a DT
+ a DT
+ a DT
+ a DT
+ a DT
+ a DT
+ a DT
+ A DT
+ a DT
+ a DT
+ a DT
+ a DT
+ a DT
+ a DT
+ about IN
+ about IN
+ ADHD NNP
+ advice NN
+ after IN
+ after IN
+ afternoon NN
+ again RB
+ again RB
+ against IN
+ against IN
+ against IN
+ ai VBP
+ ajul NN
+ Alcohol NN
+ ALL DT
+ all DT
+ all DT
+ all DT
+ all DT
+ all DT
+ all DT
+ all DT
+ all DT
+ already RB
+ always RB
+ always RB
+ am VBP
+ am VBP
+ an DT
+ an DT
+ an DT
  and CC
--running NN
-+running VBG
- on IN
--customer DT
-+customer NN
+ and CC
+ and CC
+ and CC
+ and CC
+ and CC
+ and CC
+ and CC
+ AND CC
+ and CC
+ and CC
+ and CC
+ and CC
+ and CC
+ and CC
+ and CC
+ and CC
+ and CC
+ AND CC
+ and CC
+ ANGER NN
+ angry JJ
+ angry JJ
+ anniversary NN
+ antenna NN
+ anything NN
+ are VBP
+ are VBP
+ are VBP
+ as IN
+ ass**sneezes NN
+ at IN
+ at IN
+ at IN
+ at IN
+ at IN
+ at IN
+ at IN
+ at IN
+ at IN
+ at IN
+ at IN
+ BA NNP
+ back RB
+ back RB
+ back RB
+ bad JJ
+ Badness NNP
+ Barbados NNP
+ Barbara NNP
+ bath NN
+ bath NN
+ Bay NNP
+ Bcom NN
+ Bday NN
+ be VB
+ be VB
+ be VB
+ be VB
+ be VB
+ be VB
+ be VB
+ be VB
+ be VB
+ be VB
+ be VB
+ been VBN
+ been VBN
+ been VBN
+ believe VB
+ believe VB
+ Ben NNP
+ bench NN
+ best JJS
+ bestfriend NN
+ birthday NN
+ birthday NN
+ Biz NNP
+ blog NN
+ Bono NNP
+ book NN
+ book NN
+ book NN
+ boots NNS
+ boss NN
+ Boxer NNP
+ boy NN
+ brat NN
+ brother NN
+ Bruins NNP
+ but CC
+ but CC
+ but CC
+ but CC
+ but CC
+ buy VB
+ buyer NN
+ Buyer NN
+ by IN
+ ca MD
+ ca MD
+ CA NNP
+ CA NNP
+ call VB
+ can MD
+ can MD
+ can MD
+ can MD
+ cardiologist NN
+ chairman NN
+ Christchurch NNP
+ Christine NNP
+ class NN
+ coaster NN
+ code NN
+ Cole NNP
+ college NN
+ com URL
+ come VB
+ come VB
+ coming VBG
+ committe NN
+ compete VB
+ Container NNP
+ cool JJ
+ could MD
+ could MD
+ cover NN
+ Cowboys NNP
+ crazy JJ
+ customer NN
+ dad NN
+ dad NN
+ dad NN
+ Dagenham NNP
+ Darrell NNP
+ day NN
+ day NN
+ DAY NN
+ day NN
+ day NN
+ day NN
+ day NN
+ day NN
+ day NN
+ day NN
+ day NN
+ day NN
+ day NN
+ day NN
+ day NN
+ Day NNP
+ days NNS
+ days NNS
+ days NNS
+ Dayton NNP
+ delay NN
+ did VBD
+ did VBD
+ did VBD
+ did VBD
+ did VBD
+ did VBD
+ different JJ
+ dinner NN
+ Do VB
+ do VBP
+ do VBP
+ do VBP
+ do VBP
+ doing VBG
+ dont VBP
+ Doug NNP
+ down IN
+ down IN
+ drink NN
+ drink NN
+ drug NN
+ early RB
+ Eduardo NNP
+ egg NN
+ emily NNP
+ energy NN
+ entendre NN
+ estate NN
+ event NN
+ every DT
+ everyone NN
+ everything NN
+ excited JJ
+ excited JJ
+ experience NN
+ experience NN
+ explosion NN
+ f NN
+ Father NN
+ Feb NNP
+ feel VBP
+ feeling VBG
+ few JJ
+ First JJ
+ first JJ
+ Five CD
+ follow VB
+ foot NN
+ for IN
+ for IN
+ for IN
+ for IN
+ for IN
+ for IN
+ for IN
+ for IN
+ for IN
+ For IN
+ for IN
+ for IN
+ for IN
+ for IN
+ for IN
+ for IN
+ for IN
+ for IN
+ forr IN
+ free JJ
+ Friday NNP
+ Friday NNP
+ Friday NNP
+ from IN
+ from IN
+ from IN
+ funk NN
+ Galakin NNP
+ game NN
+ game NN
+ game NN
+ Garrett NNP
+ get VB
+ get VB
+ get VB
+ gets VBZ
+ getting VBG
+ Gigli NNP
+ girls NNS
+ give VB
+ go VB
+ go VB
+ go VB
+ go VB
+ go VBP
+ God NNP
+ gOd NNP
+ goin VBG
+ goin VBG
+ going VBG
+ going VBG
+ going VBG
+ gone VBN
+ gonna VBG
+ gonna VBG
+ good JJ
+ good JJ
+ good JJ
+ good JJ
+ goonie NN
+ got VBD
+ got VBD
+ got VBD
+ Green NNP
+ Groove NNP
+ group NN
+ GUESS VBP
+ guitar NN
+ guys NNS
+ gym NN
+ had VBD
+ hair NN
+ happy JJ
+ Happy JJ
+ Happy JJ
+ Happy JJ
  hardware NN
  has VBZ
- been VBN
-@@ -2077,7 +2077,7 @@
- swishers NNP
- !! .
- RT RT
--londonland IN
-+londonland USR
- : :
- They PRP
- put VBP
-@@ -2087,25 +2087,25 @@
- these DT
- days NNS
- ... :
--Bacon NNP
--cereal NNP
-+Bacon NN
-+cereal NN
- is VBZ
- up RP
--next IN
-+next JJ
- http://hjv.dw.tc/Q0t2R URL
- 
- NHL NNP
--Betting NNP
--Picks NNP
-+Betting VBG
-+Picks NNS
- - :
- Bruins NNP
--vs CC
-+vs IN
- Wild NNP
- : :
- Thursday NNP
- night NN
- is VBZ
--reserved NN
-+reserved VBN
- for IN
- hockey NN
- as IN
-@@ -2121,21 +2121,21 @@
- http://bit.ly/gw8oSb URL
- 
- ok UH
--so UH
-+so RB
- , ,
- can MD
- someone NN
- make VB
- me PRP
--Steelers NN
-+Steelers NNP
- ( (
- Happy JJ
--) UH
--gifs NNP
-+) )
-+gifs NNS
- from IN
- last JJ
- night NN
--during NN
-+during IN
- the DT
- game NN
- ? .
-@@ -2144,37 +2144,37 @@
- will MD
- love VB
- you PRP
--forever NN
-+forever RB
- ... :
- http://tumblr.com/xny1gcptdg URL
- 
--Think VB
-+Think VBP
- I PRP
- 'm VBP
- going VBG
- to TO
- give VB
--in IN
-+in RP
- and CC
--pull VBP
-+pull VB
- the DT
- boots NNS
--out IN
-+out RP
- tonight NN
- ! .
- #bittersweet HT
- 
--fckn NNP
-+fckn JJ
- emily NNP
- rodriguez NNP
- did VBD
- n't RB
--bring VBG
-+bring VB
- my PRP$
--cookies NN
-+cookies NNS
- today NN
- !! .
--lil NN
-+lil JJ
- brat NN
- . .
- 
-@@ -2184,24 +2184,24 @@
- Today NN
- is VBZ
- my PRP$
--main NN
-+main JJ
- goonie NN
--@bobbyboutit NN
-+@bobbyboutit USR
- birthday NN
- #teamchino HT
- ca MD
- n't RB
--move VBP
-+move VB
- without IN
- him PRP
- , ,
--please UH
--send UH
-+please VB
-+send VB
- him PRP
- some DT
--shouts NN
-+shouts NNS
- !! .
--While VB
-+While IN
- he PRP
- 's VBZ
- ... :
-@@ -2212,11 +2212,11 @@
- upgrade VB
- to TO
- a DT
--BlackBerry NN
-+BlackBerry NNP
- in IN
- November NNP
- !! .
--Yesss NNP
-+Yesss UH
- . .
- &lt; UH
- 3 UH
-@@ -2231,9 +2231,9 @@
- Bday NN
- party NN
- for IN
--@SILVRSCREENSTAR NN
-+@SILVRSCREENSTAR USR
- then IN
--hp6 NN
-+hp6 NNP
- with IN
- my PRP$
- girls NNS
-@@ -2245,7 +2245,7 @@
- !! .
- 
- A DT
--NEW NN
-+NEW JJ
- Alcohol NN
- energy NN
- drink NN
-@@ -2253,20 +2253,20 @@
- which WDT
- may MD
- be VB
--banned NN
--.. .
--because VB
--it PRP
--causes NN
--problems NN
--among NN
-+banned VBN
-+.. :
-+because IN
-+it PRP
-+causes VBZ
-+problems NNS
-+among IN
- college NN
--students NN
-+students NNS
- . .
- 
- @christinamarks_ USR
- u PRP
--try NN
-+try VBP
- to TO
- be VB
- like IN
-@@ -2277,37 +2277,37 @@
- Happy JJ
- Monday NNP
- to TO
--Everyone NNP
-+Everyone NN
- ! .
- #education HT
- can MD
- never RB
- be VB
--taken DT
--away NN
-+taken VBN
-+away RB
- ... :
- go VB
- follow VB
--your PRP
-+your PRP$
- #dreams HT
- 
- NO UH
- Saints NNP
--R NN
-+R VBP
- . .
--Buch PRP
-+Buch NNP
- might MD
- come VB
- back RB
- n CC
--play NN
--vs CC
-+play VB
-+vs IN
- Seahawks NNP
- on IN
- Sunday NNP
- ?? .
- 
--@YnYrTheOne NN
-+@YnYrTheOne USR
- what WP
- time NN
- is VBZ
-@@ -2319,33 +2319,33 @@
- Happy JJ
- birthday NN
- to TO
--my PRP$
-+my PRP
- not RB
- so RB
- little JJ
- brother NN
--@xHangmanx NN
-+@xHangmanx USR
- !!! .
- He PRP
- 's VBZ
- 20 CD
- today NN
- ! .
--Holy NNP
--crap NNP
-+Holy UH
-+crap UH
- , ,
- 20 CD
- ? .
--Jeez NN
-+Jeez UH
- man UH
- ... :
- 
--2011 UH
-+2011 CD
- first JJ
- time NN
- home NN
- buyer NN
--incentives NN
-+incentives NNS
- in IN
- Temecula NNP
- CA NNP
-@@ -2355,37 +2355,37 @@
- Time NN
- Home NN
- Buyer NN
--Incentives NN
-+Incentives NNS
- in IN
- Temecula NNP
- CA NNP
--Incen NNP
-+Incen NN
- ... :
- http://bit.ly/hB3WWp URL
- 
--USM PRP
--get VBP
--ready JJ
-+USM NNP
-+get VB
-+ready RB
- yours PRP$
--truly JJ
-+truly RB
- tonight NN
- at IN
--frat DT
-+frat NN
- house NN
--Hattiesburg NN
-+Hattiesburg NNP
- on IN
- the DT
--1s NN
-+1s CD
- n CC
--2s NNP
-+2s CD
- !! .
- 
--Monsters NNP
-+Monsters NNPS
- , ,
--tweet NN
--@defpenradio NN
-+tweet VB
-+@defpenradio USR
- and CC
--ask VBP
-+ask VB
- them PRP
- when WRB
- they PRP
-@@ -2402,39 +2402,39 @@
- : :
- LIL NNP
- WAYNE NNP
--/ NNP
-+/ CC
- NICKI NNP
- MINAJ NNP
- - :
- March NNP
- 30 CD
- - :
--SOLD NNP
--OUT.....'nuff NNP
-+SOLD VBN
-+OUT.....'nuff RP
- said VBD
- . .
- 
- Cowboys NNP
--vs CC
-+vs IN
- . .
- Lions NNP
- : :
--The NNP
-+The DT
- Jason NNP
- Garrett NNP
--era NNP
-+era NN
- got VBD
- off RP
- to TO
- a DT
- good JJ
--start VB
-+start NN
- last JJ
- week NN
- . .
- Now RB
- the DT
--Cowboys NN
-+Cowboys NNS
- will MD
- try VB
- to TO
-@@ -2444,8 +2444,8 @@
- ... :
- http://bit.ly/bSS914 URL
- 
--Hell NNP
--yes NNP
-+Hell UH
-+yes UH
- ! .
- RT RT
- @GeeSPOT_ USR
-@@ -2464,7 +2464,7 @@
- RT RT
- @JasonKingYahoo USR
- : :
--Eventful NNP
-+Eventful JJ
- morning NN
- for IN
- Oklahoma NNP
-@@ -2473,45 +2473,45 @@
- Darrell NNP
- Williams NNP
- . .
--Won NNP
--Big JJ
--12 IN
--Rookie NNP
-+Won VBD
-+Big NNP
-+12 NNP
-+Rookie NN
- of IN
- the DT
- Week NN
--Award NNP
-+Award NN
- - :
- and CC
- got VBD
--charged NN
-+charged VBN
- with IN
- f NN
- ... :
- 
--Good NNP
--start VB
-+Good JJ
-+start NN
- for IN
--sharks DT
-+sharks NNP
- tonight NN
- can MD
--only JJ
-+only RB
- get VB
--better RB
-+better JJR
- . .
--Played NN
-+Played VBD
- with IN
--short DT
-+short JJ
- bench NN
- tonight NN
- . .
--Thought NNP
-+Thought VBD
- Rocks NNP
- well RB
- in IN
- game NN
- early RB
--though NN
-+though IN
- until IN
- ' ''
- unseen NN
-@@ -2522,28 +2522,28 @@
- this DT
- week NN
- ive PRP
--realised NN
-+realised VBN
- what WP
- i PRP
--believe VB
-+believe VBP
- , ,
--picked NNP
--up IN
-+picked VBD
-+up RP
- my PRP$
- guitar NN
- , ,
- started VBD
--writing NN
-+writing VBG
- and CC
--sketching NN
-+sketching VBG
- again RB
- ... :
- things NNS
- are VBP
--beginning NN
-+beginning VBG
- to TO
- look VB
--up NN
-+up RP
- 
- @mfeige USR
- it PRP
-@@ -2551,9 +2551,9 @@
- on IN
- a DT
- Saturday NNP
--though NN
-+though RB
- . .
--So IN
-+So RB
- that DT
- 's VBZ
- a DT
-@@ -2561,10 +2561,10 @@
- . .
- 
- Pick VB
--up IN
-+up RP
- here RB
- . .
--Deliver NN
-+Deliver VB
- on IN
- Dayton NNP
- NJ NNP
-@@ -2575,14 +2575,14 @@
- Container NNP
- ) )
- 
--good JJ
--morning NN
--tweeps NN
-+good UH
-+morning UH
-+tweeps NNS
- . .
- have VB
--'ll PRP
-+'ll MD
- a DT
--fabulous NN
-+fabulous JJ
- day NN
- .... :
- 
-@@ -2595,43 +2595,43 @@
- gym NN
- now RB
- ! .
--Excited NN
-+Excited JJ
- for IN
- weekend NN
--plans NN
-+plans NNS
- ! .
- 
- @Exclusively_T USR
- it PRP
--came NN
-+came VBD
- on IN
- my PRP$
- pandora NNP
- today NN
--tho NN
-+tho RB
- loser NN
- so IN
- I PRP
--tweeted VBN
-+tweeted VBD
- it PRP
- , ,
- nobody NN
--stuntin NN
--yo UH
-+stuntin VBG
-+yo PRP$
- tweet NN
- 
- it PRP
- was VBD
--half DT
--past NN
-+half NN
-+past JJ
- 8 CD
- when WRB
- the DT
--drugs NN
--began NN
-+drugs NNS
-+began VBD
- to TO
- take VB
--hold VBP
-+hold NN
- .... :
- 
- I PRP
-@@ -2646,7 +2646,7 @@
- say VB
- " ''
- the DT
--shore NNP
-+shore NN
- was VBD
- on IN
- , ,
-@@ -2655,49 +2655,49 @@
- took VBD
- all DT
- day NN
--". .
-+". ''
- 
- last JJ
- day NN
- of IN
--sorting NN
--pope NN
-+sorting VBG
-+pope NNP
- visit NN
- to TO
--birmingham DT
-+birmingham NNP
- stuff NN
--out IN
-+out RP
- ..... :
- hope VBP
- it PRP
--goes NN
--ok UH
-+goes VBZ
-+ok JJ
- on IN
- sunday NNP
- !! .
- 
--Wow NNP
-+Wow UH
- , ,
- i PRP
- feel VBP
- so RB
- much RB
--better RB
-+better JJR
- after IN
--working NN
-+working VBG
- out RP
- :) UH
- so RB
--worth IN
-+worth JJ
- it PRP
- . .
- 
- gonna VBG
- watch VB
--500 CD
--days NNS
--of IN
--summer NN
-+500 NNP
-+days NNP
-+of NNP
-+summer NNP
- , ,
- and CC
- call VB
-@@ -2706,11 +2706,11 @@
- night NN
- :\ UH
- 
--Shower NNP
-+Shower NN
- time NN
- the DT
--flyin NN
--pilot IN
-+flyin NNP
-+pilot NNP
- I PRP
- was VBD
- at IN
-@@ -2720,58 +2720,58 @@
- n't RB
- have VB
- no DT
--hot NN
-+hot JJ
- water NN
--uggghh NN
-+uggghh UH
- 
- @Yeweezii USR
--Jst NN
--lock IN
-+Jst RB
-+lock VB
- her PRP
- outside IN
--4 CD
--d NN
--nite UH
-+4 IN
-+d DT
-+nite NN
- . .
- It PRP
--workz NN
--al NN
--d NN
-+workz VBZ
-+al DT
-+d DT
- time NN
- :-D UH
- 
- @ConorMc_Ginty USR
--GaGa NN
--played NN
-+GaGa NNP
-+played VBD
- here RB
- a DT
- few JJ
- weeks NNS
--back RB
-+back JJ
- . .
- She PRP
--spoke VBP
-+spoke VBD
- out RP
- against IN
--SB1070 DT
--during NN
-+SB1070 NNP
-+during IN
- the DT
- show NN
- . .
- God NNP
--bless NNP
-+bless VBZ
- her PRP
- for IN
- that DT
- . .
- 
--Got NN
-+Got VBD
- the DT
- stuff NN
- to TO
- make VB
- egg NN
--rolls NN
-+rolls NNS
- for IN
- work NN
- monday NNP
-@@ -2781,57 +2781,57 @@
- : :
- How WRB
- to TO
--Deal NN
-+Deal VB
- When WRB
--Your NNP
--Crush NNP
-+Your PRP$
-+Crush NN
- Is VBZ
--Taken NN
-+Taken VBN
- : :
- http://yhoo.it/aFG5Ue URL
- 
- RT RT
- @cstatus USR
- : :
--pet DT
-+pet NN
- peeve NN
- when WRB
--niggas PRP
-+niggas NNS
- do VBP
- n't RB
--tag JJ
--albums NN
-+tag VB
-+albums NNS
- right RB
- ... :
--lowercase NNP
--track NNP
--names NNP
-+lowercase JJ
-+track NN
-+names NNS
- and CC
- shit NN
- 
--ThAnK NNP
-+ThAnK VB
- gOd NNP
--ItS NNP
--fRiDaY NN
-+ItS PRP
-+fRiDaY NNP
- !! .
- 
- http://bit.ly/aTTQYq URL
- When WRB
--Pepsi NN
-+Pepsi NNP
- to TO
--ring NN
-+ring VB
- usually RB
--confirm NN
-+confirm VB
- to TO
--, .
--winning NN
-+, ,
-+winning VBG
- a DT
- Nokia NNP
- 5800 CD
- ? .
- 
--Cruisers NNP
--meet VB
-+Cruisers NNS
-+meet VBP
- at IN
- Norfolk NNP
- Mall NNP
-@@ -2844,19 +2844,19 @@
- . .
- 22 CD
- , ,
--4:30 PRP
-+4:30 CD
- to TO
- ??. .
--Contact NNP
-+Contact VB
- Doug NNP
- for IN
--more JJ
-+more RBR
- info NN
- . .
- http://www.cruisetillsonburg.com/ URL
- 
--hows NNP
--everyones NNP
-+hows WRB
-+everyones PRP$
- day NN
- goin VBG
- ? .
-@@ -2864,10 +2864,10 @@
- #NFL HT
- Week NN
- 2 CD
--picks NN
-+picks NNS
- blog NN
- is VBZ
--up RP
-+up RB
- on IN
- @The_Score USR
- website NN
-@@ -2878,7 +2878,7 @@
- think VBP
- it PRP
- 's VBZ
--better RB
-+better JJR
- to TO
- go VB
- to TO
-@@ -2893,8 +2893,8 @@
- School NN
- today NN
- . .
--HELL NN
--YEAH NN
-+HELL UH
-+YEAH UH
- http://tumblr.com/xt21gcptqr URL
- 
- @Kristi_Taylor USR
-@@ -2918,25 +2918,25 @@
- my PRP$
- Bcom NN
- class NN
--invited NN
-+invited VBD
- me PRP
- to TO
- an DT
--Evangelist NNP
--revival NNP
--mass NNP
-+Evangelist NN
-+revival NN
-+mass NN
- ... :
--FUCKING NN
-+FUCKING RB
+ has VBZ
+ has VBZ
+ has VBZ
+ hate VBP
+ hate VBP
  HATE VBP
- IT PRP
--WHEN NN
--THEY NN
--KNOW IN
--I'M DT
--PAGAN NN
-+WHEN WRB
-+THEY PRP
-+KNOW VBP
-+I'M PRP
-+PAGAN NNP
- AND CC
--INVITE NN
--ME NN
-+INVITE VBP
-+ME PRP
- . .
- ANGER NN
- . .
-@@ -2944,25 +2944,25 @@
- Jiaaah NNP
- .. :
- Ky NNP
--barang NNP
--aja NNP
--maen NNP
-+barang VBG
-+aja JJ
-+maen NN
- nitip NN
--".. .
--Hahaha NNP
-+".. O
-+Hahaha UH
- .. :
- Udh NNP
--jul NNP
-+jul NN
- .. :
- Galakin NNP
--aja NNP
-+aja UH
- .. :
- Wkwkwk NNP
- RT RT
- @riesranty USR
- : :
- @azkuro USR
--kak NN
-+kak JJ
- ajul NN
- , ,
- titip NNP
-@@ -2979,7 +2979,7 @@
- BA NNP
- 2910 CD
- and CC
--fly JJ
-+fly VBP
- to TO
- Barbados NNP
- on IN
-@@ -2988,9 +2988,9 @@
- @firecore USR
+ have VB
+ have VB
+ Have VB
+ Have VB
+ have VB
+ have VB
+ have VBP
+ have VBP
+ have VBP
+ have VBP
+ have VBP
+ having VBG
+ having VBG
+ he PRP
+ He PRP
+ He PRP
+ he PRP
+ he PRP
+ he PRP
+ he PRP
+ He PRP
+ held VBD
+ help VB
+ help VB
+ hemmed VBD
+ her PRP
+ her PRP
+ her PRP$
+ here RB
+ here RB
+ high NN
+ Hilfiger NNP
+ him PRP
+ him PRP
+ hockey NN
+ hold VBP
+ home NN
+ home NN
+ home NN
+ Home NN
+ homework NN
+ hope VBP
+ hope VBP
+ hope VBP
+ house NN
+ how WRB
+ How WRB
+ http://bit.ly/9nTWQw URL
+ http://bit.ly/agB9iL URL
+ http://bit.ly/aTTQYq URL
+ http://bit.ly/bSS914 URL
+ http://bit.ly/cNOeyS URL
+ http://bit.ly/gw8oSb URL
+ http://bit.ly/h4wiIs URL
+ http://bit.ly/hB3WWp URL
+ http://bit.ly/hgMKjS URL
+ http://dlvr.it/5Rh4w URL
+ http://f.ast.ly/DfxRf URL
+ http://hjv.dw.tc/Q0t2R URL
+ http://nctphoenix.com/showtimes.html URL
+ http://t.co/JfGm0uH URL
+ http://tinyurl.com/27r2pdz URL
+ http://tinyurl.com/28hd9fu URL
+ http://tumblr.com/xmciuda0t URL
+ http://tumblr.com/xny1gcptdg URL
+ http://tumblr.com/xt21gcptqr URL
+ http://twitpic.com/2pdvtr URL
+ http://twitpic.com/38c0c6 URL
  http://twitpic.com/3xgdng URL
- - :
--sign IN
-+sign VB
- me PRP
--up NN
-+up RP
- , ,
+ http://www.cruisetillsonburg.com/ URL
+ http://www.youtube.com/watch?v=8zJKZJ7TGlU URL
+ http://yhoo.it/aFG5Ue URL
+ I PRP
+ I PRP
+ I PRP
+ I PRP
+ I PRP
+ i PRP
+ I PRP
+ I PRP
+ I PRP
+ I PRP
+ I PRP
+ I PRP
+ I PRP
+ I PRP
+ I PRP
+ I PRP
+ i PRP
+ I PRP
+ I PRP
+ I PRP
+ I PRP
+ i PRP
+ i PRP
+ I PRP
+ I PRP
+ I PRP
+ I PRP
+ i PRP
+ I PRP
+ i PRP
+ I PRP
+ I PRP
+ I PRP
+ I PRP
+ I PRP
+ I PRP
+ I PRP
+ I PRP
+ I PRP
+ I PRP
+ i PRP
+ I PRP
+ I PRP
+ I PRP
+ I PRP
+ i PRP
+ I PRP
+ I PRP
+ i PRP
+ I PRP
+ if IN
+ im PRP
+ image NN
+ in IN
+ in IN
+ in IN
+ in IN
+ in IN
+ in IN
+ in IN
+ in IN
+ in IN
+ in IN
+ in IN
+ in IN
+ in IN
+ in IN
+ info NN
+ interest NN
+ interesting JJ
+ Into IN
+ intrest NN
+ is VBZ
+ is VBZ
+ is VBZ
+ is VBZ
+ is VBZ
+ is VBZ
+ is VBZ
+ is VBZ
+ is VBZ
+ is VBZ
+ is VBZ
+ is VBZ
+ is VBZ
+ is VBZ
+ is VBZ
+ is VBZ
+ is VBZ
+ Is VBZ
+ is VBZ
+ it PRP
+ it PRP
+ it PRP
+ It PRP
+ It PRP
+ it PRP
+ it PRP
+ it PRP
+ it PRP
+ It PRP
+ it PRP
+ It PRP
+ it PRP
+ it PRP
+ It PRP
+ It PRP
+ it PRP
+ it PRP
+ it PRP
+ it PRP
+ it PRP
+ it PRP
+ it PRP
+ it PRP
+ it PRP
+ it PRP
+ It PRP
+ it PRP
+ IT PRP
+ its PRP
+ ive PRP
+ JAMAICA NNP
+ Jason NNP
+ Jiaaah NNP
+ judge NN
  just RB
- did VBD
+ Just RB
+ just RB
+ km NN
+ know VBP
+ Korean NNP
+ Ky NNP
+ lab NN
+ lady NN
+ last JJ
+ last JJ
+ last JJ
+ last JJ
+ last JJ
+ last JJ
+ last JJ
+ last JJ
+ later RB
+ let VB
+ let VB
+ life NN
+ life NN
+ life NN
+ life NN
+ like IN
+ like IN
+ like IN
+ like IN
+ like IN
+ LIL NNP
+ Lindsay NNP
+ Linkin NNP
+ Lions NNP
+ little JJ
+ Lohan NNP
+ lol UH
+ Lol UH
+ lol UH
+ lol UH
+ lol UH
+ look VB
+ look VB
+ look VB
+ looking VBG
+ loser NN
+ love VB
+ low JJ
+ made VBD
+ mainland NN
+ make VB
+ make VB
+ makes VBZ
+ Mall NNP
+ man UH
+ March NNP
+ may MD
+ Maybe RB
+ me PRP
+ me PRP
+ me PRP
+ me PRP
+ me PRP
+ me PRP
+ mean VB
+ Metallurgy NNP
+ MetroPCS NNP
+ might MD
+ might MD
+ might MD
+ might MD
+ Mike NNP
+ MINAJ NNP
+ mom NN
+ mom NN
+ Monday NNP
+ monday NNP
+ MONTCLAIR NNP
+ month NN
+ morning NN
+ morning NN
+ morning NN
+ Morning UH
+ much RB
+ much RB
+ music NN
+ my PRP$
+ my PRP$
+ my PRP$
+ my PRP$
+ My PRP$
+ my PRP$
+ my PRP$
+ my PRP$
+ my PRP$
+ MY PRP$
+ my PRP$
+ my PRP$
+ my PRP$
+ My PRP$
+ my PRP$
+ my PRP$
+ my PRP$
+ my PRP$
+ my PRP$
+ my PRP$
+ my PRP$
+ n CC
+ n CC
+ n CC
+ n't RB
+ n't RB
+ n't RB
+ n't RB
+ n't RB
+ n't RB
+ n't RB
+ n't RB
+ n't RB
+ n't RB
+ n't RB
+ n't RB
+ n't RB
+ n't RB
+ n't RB
+ n't RB
+ n't RB
+ n't RB
+ N.J. NNP
+ need VBP
+ need VBP
+ never RB
+ never RB
+ new JJ
+ New NNP
+ next JJ
+ NHL NNP
+ nice JJ
+ nice JJ
+ NICKI NNP
+ Nigel NNP
+ night NN
+ night NN
+ night NN
+ night NN
+ night NN
+ night NN
+ Night NNP
+ nitip NN
+ NJ NNP
+ no DT
+ no DT
+ no DT
+ no DT
+ NO UH
+ nobody NN
+ Nokia NNP
+ Norfolk NNP
+ Not RB
+ not RB
+ not RB
+ Not RB
+ not RB
+ November NNP
+ now RB
+ now RB
+ now RB
+ now RB
+ Now RB
+ now RB
+ ntake VB
+ NZST) NNP
+ O'Donnell NNP
+ of IN
+ of IN
+ of IN
+ of IN
+ of IN
+ of IN
+ of IN
+ of IN
+ of IN
+ of IN
+ of IN
+ of IN
+ of IN
+ of IN
+ off RP
+ off RP
+ ok UH
+ ok UH
+ Oklahoma NNP
+ old JJ
+ OMG UH
+ on IN
+ on IN
+ on IN
+ on IN
+ on IN
+ on IN
+ on IN
+ on IN
+ on IN
+ on IN
+ on IN
+ on IN
+ on IN
+ on IN
+ on IN
+ on IN
+ on IN
+ on IN
+ on IN
+ on IN
+ on IN
+ One CD
+ one NN
+ one NN
+ ones NN
+ or CC
+ or CC
+ our PRP$
+ our PRP$
+ our PRP$
+ our PRP$
+ our PRP$
+ out RP
+ out RP
+ out RP
+ outside IN
+ outside IN
+ Packers NNP
+ pandora NNP
+ pants NNS
+ parents NNS
+ Park NNP
+ Part NN
+ party NN
+ Patty NNP
+ peeve NN
+ people NNS
+ people NNS
+ people NNS
+ people NNS
+ people NNS
+ people NNS
+ Phil NNP
+ phone NN
+ Pick VB
+ plot NN
+ program NN
+ put VBP
+ Q__AND__A NN
+ QUAKE NN
+ rampage NN
+ reading VBG
+ real JJ
+ realize VBP
+ Really RB
+ really RB
+ reason NN
+ record NN
+ relationship NN
+ remember VB
+ Rep NNP
+ right RB
+ right RB
+ Rocks NNP
+ rodriguez NNP
+ roller NN
+ RT RT
+ RT RT
+ RT RT
+ RT RT
+ RT RT
+ RT RT
+ RT RT
+ RT RT
+ RT RT
+ RT RT
+ RT RT
+ RT RT
+ RT RT
+ RT RT
+ RT RT
+ RT RT
+ RT RT
+ RT RT
+ said VBD
+ Saints NNP
+ sam NNP
+ same JJ
+ sarah NNP
+ Saturday NNP
+ Saturday NNP
+ Saturday NNP
+ Saturday NNP
+ say VB
+ say VB
+ say VBP
+ school NN
+ School NN
+ Seahawks NNP
+ see VB
+ see VB
+ seems VBZ
+ seen VBN
+ she PRP
+ she PRP
+ She PRP
+ shirt NN
+ shit NN
+ shit NN
+ shortening NN
+ shorts NNS
+ should MD
+ shoutout NN
+ show NN
+ show NN
+ show NN
+ sleep VB
+ so IN
+ so IN
+ so RB
+ so RB
+ So RB
+ so RB
+ so RB
+ so RB
+ so RB
+ so RB
+ software NN
+ some DT
+ some DT
+ some DT
+ some DT
+ someone NN
+ someone NN
+ something NN
+ Something NN
+ Something NN
+ sorry JJ
+ St NNP
+ started VBD
+ Stephen NNP
+ stick VB
+ still RB
+ still RB
+ studio NN
+ stuff NN
+ stuff NN
+ Sunday NNP
+ sunday NNP
+ Surita NNP
+ swishers NNP
+ take VB
+ Tech NNP
+ tee NN
+ Temecula NNP
+ Temecula NNP
+ test NN
+ Thanks NNS
+ that DT
+ that DT
+ that DT
+ that DT
+ that DT
+ that IN
+ that IN
+ that IN
+ that IN
+ that IN
+ that IN
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ the DT
+ them PRP
+ them PRP
+ then IN
+ there PRP$
+ there RB
+ there RB
+ these DT
+ they PRP
+ they PRP
+ They PRP
+ they PRP
+ things NNS
+ things NNS
+ think VBP
+ think VBP
+ this DT
+ this DT
+ this DT
+ This DT
+ this DT
+ through IN
+ Thursday NNP
+ time NN
+ time NN
+ time NN
+ time NN
+ time NN
+ time NN
+ time NN
+ time NN
+ time NN
+ Time NN
+ time NN
+ time NN
+ titip NNP
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ to TO
+ today NN
+ today NN
+ today NN
+ today NN
+ today NN
+ Today NN
+ today NN
+ TODAY NN
+ today NN
+ Today NN
+ today NN
+ today NN
+ today NN
+ together RB
+ tomorrow NN
+ tomorrow NN
+ Tomorrow NN
+ tomorrow NN
+ tomorrow NN
+ tomorrow NN
+ tomorrow NN
+ tonight NN
+ tonight NN
+ tonight NN
+ tonight NN
+ TONIGHT NN
+ tonight NN
+ tonight NN
+ tonight NN
+ tonight NN
+ tonight NN
+ too RB
+ too RB
+ too RB
+ took VBD
+ took VBD
+ Tour NNP
+ Town NNP
+ Try VB
+ try VB
+ trying VBG
+ tweet NN
+ tweeting VBG
+ two CD
+ u PRP
+ Udh NNP
+ under IN
+ unseen NN
+ until IN
+ up RP
+ upgrade VB
+ ur PRP$
+ URL NN
+ Ustream NNP
+ usually RB
+ venom NN
+ visit NN
+ want VBP
+ War NNP
+ was VBD
+ was VBD
+ was VBD
+ was VBD
+ was VBD
+ was VBD
+ was VBD
+ was VBD
+ watch VB
+ water NN
+ WAYNE NNP
+ we PRP
+ we PRP
+ We PRP
+ wearing VBG
+ weather NN
+ website NN
+ week NN
+ week NN
+ week NN
+ week NN
+ week NN
+ week NN
+ week NN
+ week NN
+ Week NN
+ week NN
+ Week NN
+ weekend NN
+ weeks NNS
+ weeks NNS
+ well RB
+ well RB
+ Well UH
+ went VBD
+ what WP
+ what WP
+ what WP
+ when WRB
+ when WRB
+ When WRB
+ when WRB
+ when WRB
+ when WRB
+ when WRB
+ when WRB
+ when WRB
+ when WRB
+ when WRB
+ when WRB
+ when WRB
+ When WRB
+ when WRB
+ When WRB
+ where WRB
+ which WDT
+ while NN
+ wife NN
+ Wild NNP
+ will MD
+ will MD
+ will MD
+ will MD
+ will MD
+ will MD
+ will MD
+ Williams NNP
+ with IN
+ with IN
+ with IN
+ With IN
+ With IN
+ with IN
+ with IN
+ with IN
+ with IN
+ with IN
+ with IN
+ with IN
+ within IN
+ without IN
+ Wkwkwk NNP
+ wo MD
+ work NN
+ work NN
+ work NN
+ world NN
+ worst JJS
+ would MD
+ Wrawby NNP
+ xD UH
+ year NN
+ year NN
+ year NN
+ years NNS
+ years NNS
+ years NNS
+ yet CC
+ yet CC
+ Yli NNP
+ yo UH
+ you PRP
+ you PRP
+ you PRP
+ you PRP
+ you PRP
+ you PRP
+ you PRP
+ You PRP
+ you PRP
+ your PRP
+ your PRP$
+ your PRP$
+ your PRP$
+ yours PRP$
++!" .
++". ''
++".. O
++&lt; CC
++'ll MD
++'ll MD
++'s NNP
++'s NNP
++'s POS
++'s POS
++'s PRP
++( (
++( (
++) )
++)) UH
++*DROOLS* UH
+++ SYM
++++ ../dev.out	2015-12-07 20:46:31.000000000 +0800
++, ,
++, ,
++, ,
++- UH
++- UH
++-Who WP
++. UH
++. URL
++.. :
++.. :
++/ CC
++09 CD
++1 LS
++10:03 CD
++12 NNP
++1s CD
++2 TO
++2 TO
++2011 CD
++2011 CD
++2011 CD
++2s CD
++35G CD
++4 IN
++4.5 CD
++4:30 CD
++4th CD
++500 NNP
++7 CD
++980-333-3923 CD
++=) UH
++=/ UH
++=D UH
++@bobbyboutit USR
++@defpenradio USR
++@lizwoodring USR
++@owlcity USR
++@SILVRSCREENSTAR USR
++@thecodysimpson USR
++@xHangmanx USR
++@YnYrTheOne USR
++accurate JJ
++adn CC
++Advice NN
++after* RB
++afternoon UH
++Aggressive JJ
++ago RB
++ahhhh UH
++aja JJ
++aja UH
++al DT
++albums NNS
++all DT
++all DT
++all DT
++all DT
++allegedly RB
++almost RB
++am NN
++America's... NNP
++among IN
++amusing JJ
++And CC
++Annoying JJ
++Antipsychotic JJ
++anxious JJ
++as RB
++ASAP RB
++ASAP RB
++Ash NNP
++ask VB
++ass NN
++Award NN
++away RB
++away RB
++away RB
++B VB
++back JJ
++BACK RB
++Bacon NN
++banned VBN
++barang VBG
++beacuse IN
++because IN
++Bed NN
++been VBN
++before RB
++before RB
++began VBD
++beginning VBG
++beginning VBG
++being VBG
++BELIEBER NNP
++believe VBP
++Benefits NNS
++bestfriends NNS
++bet VBP
++better JJR
++better JJR
++better JJR
++better MD
++Betting VBG
++between IN
++Big NNP
++birmingham NNP
++BlackBerry NNP
++bless VBZ
++Braun NNP
++bring VB
++brittany NNP
++brought VBN
++Buch NNP
++call VB
++call VBP
++came VBD
++care VBP
++causes VBZ
++cereal NN
++charged VBN
++CHILLIN VBG
++City NN
++classified VBN
++Cleaners NNP
++close JJ
++commit VBZ
++complains VBZ
++confirm VB
++connected VBD
++Contact VB
++cookies NNS
++covers NNS
++Cowboys NNS
++crap UH
++crappy JJ
++criticize VB
++Cruisers NNS
++Crush NN
++customer NN
++cutting VBG
++d DT
++d DT
++dalam VB
++damn UH
++Day NN
++days NNP
++Deal VB
++defendi VBG
++Deliver VB
++desert NN
++design VB
++didnt VBD
++Director NN
++disheveled JJ
++do VB
++do VB
++do VBP
++do VBP
++do VBP
++do VBP
++DO VBP
++Dointhemost URL
++donated VBD
++doodles NNS
++double JJ
++draw VB
++drivers NNS
++Driving VBG
++driving VBG
++driving VBG
++DRIVING VBG
++droppin VBG
++drugs NNS
++dude NN
++during IN
++during IN
++dweller NN
++EARPHONES NNS
++Eats NNPS
++emails NNS
++Emporer NNP
++Ending VBG
++Engineers NNPS
++enough JJ
++entering VBG
++era NN
++Evangelist NN
++Eventful JJ
++EVER RB
++Every DT
++Everyone NN
++everyones PRP$
++evry JJ
++exact JJ
++Excited JJ
++exclusive JJ
++excruciatingly RB
++Excuses NNS
++Excuses NNS
++Excuses NNS
++experienced VBN
++Fabulous JJ
++fabulous JJ
++faces NNS
++failed VBD
++fakin VBG
++family NN
++fantastic JJ
++Far RB
++FASTER JJR
++fckn JJ
++features VBZ
++fellow JJ
++fellow JJ
++felt VBD
++fetch JJ
++film NN
++finish VB
++fitted VBD
++fly VBP
++flyin NNP
++Football NN
++football NN
++forever RB
++forgave VBP
++frat NN
++freaking JJ
++friday NN
++fRiDaY NNP
++FROM IN
++FUCKING RB
++GaGa NNP
++Game JJ
++Game NN
++Get VB
++get VB
++get VBP
++gettin VBG
++gifs NNS
++goes VBZ
++GOO VB
++Good JJ
++Good JJ
++Good JJ
++Good JJ
++good UH
++Good UH
++good UH
++Got VBD
++Gotta VBP
++Great JJ
++Great JJ
++greatest JJS
++had VBN
++Hahaha UH
++Half JJ
++half NN
++happier JJR
++Hattiesburg NNP
++HAVE VB
++hawt JJ
++Hell UH
++HELL UH
++her PRP$
++Her PRP$
++here IN
++hold NN
++Holy UH
++hoodies NNS
++Hopefully RB
++hot JJ
++hows WRB
++hp6 NNP
++husband NN
++I NNP
++I'M PRP
++i'mgoing VBG
++id PRP
++importing JJ
++In IN
++in NNP
++in RP
++Incen NN
++incentives NNS
++Incentives NNS
++Intellectual NNP
++intended) VBD
++investigating VBG
++INVITE VBP
++invited VBD
++iPhone NN
++issues NNS
++it PRP
++ItS PRP
++jeans NNS
++Jeez UH
++join VB
++JPN NNP
++Jst RB
++judge VB
++jul NN
++JUST RB
++justt RB
++kak JJ
++Kay NNP
++keep VB
++Kids NNS
++kidz NNS
++KINDA RB
++KNOW VBP
++known VBN
++lame JJ
++LANDED VBD
++last RB
++later JJ
++laughed VBD
++Launches VBZ
++league NN
++leave VB
++lest VBP
++lets VBP
++likely RB
++lil JJ
++Lingerie NN
++links NNS
++liquids NNP
++listens VBZ
++live RB
++live VB
++living NN
++lock VB
++LOL UH
++LOL UH
++londonland USR
++long RB
++long RB
++looked VBN
++lost VBN
++loved VBD
++lower JJR
++lowercase JJ
++Mack NNP
++Made NNP
++maen NN
++Mag NN
++main JJ
++Man NN
++man NN
++many JJ
++marched VBD
++mariaelena NNP
++mass NN
++masturbators NNS
++May MD
++ME PRP
++mean JJ
++Meds NNS
++mee PRP
++meet VBP
++Mining NNP
++miss VB
++MISSED VBD
++Mom NN
++Monsters NNPS
++months NNS
++Mood NN
++more RBR
++more RBR
++morning UH
++Mortgage NN
++Most RBS
++move VB
++movies NNS
++murder NN
++Must MD
++my PRP
++my$ PRP$
++N'T RB
++N'T RB
++names NNS
++Need VB
++New JJ
++NEW JJ
++next JJ
++niggas NNS
++nite NN
++no UH
++noting VBG
++of NNP
++ok JJ
++omg UH
++on RP
++one CD
++one CD
++one CD
++only RB
++order VB
++out JJ
++out RP
++out RP
++out RP
++OUT.....'nuff RP
++PAGAN NNP
++painful JJ
++Party NN
++pass VB
++past JJ
++past JJ
++Pepsi NNP
++persist VBP
++pet NN
++PG&lt;E NNP
++picked VBD
++Picks NNS
++picks NNS
++pictures NNS
++pilot NNP
++plans NNS
++play VB
++play VB
++Played VBD
++played VBD
++pleasant JJ
++please VB
++pope NNP
++Possibly RB
++post VB
++ppl NNS
++pretty RB
++problems NNS
++proving VBG
++pull VB
++pushy JJ
++put VBP
++Quick RB
++R VBP
++rap-rock'. NN
++rates NNS
++read VBD
++ready RB
++real NN
++realised VBN
++rehab NN
++releasing VBG
++reserved VBN
++RESPECT VB
++respond VB
++responded VBD
++responds VBZ
++RETWEET VB
++revival NN
++ride NN
++ring VB
++rings NNS
++rivalries NNS
++role VB
++rolls NNS
++Rookie NN
++round RB
++running VBG
++saves VBZ
++say VB
++Saying VBG
++SB1070 NNP
++scan VB
++SCM NNP
++Scooter NNP
++SD2 NNP
++sdill RB
++selfs PRP
++send VB
++Sept NNP
++Seriously UH
++service NN
++sharing VBG
++sharks NNP
++shit UH
++shocked JJ
++shore NN
++short JJ
++short JJ
++short JJ
++Shout VB
++shouts NNS
++Shower NN
++showin VBG
++shows VBZ
++shut VB
++sign VB
++since IN
++sketching VBG
++SKILLS NNS
++Sleep VB
++Small JJ
++smdh UH
++SMH UH
++so IN
++So RB
++so RB
++So RB
++so UH
++Society NNP
++sold VBD
++SOLD VBN
++Someone NN
++son NN
++sorting VBG
++soup NN
++south-west JJ
++special JJ
++Specials NNS
++spent VBD
++spent VBP
++spinning VBG
++spit VBP
++spoke VBD
++spy NN
++start NN
++start NN
++starting VBG
++state NN
++Steelers NNP
++steps NNS
++steve NNP
++STILL RB
++stopped VBN
++students NNS
++stuntin VBG
++sum DT
++summer NNP
++Sun NNP
++sunday NN
++survive VB
++sweepstakes NNS
++T NN
++tag VB
++taken VBN
++Taken VBN
++TALKING VBG
++tanya NNP
++tapping VBG
++taste VB
++Tasty JJ
++Ten CD
++ten CD
++terrible JJ
++tex VB
++tha DT
++ThAnK VB
++thanks NNS
++that DT
++that DT
++that IN
++that WDT
++that WDT
++that WDT
++thats WDT
++The DT
++The DT
++The DT
++The DT
++The DT
++there EX
++There UH
++theres EX
++THEY PRP
++they PRP$
++think VB
++Think VBP
++tho RB
++thou( RB
++though IN
++though RB
++though RB
++Thought VBD
++Thousands NNS
++tht WDT
++to'. TO
++Told VBD
++Tonight NN
++Tonight NN
++Tonight RB
++Tour NN
++track NN
++trouble NN
++truly RB
++try VBP
++Trying VBG
++Tryna VBG
++ttys UH
++tunes NNS
++tweeps NNS
++tweet VB
++tweet VBZ
++tweeted VBD
++twitter NN
++uggghh UH
++Ugh UH
++Ugh UH
++unknown JJ
++untag VBP
++up RB
++up RP
++up RP
++up RP
++up RP
++up RP
++up RP
++up RP
++usb NN
++USM NNP
++v RB
++very RB
++vids NNS
++vs IN
++vs IN
++vs IN
++wanting VBG
++Wasnt VBD
++wass VBD
++wasted VBN
++Way NN
++WB NNP
++wear VBP
++WELL UH
++WHEN WRB
++While IN
++white JJ
++whom WP
++WILDCATS NNP
++winning VBG
++without IN
++WO MD
++women NNS
++Won VBD
++wonderful JJ
++work VB
++work VB
++working VBG
++working VBG
++works VBZ
++workz VBZ
++worry VB
++worth JJ
++worth JJ
++Wow UH
++writing VBG
++written VBN
++wrote VBD
++wuz VBD
++XD UH
++xDlmfao UH
++y'all PRP
++YAH PRP
++YEAH UH
++yes UH
++Yesss UH
++yo PRP$
++yo PRP$
++your POS
++your PRP$
++Your PRP$
++yrs NNS
++~December*18th~ NNP
+-!" :
+-". .
+-".. .
+-&lt; UH
+-'ll PRP
+-'ll PRP
+-'s POS
+-'s POS
+-'s VBZ
+-'s VBZ
+-'s VBZ
+-( UH
+-( UH
+-) UH
+-)) .
+-*DROOLS* .
+-+ .
+-, .
+-, .
+-, .
+-- :
+-- :
+--- p5_viterbi_test.txt	2015-12-08 02:27:17.000000000 +0800
+--Who NN
+-. .
+-. URL
+-.. .
+-.. .
+-/ NNP
+-09 NNP
+-1 CD
+-10:03 PRP
+-12 IN
+-1s NN
+-2 CD
+-2 CD
+-2011 NNP
+-2011 UH
+-2011 UH
+-2s NNP
+-35G NN
+-4 CD
+-4.5 NN
+-4:30 PRP
+-4th UH
+-500 CD
+-7 UH
+-980-333-3923 NN
+-=) .
+-=/ URL
+-=D .
+-@bobbyboutit NN
+-@defpenradio NN
+-@lizwoodring NN
+-@owlcity NN
+-@SILVRSCREENSTAR NN
+-@thecodysimpson NN
+-@xHangmanx NN
+-@YnYrTheOne NN
+-accurate NN
+-adn IN
+-Advice NNP
+-after* .
+-afternoon NN
+-Aggressive NNP
+-ago IN
+-ahhhh PRP
+-aja NNP
+-aja NNP
+-al NN
+-albums NN
+-all IN
+-all IN
+-all IN
+-all IN
+-allegedly NNP
+-almost NNP
+-am VBP
+-America's... :
+-among NN
+-amusing NN
+-And NNP
+-Annoying NN
+-Antipsychotic NNP
+-anxious DT
+-as IN
+-ASAP NN
+-ASAP NN
+-Ash NN
+-ask VBP
+-ass JJ
+-Award NNP
+-away IN
+-away NN
+-away NN
+-B NN
+-BACK NNP
+-back RB
+-Bacon NNP
+-banned NN
+-barang NNP
+-beacuse NN
+-because VB
+-Bed NNP
+-been VBP
+-before IN
+-before IN
+-began NN
+-beginning NN
+-beginning NN
+-being NN
+-BELIEBER NN
+-believe VB
+-Benefits NNP
+-bestfriends NN
+-bet NN
+-better RB
+-better RB
+-better RB
+-better RB
+-Betting NNP
+-between NN
+-Big JJ
+-birmingham DT
+-BlackBerry NN
+-bless NNP
+-Braun NN
+-bring VBG
+-brittany NN
+-brought NN
+-Buch PRP
+-call NN
+-call NN
+-came NN
+-care NN
+-causes NN
+-cereal NNP
+-charged NN
+-CHILLIN RT
+-City NNP
+-classified NN
+-Cleaners NN
+-close NN
+-commit NN
+-complains NN
+-confirm NN
+-connected NN
+-Contact NNP
+-cookies NN
+-covers NN
+-Cowboys NN
+-crap NNP
+-crappy NN
+-criticize NNP
+-Cruisers NNP
+-Crush NNP
+-customer DT
+-cutting NN
+-d NN
+-d NN
+-dalam NN
+-damn NNP
+-Day NNP
+-days NNS
+-Deal NN
+-defendi NN
+-Deliver NN
+-desert NNP
+-design NN
+-didnt RB
+-Director NNP
+-disheveled NN
+-do VB
+-do VB
+-do VB
+-do VB
+-DO VB
+-do VBP
+-do VBP
+-Dointhemost NNP
+-donated NN
+-doodles NN
+-double NN
+-draw DT
+-drivers NNP
+-Driving NN
+-driving NN
+-DRIVING NN
+-driving NNP
+-droppin NN
+-drugs NN
+-dude NNP
+-during NN
+-during NN
+-dweller NNP
+-EARPHONES NN
+-Eats NNP
+-emails DT
+-Emporer NN
+-Ending NN
+-Engineers NNP
+-enough RB
+-entering NN
+-era NNP
+-Evangelist NNP
+-Eventful NNP
+-EVER NN
+-Every NNP
+-Everyone NNP
+-everyones NNP
+-evry NN
+-exact NNP
+-Excited NN
+-exclusive NN
+-excruciatingly NNP
+-Excuses NNP
+-Excuses NNP
+-Excuses NNP
+-experienced NN
+-fabulous NN
+-Fabulous NNP
+-faces NN
+-failed NNP
+-fakin IN
+-family NNP
+-fantastic NN
+-Far NNP
+-FASTER NN
+-fckn NNP
+-features NN
+-fellow NN
+-fellow NNP
+-felt NN
+-fetch NN
+-film NNP
+-finish IN
+-fitted NN
+-fly JJ
+-flyin NN
+-Football NNP
+-football NNP
+-forever NN
+-forgave IN
+-frat DT
+-freaking NN
+-fRiDaY NN
+-friday NNP
+-FROM NNP
+-FUCKING NN
+-GaGa NN
+-Game NN
+-Game NNP
+-get VB
+-Get VBP
+-get VBP
+-gettin DT
+-gifs NNP
+-goes NN
+-GOO NN
+-good JJ
+-good JJ
+-Good NNP
+-Good NNP
+-Good NNP
+-Good NNP
+-Good NNP
+-Got NN
+-Gotta NNP
+-Great NN
+-Great NN
+-greatest NN
+-had VBD
+-Hahaha NNP
+-half DT
+-Half NNP
+-happier NN
+-Hattiesburg NN
+-HAVE IN
+-hawt NNP
+-HELL NN
+-Hell NNP
+-Her NNP
+-her PRP
+-here RB
+-hold VBP
+-Holy NNP
+-hoodies NN
+-Hopefully NNP
+-hot NN
+-hows NNP
+-hp6 NN
+-husband NNP
+-I PRP
+-I'M DT
+-i'mgoing NN
+-id RB
+-importing NN
+-in IN
+-in IN
+-In NNP
+-Incen NNP
+-incentives NN
+-Incentives NN
+-Intellectual NN
+-intended) NN
+-investigating NN
+-INVITE NN
+-invited NN
+-iPhone PRP
+-issues NN
+-it PRP
+-ItS NNP
+-jeans NN
+-Jeez NN
+-join NN
+-JPN NN
+-Jst NN
+-judge IN
+-jul NNP
+-JUST NNP
+-justt NN
+-kak NN
+-Kay NN
+-keep IN
+-Kids NNP
+-kidz RB
+-KINDA DT
+-KNOW IN
+-known JJ
+-lame NN
+-LANDED NNP
+-last JJ
+-later RB
+-laughed NN
+-Launches NNP
+-league NNP
+-leave NN
+-lest NN
+-lets VBZ
+-likely NNP
+-lil NN
+-Lingerie NNP
+-links NN
+-liquids DT
+-listens NNP
+-live VBP
+-live VBP
+-living VBG
+-lock IN
+-LOL NN
+-LOL NN
+-londonland IN
+-long JJ
+-long JJ
+-looked NN
+-lost VBD
+-loved NN
+-lower NN
+-lowercase NNP
+-Mack NN
+-Made VBD
+-maen NNP
+-Mag NNP
+-main NN
+-Man UH
+-man UH
+-many NNS
+-marched NN
+-mariaelena NN
+-mass NNP
+-masturbators NN
+-May NNP
+-ME NN
+-mean VBP
+-Meds NNP
+-mee NN
+-meet VB
+-Mining NN
+-miss VBP
+-MISSED JJ
+-Mom PRP
+-Monsters NNP
+-months NNP
+-Mood NNP
+-more JJ
+-more JJ
+-morning NN
+-Mortgage NNP
+-Most JJS
+-move VBP
+-movies NN
+-murder DT
+-Must PRP
+-my PRP$
+-my$ NN
+-N'T DT
+-N'T NN
+-names NNP
+-Need NNP
+-NEW NN
+-New NNP
+-next IN
+-niggas PRP
+-nite UH
+-no DT
+-noting NN
+-of IN
+-ok UH
+-omg NN
+-on IN
+-one NN
+-one NN
+-one NN
+-only JJ
+-order IN
+-out IN
+-out IN
+-out IN
+-out RP
+-OUT.....'nuff NNP
+-PAGAN NN
+-painful NN
+-Party NNP
+-pass NN
+-past NN
+-past NN
+-Pepsi NN
+-persist NNP
+-pet DT
+-PG&lt;E DT
+-picked NNP
+-picks NN
+-Picks NNP
+-pictures NN
+-pilot IN
+-plans NN
+-play NN
+-play NN
+-Played NN
+-played NN
+-pleasant NN
+-please UH
+-pope NN
+-Possibly NNP
+-post NN
+-ppl IN
+-pretty NN
+-problems NN
+-proving NN
+-pull VBP
+-pushy NN
+-put VBN
+-Quick NNP
+-R NN
+-rap-rock'. IN
+-rates NN
+-read NN
+-ready JJ
+-real JJ
+-realised NN
+-rehab PRP
+-releasing NN
+-reserved NN
+-RESPECT NNP
+-respond NN
+-responded NN
+-responds NN
+-RETWEET NN
+-revival NNP
+-ride IN
+-ring NN
+-rings NNP
+-rivalries NNP
+-role DT
+-rolls NN
+-Rookie NNP
+-round NN
+-running NN
+-saves NN
+-say VBP
+-Saying NN
+-SB1070 DT
+-scan IN
+-SCM NN
+-Scooter NN
+-SD2 NN
+-sdill NN
+-selfs NN
+-send UH
+-Sept NN
+-Seriously NNP
+-service IN
+-sharing NN
+-sharks DT
+-shit JJ
+-shocked NN
+-shore NNP
+-short DT
+-short NN
+-short NN
+-Shout NNP
+-shouts NN
+-Shower NNP
+-showin NN
+-shows NNS
+-shut NNP
+-sign IN
+-since NN
+-sketching NN
+-SKILLS NN
+-Sleep NNP
+-Small NNP
+-smdh NN
+-SMH NNP
+-so CC
+-So IN
+-so RB
+-So UH
+-so UH
+-Society NN
+-sold IN
+-SOLD NNP
+-Someone NNP
+-son UH
+-sorting NN
+-soup IN
+-south-west NN
+-special NN
+-Specials NN
+-spent IN
+-spent VBP
+-spinning NN
+-spit NN
+-spoke VBP
+-spy NNP
+-start VB
+-start VB
+-starting NN
+-state DT
+-Steelers NN
+-steps NN
+-steve NN
+-STILL VB
+-stopped JJ
+-students NN
+-stuntin NN
+-sum NNP
+-summer NN
+-Sun NN
+-sunday NNP
+-survive NN
+-sweepstakes NN
+-T NNP
+-tag JJ
+-taken DT
+-Taken NN
+-TALKING NN
+-tanya PRP
+-tapping NN
+-taste DT
+-Tasty NNP
+-ten DT
+-Ten NNP
+-terrible NN
+-tex DT
+-tha NNP
+-ThAnK NNP
+-thanks NN
+-that DT
+-that DT
+-that IN
+-that IN
+-that IN
+-that RB
+-thats DT
+-The NNP
+-The NNP
+-The NNP
+-The NNP
+-The NNP
+-There EX
+-there RB
+-theres NN
+-THEY NN
+-they PRP
+-Think VB
+-think VBP
+-tho NN
+-thou( NN
+-though NN
+-though NN
+-though NN
+-Thought NNP
+-Thousands NNP
+-tht DT
+-to'. .
+-Told NN
+-Tonight NNP
+-Tonight NNP
+-Tonight NNP
+-Tour NNP
+-track NNP
+-trouble DT
+-truly JJ
+-try NN
+-Trying NN
+-Tryna PRP
+-ttys NNP
+-tunes NN
+-tweeps NN
+-tweet NN
+-tweet NN
+-tweeted VBN
+-twitter NNP
+-uggghh NN
+-Ugh NN
+-Ugh NNP
+-unknown NN
+-untag IN
+-up IN
+-up IN
+-up IN
+-up IN
+-up NN
+-up NN
+-up NN
+-up RP
+-usb NNP
+-USM PRP
+-v NNP
+-very NN
+-vids NN
+-vs CC
+-vs CC
+-vs CC
+-wanting NN
+-Wasnt NNP
+-wass DT
+-wasted NN
+-Way NNP
+-WB NN
+-wear VB
+-WELL NN
+-WHEN NN
+-While VB
+-white NN
+-whom IN
+-WILDCATS NN
+-winning NN
+-without NN
+-WO IN
+-women NN
+-Won NNP
+-wonderful NN
+-work NN
+-work NN
+-working NN
+-working NN
+-works VBP
+-workz NN
+-worry IN
+-worth IN
+-worth NN
+-Wow NNP
+-writing NN
+-written DT
+-wrote IN
+-wuz NN
+-XD NNP
+-xDlmfao NN
+-y'all DT
+-YAH NN
+-YEAH NN
+-yes NNP
+-Yesss NNP
+-yo UH
+-yo UH
+-Your NNP
+-your PRP
+-your PRP
+-yrs NN
+-~December*18th~ .
+@@ -1,5 +1,5 @@
+@@ -1015,18 +1015,18 @@
+@@ -1040,23 +1040,23 @@
+@@ -1070,45 +1070,45 @@
+@@ -1118,7 +1118,7 @@
+@@ -1132,31 +1132,31 @@
+@@ -1164,18 +1164,18 @@
+@@ -1183,11 +1183,11 @@
+@@ -1196,10 +1196,10 @@
+@@ -1207,23 +1207,23 @@
+@@ -1237,19 +1237,19 @@
+@@ -1257,7 +1257,7 @@
+@@ -1268,30 +1268,30 @@
+@@ -1306,7 +1306,7 @@
+@@ -1316,7 +1316,7 @@
+@@ -1331,17 +1331,17 @@
+@@ -1349,36 +1349,36 @@
+@@ -135,20 +135,20 @@
+@@ -1386,9 +1386,9 @@
+@@ -1422,17 +1422,17 @@
+@@ -1450,8 +1450,8 @@
+@@ -1459,18 +1459,18 @@
+@@ -1478,14 +1478,14 @@
+@@ -1495,36 +1495,36 @@
+@@ -1536,26 +1536,26 @@
+@@ -1563,7 +1563,7 @@
+@@ -157,21 +157,21 @@
+@@ -1585,7 +1585,7 @@
+@@ -16,14 +16,14 @@
+@@ -1604,9 +1604,9 @@
+@@ -1620,7 +1620,7 @@
+@@ -1628,11 +1628,11 @@
+@@ -1642,16 +1642,16 @@
+@@ -1662,75 +1662,75 @@
+@@ -1742,12 +1742,12 @@
+@@ -1756,31 +1756,31 @@
+@@ -1788,8 +1788,8 @@
+@@ -1801,7 +1801,7 @@
+@@ -1810,20 +1810,20 @@
+@@ -1831,7 +1831,7 @@
+@@ -1839,27 +1839,27 @@
+@@ -1892,18 +1892,18 @@
+@@ -1915,21 +1915,21 @@
+@@ -1942,7 +1942,7 @@
+@@ -196,85 +196,85 @@
+@@ -1983,35 +1983,35 @@
+@@ -2019,18 +2019,18 @@
+@@ -2038,32 +2038,32 @@
+@@ -2077,7 +2077,7 @@
+@@ -2087,25 +2087,25 @@
+@@ -2121,21 +2121,21 @@
+@@ -2144,37 +2144,37 @@
+@@ -2184,24 +2184,24 @@
+@@ -2212,11 +2212,11 @@
+@@ -2231,9 +2231,9 @@
+@@ -2245,7 +2245,7 @@
+@@ -2253,20 +2253,20 @@
+@@ -2277,37 +2277,37 @@
+@@ -2319,33 +2319,33 @@
+@@ -2355,37 +2355,37 @@
+@@ -2402,39 +2402,39 @@
+@@ -2444,8 +2444,8 @@
+@@ -2464,7 +2464,7 @@
+@@ -2473,45 +2473,45 @@
+@@ -2522,28 +2522,28 @@
+@@ -2551,9 +2551,9 @@
+@@ -2561,10 +2561,10 @@
+@@ -2575,14 +2575,14 @@
+@@ -2595,43 +2595,43 @@
+@@ -2646,7 +2646,7 @@
+@@ -2655,49 +2655,49 @@
+@@ -2706,11 +2706,11 @@
+@@ -2720,58 +2720,58 @@
+@@ -2781,57 +2781,57 @@
+@@ -2844,19 +2844,19 @@
+@@ -2864,10 +2864,10 @@
+@@ -2878,7 +2878,7 @@
+@@ -2893,8 +2893,8 @@
+@@ -2918,25 +2918,25 @@
+@@ -2944,25 +2944,25 @@
+@@ -295,7 +295,7 @@
+@@ -2979,7 +2979,7 @@
+@@ -2988,9 +2988,9 @@
+@@ -307,18 +307,18 @@
+@@ -33,8 +33,8 @@
+@@ -332,11 +332,11 @@
+@@ -348,44 +348,44 @@
+@@ -401,28 +401,28 @@
+@@ -42,14 +42,14 @@
+@@ -431,51 +431,51 @@
+@@ -484,28 +484,28 @@
+@@ -515,17 +515,17 @@
+@@ -533,7 +533,7 @@
+@@ -544,9 +544,9 @@
+@@ -563,7 +563,7 @@
+@@ -575,7 +575,7 @@
+@@ -58,23 +58,23 @@
+@@ -585,26 +585,26 @@
+@@ -630,72 +630,72 @@
+@@ -7,7 +7,7 @@
+@@ -703,16 +703,16 @@
+@@ -736,27 +736,27 @@
+@@ -765,72 +765,72 @@
+@@ -83,44 +83,44 @@
+@@ -838,49 +838,49 @@
+@@ -892,17 +892,17 @@
+@@ -913,7 +913,7 @@
+@@ -925,8 +925,8 @@
+@@ -942,7 +942,7 @@
+@@ -951,20 +951,20 @@
+@@ -974,33 +974,33 @@

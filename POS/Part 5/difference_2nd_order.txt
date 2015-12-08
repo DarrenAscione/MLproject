@@ -1,4 +1,4 @@
---- p5_viterbi_2nd_order.txt	2015-12-08 19:40:47.000000000 +0800
+--- p5_viterbi_2nd_order.txt	2015-12-08 20:07:57.000000000 +0800
 +++ ../dev.out	2015-12-08 17:55:01.000000000 +0800
 @@ -1,5 +1,5 @@
 -Gotta DT
@@ -26,7 +26,7 @@
  took VBD
  the DT
  antenna NN
-@@ -31,10 +31,10 @@
+@@ -31,9 +31,9 @@
  finally RB
  . .
  
@@ -34,19 +34,15 @@
 +QUAKE NN
  : :
 -Mag NNP
--4.5 NNP
 +Mag NN
-+4.5 CD
+ 4.5 CD
  , ,
  Saturday NNP
- , ,
-@@ -42,14 +42,14 @@
- 18 CD
+@@ -43,13 +43,13 @@
  2010 CD
  at IN
--10:03 NN
+ 10:03 CD
 -am VBP
-+10:03 CD
 +am NN
  ( (
 -NZST) NN
@@ -1494,7 +1490,7 @@
  music NN
  of IN
  all DT
-@@ -1495,36 +1495,36 @@
+@@ -1495,35 +1495,35 @@
  foot NN
  has VBZ
  n't RB
@@ -1536,13 +1532,11 @@
 +Specials NNS
  too RB
  .. :
--tex DT
--980-333-3923 NN
+-tex NNP
 +tex VB
-+980-333-3923 CD
+ 980-333-3923 CD
  to TO
  get VB
- on IN
 @@ -1533,29 +1533,29 @@
  list NN
  ! .
@@ -2372,7 +2366,7 @@
 -1s NN
 +1s CD
  n CC
--2s NN
+-2s NNP
 +2s CD
  !! .
  
@@ -2876,12 +2870,8 @@
  at IN
  Norfolk NNP
  Mall NNP
-@@ -2844,10 +2844,10 @@
- . .
- 22 CD
- , ,
--4:30 NN
-+4:30 CD
+@@ -2847,7 +2847,7 @@
+ 4:30 CD
  to TO
  ??. .
 -Contact NNP
