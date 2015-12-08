@@ -1,4 +1,4 @@
---- p5_viterbi_2nd_order.txt	2015-12-08 14:21:23.000000000 +0800
+--- p5_viterbi_2nd_order.txt	2015-12-08 14:35:47.000000000 +0800
 +++ ../dev.out	2015-12-07 20:46:31.000000000 +0800
 @@ -1,5 +1,5 @@
 -Gotta NNP
@@ -604,17 +604,16 @@
  . .
  
  RT RT
-@@ -585,26 +585,26 @@
+@@ -585,7 +585,7 @@
  . .
  6 CD
  . .
 -2011 UH
 +2011 CD
  . .
--The NNP
-+The DT
+ The DT
  day NN
- @owlcity USR
+@@ -593,18 +593,18 @@
  went VBD
  on IN
  an DT
@@ -808,9 +807,8 @@
  RT RT
  @ItsTheTeenLife USR
  : :
--The NNP
+ The DT
 -exact NN
-+The DT
 +exact JJ
  day NN
  that IN
@@ -990,7 +988,7 @@
  to TO
  look VB
  at IN
-@@ -951,56 +951,56 @@
+@@ -951,47 +951,47 @@
  http://bit.ly/hgMKjS URL
  
  @yeastieboys USR
@@ -1050,8 +1048,7 @@
  MONTCLAIR NNP
  N.J. NNP
  ...: :
--The NNP
-+The DT
+@@ -999,8 +999,8 @@
  all DT
  day NN
  event NN
@@ -1178,8 +1175,14 @@
  !!!! .
  
  @JaeChartaye USR
-@@ -1132,31 +1132,31 @@
- Town NNP
+@@ -1128,35 +1128,35 @@
+ next JJ
+ week NN
+ 
+-The DT
+-Town NN
++The NNP
++Town NNP
  might MD
  be VB
 -one NN
@@ -1371,8 +1374,7 @@
 +working VBG
  together RB
  . .
--The NNP
-+The DT
+ The DT
  film NN
 -'s VBZ
 -releasing NN
@@ -2430,7 +2432,7 @@
  them PRP
  when WRB
  they PRP
-@@ -2400,26 +2400,26 @@
+@@ -2400,22 +2400,22 @@
  RT RT
  @JordanCenter USR
  : :
@@ -2461,11 +2463,6 @@
  . .
  Lions NNP
  : :
--The NNP
-+The DT
- Jason NNP
- Garrett NNP
- era NN
 @@ -2428,15 +2428,15 @@
  to TO
  a DT

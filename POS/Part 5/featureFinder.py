@@ -42,6 +42,8 @@ REGEXES = [
 		r'^.+[fF][uU][lL]$',
 		r'^.*\'[sS]$',
 		r'^[(one)(two)(three)(four)(five)(six)(seven)(eight)(nine)(ten)]$',
+		r'^[tT][hH][eE]$',
+		r'^[dD][oO]$',
 ]
 ALL = "ALL"
 COMPILED = [re.compile(regex) for regex in REGEXES]
@@ -94,7 +96,7 @@ with open(out_file, "w") as out_fileF:
 			out_fileF.write("{0} {1} {2}\n".format(regex, tag, prob_dict[regex][tag]))	
 
 with open("regularised_" + out_file, "w") as out_fileF:
-	regularised_dict = regularise(prob_dict, 1e-4)
+	regularised_dict = regularise(prob_dict, 1e-30)
 	for regex in regularised_dict:
 		for tag in regularised_dict[regex]:
 			out_fileF.write("{0} {1} {2}\n".format(regex, tag, prob_dict[regex][tag]))	

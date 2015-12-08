@@ -587,7 +587,7 @@ RT RT
 . .
 2011 UH
 . .
-The NNP
+The DT
 day NN
 @owlcity USR
 went VBD
@@ -779,7 +779,7 @@ Great NN
 RT RT
 @ItsTheTeenLife USR
 : :
-The NNP
+The DT
 exact NN
 day NN
 that IN
@@ -995,7 +995,7 @@ Tour NNP
 MONTCLAIR NNP
 N.J. NNP
 ...: :
-The NNP
+The DT
 all DT
 day NN
 event NN
@@ -1128,8 +1128,8 @@ u PRP
 next JJ
 week NN
 
-The NNP
-Town NNP
+The DT
+Town NN
 might MD
 be VB
 one NN
@@ -1334,7 +1334,7 @@ now RB
 working NN
 together RB
 . .
-The NNP
+The DT
 film NN
 's VBZ
 releasing NN
@@ -2419,7 +2419,7 @@ vs CC
 . .
 Lions NNP
 : :
-The NNP
+The DT
 Jason NNP
 Garrett NNP
 era NN
