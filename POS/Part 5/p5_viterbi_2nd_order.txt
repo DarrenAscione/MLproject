@@ -34,7 +34,7 @@ finally RB
 QUAKE USR
 : :
 Mag NNP
-4.5 NN
+4.5 NNP
 , ,
 Saturday NNP
 , ,
@@ -648,8 +648,8 @@ a DT
 short NN
 experience NN
 ( (
-double IN
-entendre DT
+double NN
+entendre NN
 intended) NN
 . .
 
@@ -749,7 +749,7 @@ sleep VB
 , ,
 not RB
 feeling VBG
-very NN
+very IN
 well RB
 , ,
 see VB
@@ -979,7 +979,7 @@ it PRP
 's VBZ
 as IN
 bad JJ
-down RP
+down IN
 there RB
 . .
 
@@ -1113,7 +1113,7 @@ lol UH
 . .
 
 ahaha UH
-that DT
+that RB
 just RB
 made VBD
 my PRP$
@@ -2080,7 +2080,7 @@ RT RT
 londonland USR
 : :
 They PRP
-put VBD
+put VBP
 bacon NN
 on IN
 everything NN
@@ -2344,8 +2344,8 @@ man UH
 first JJ
 time NN
 home NN
-buyer IN
-incentives NNP
+buyer NN
+incentives NN
 in IN
 Temecula NNP
 CA NNP
@@ -2551,7 +2551,7 @@ it PRP
 on IN
 a DT
 Saturday NNP
-though NNP
+though NN
 . .
 So UH
 that WDT
@@ -2870,7 +2870,7 @@ is VBZ
 up RP
 on IN
 @The_Score USR
-website NN
+website USR
 ... :
 http://blogs.thescore.com/nfl/2010/09/17/pizzolaw2/ URL
 
@@ -2962,8 +2962,8 @@ RT RT
 @riesranty USR
 : :
 @azkuro USR
-kak :
-ajul NNP
+kak NN
+ajul NN
 , ,
 titip NNP
 ... :

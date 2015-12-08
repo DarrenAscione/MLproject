@@ -1,4 +1,4 @@
---- p5_viterbi_2nd_order.txt	2015-12-08 19:32:37.000000000 +0800
+--- p5_viterbi_2nd_order.txt	2015-12-08 19:40:47.000000000 +0800
 +++ ../dev.out	2015-12-08 17:55:01.000000000 +0800
 @@ -1,5 +1,5 @@
 -Gotta DT
@@ -34,7 +34,7 @@
 +QUAKE NN
  : :
 -Mag NNP
--4.5 NN
+-4.5 NNP
 +Mag NN
 +4.5 CD
  , ,
@@ -635,11 +635,10 @@
 +short JJ
  experience NN
  ( (
--double IN
--entendre DT
--intended) NN
+-double NN
 +double JJ
-+entendre NN
+ entendre NN
+-intended) NN
 +intended) VBD
  . .
  
@@ -737,7 +736,7 @@
  , ,
  not RB
  feeling VBG
--very NN
+-very IN
 +very RB
  well RB
  , ,
@@ -982,8 +981,7 @@
 -as IN
 +as RB
  bad JJ
--down RP
-+down IN
+ down IN
  there RB
  . .
  
@@ -1115,7 +1113,13 @@
  to TO
  get VB
  going VBG
-@@ -1118,7 +1118,7 @@
+@@ -1113,12 +1113,12 @@
+ . .
+ 
+ ahaha UH
+-that RB
++that DT
+ just RB
  made VBD
  my PRP$
  day NN
@@ -2069,15 +2073,7 @@
  has VBZ
  been VBN
  about IN
-@@ -2080,32 +2080,32 @@
- londonland USR
- : :
- They PRP
--put VBD
-+put VBP
- bacon NN
- on IN
- everything NN
+@@ -2087,25 +2087,25 @@
  these DT
  days NNS
  ... :
@@ -2330,13 +2326,11 @@
  , ,
  20 CD
  ? .
-@@ -2344,8 +2344,8 @@
- first JJ
+@@ -2345,7 +2345,7 @@
  time NN
  home NN
--buyer IN
--incentives NNP
-+buyer NN
+ buyer NN
+-incentives NN
 +incentives NNS
  in IN
  Temecula NNP
@@ -2553,7 +2547,7 @@
  on IN
  a DT
  Saturday NNP
--though NNP
+-though NN
 +though RB
  . .
 -So UH
@@ -2906,7 +2900,7 @@
  day NN
  goin VBG
  ? .
-@@ -2867,7 +2867,7 @@
+@@ -2867,10 +2867,10 @@
  picks NNS
  blog NN
  is VBZ
@@ -2914,7 +2908,11 @@
 +up RB
  on IN
  @The_Score USR
- website NN
+-website USR
++website NN
+ ... :
+ http://blogs.thescore.com/nfl/2010/09/17/pizzolaw2/ URL
+ 
 @@ -2893,8 +2893,8 @@
  School NN
  today NN
@@ -2926,7 +2924,7 @@
  http://tumblr.com/xt21gcptqr URL
  
  @Kristi_Taylor USR
-@@ -2922,48 +2922,48 @@
+@@ -2922,47 +2922,47 @@
  me PRP
  to TO
  an DT
@@ -2990,13 +2988,11 @@
  @riesranty USR
  : :
  @azkuro USR
--kak :
--ajul NNP
+-kak NN
 +kak JJ
-+ajul NN
+ ajul NN
  , ,
  titip NNP
- ... :
 @@ -2979,7 +2979,7 @@
  BA NNP
  2910 CD
