@@ -1,4 +1,4 @@
-Gotta NN
+Gotta DT
 call NN
 mom NN
 2 TO
@@ -85,7 +85,7 @@ did VBD
 it PRP
 + .
 
-Football NN
+Football DT
 game NN
 tonight NN
 with IN
@@ -141,7 +141,7 @@ Ustream NNP
 later RB
 tonight NN
 
-Lingerie NN
+Lingerie DT
 football NN
 league .
 come VB
@@ -259,7 +259,7 @@ Driving NN
 , ,
 driving NNP
 , ,
-driving NN
+driving NNP
 away NN
 to TO
 Phil NNP
@@ -330,7 +330,7 @@ started VBD
 following VBG
 me PRP
 today NN
-so RB
+so IN
 I PRP
 better JJR
 post NN
@@ -1020,7 +1020,7 @@ nice JJ
 outside IN
 today NN
 
-Every NN
+Every DT
 year NN
 , ,
 i PRP
@@ -1088,7 +1088,7 @@ spinning NN
 2 CD
 exclusive NN
 new JJ
-tunes NN
+tunes NNS
 
 I PRP
 need VBP
@@ -1606,7 +1606,7 @@ getting VBG
 " ''
 white NN
 boy NN
-wasted NN
+wasted VBD
 " ''
 tonight NN
 ! .
@@ -1702,7 +1702,7 @@ do VB
 yet CC
 she PRP
 never RB
-responds NN
+responds VBZ
 to TO
 me PRP
 ASAP NN
@@ -1756,7 +1756,7 @@ and CC
 got VBD
 : :
 Part NN
-7 UH
+7 CD
 ! .
 Try VB
 it PRP
@@ -1771,7 +1771,7 @@ more RBR
 accurate NN
 . .
 Wasnt NNP
-brought NN
+brought NNP
 up RP
 here RB
 though NN
@@ -1788,7 +1788,7 @@ my PRP$
 life NN
 . .
 
-y'all NN
+y'all DT
 care NN
 if IN
 I PRP
@@ -1925,7 +1925,7 @@ morning NN
 ! .
 Have VB
 a DT
-Good JJ
+Good NNP
 day NN
 :) UH
 from IN
@@ -2091,7 +2091,7 @@ Bacon NNP
 cereal NNP
 is VBZ
 up RP
-next JJ
+next IN
 http://hjv.dw.tc/Q0t2R URL
 
 NHL NNP
@@ -2293,7 +2293,7 @@ your PRP$
 
 NO UH
 Saints NNP
-R NN
+R NNP
 . .
 Buch NNP
 might MD
@@ -2344,8 +2344,8 @@ man UH
 first JJ
 time NN
 home NN
-buyer NN
-incentives NN
+buyer IN
+incentives NNP
 in IN
 Temecula NNP
 CA NNP
@@ -2490,7 +2490,7 @@ f PRP
 ... :
 
 Good UH
-start VB
+start VBP
 for IN
 sharks DT
 tonight NN
@@ -2551,7 +2551,7 @@ it PRP
 on IN
 a DT
 Saturday NNP
-though NN
+though NNP
 . .
 So UH
 that WDT
@@ -2579,8 +2579,8 @@ good JJ
 morning NN
 tweeps NN
 . .
-have VBP
-'ll MD
+have VB
+'ll PRP
 a DT
 fabulous NN
 day NN
@@ -2610,7 +2610,7 @@ pandora NNP
 today NN
 tho NN
 loser NN
-so RB
+so IN
 I PRP
 tweeted VBN
 it PRP
@@ -2812,7 +2812,7 @@ shit JJ
 ThAnK NNP
 gOd NNP
 ItS NNP
-fRiDaY NN
+fRiDaY NNP
 !! .
 
 http://bit.ly/aTTQYq URL
@@ -2947,7 +2947,7 @@ Ky NNP
 barang NNP
 aja NNP
 maen NNP
-nitip NN
+nitip NNP
 ".. .
 Hahaha NNP
 .. :

@@ -1,7 +1,7 @@
---- p5_viterbi_2nd_order.txt	2015-12-08 19:15:16.000000000 +0800
+--- p5_viterbi_2nd_order.txt	2015-12-08 19:32:37.000000000 +0800
 +++ ../dev.out	2015-12-08 17:55:01.000000000 +0800
 @@ -1,5 +1,5 @@
--Gotta NN
+-Gotta DT
 -call NN
 +Gotta VBP
 +call VB
@@ -96,7 +96,8 @@
 -+ .
 ++ SYM
  
- Football NN
+-Football DT
++Football NN
  game NN
  tonight NN
  with IN
@@ -144,7 +145,7 @@
  http://twitpic.com/2pdvtr URL
  
  RT RT
-@@ -135,7 +135,7 @@
+@@ -135,20 +135,20 @@
  to TO
  go VB
  back RB
@@ -153,9 +154,10 @@
  on IN
  Ustream NNP
  later RB
-@@ -143,12 +143,12 @@
+ tonight NN
  
- Lingerie NN
+-Lingerie DT
++Lingerie NN
  football NN
 -league .
 +league NN
@@ -272,7 +274,7 @@
 -driving NNP
 +driving VBG
  , ,
--driving NN
+-driving NNP
 -away NN
 +driving VBG
 +away RB
@@ -315,7 +317,7 @@
  old JJ
  lady NN
  for IN
-@@ -324,19 +324,19 @@
+@@ -324,7 +324,7 @@
  advice NN
  ... :
  
@@ -324,10 +326,9 @@
  just RB
  started VBD
  following VBG
- me PRP
+@@ -332,11 +332,11 @@
  today NN
--so RB
-+so IN
+ so IN
  I PRP
 -better JJR
 -post NN
@@ -1013,7 +1014,7 @@
  http://tinyurl.com/28hd9fu URL
  #fb HT
  
-@@ -1015,18 +1015,18 @@
+@@ -1015,7 +1015,7 @@
  the DT
  weather NN
  is VBZ
@@ -1022,11 +1023,7 @@
  nice JJ
  outside IN
  today NN
- 
--Every NN
-+Every DT
- year NN
- , ,
+@@ -1026,7 +1026,7 @@
  i PRP
  realize VBP
  how WRB
@@ -1093,8 +1090,7 @@
 -exclusive NN
 +exclusive JJ
  new JJ
--tunes NN
-+tunes NNS
+ tunes NNS
  
  I PRP
  need VBP
@@ -1607,7 +1603,7 @@
 -white NN
 +white JJ
  boy NN
--wasted NN
+-wasted VBD
 +wasted VBN
  " ''
  tonight NN
@@ -1659,7 +1655,7 @@
  ,? .
  ;) UH
  
-@@ -1662,75 +1662,75 @@
+@@ -1662,42 +1662,42 @@
  show NN
  with IN
  @ogochocinco USR
@@ -1716,9 +1712,8 @@
  , ,
  yet CC
  she PRP
- never RB
--responds NN
-+responds VBZ
+@@ -1705,32 +1705,32 @@
+ responds VBZ
  to TO
  me PRP
 -ASAP NN
@@ -1774,15 +1769,7 @@
  with IN
  your PRP$
  dad NN
-@@ -1756,31 +1756,31 @@
- got VBD
- : :
- Part NN
--7 UH
-+7 CD
- ! .
- Try VB
- it PRP
+@@ -1763,24 +1763,24 @@
  : :
  http://tinyurl.com/27r2pdz URL
  
@@ -1798,7 +1785,7 @@
 +accurate JJ
  . .
 -Wasnt NNP
--brought NN
+-brought NNP
 +Wasnt VBD
 +brought VBN
  up RP
@@ -1820,7 +1807,7 @@
  life NN
  . .
  
--y'all NN
+-y'all DT
 -care NN
 +y'all PRP
 +care VBP
@@ -1935,7 +1922,7 @@
  lol UH
  
  Just RB
-@@ -1915,12 +1915,12 @@
+@@ -1915,21 +1915,21 @@
  :D UH
  it PRP
  's VBZ
@@ -1950,7 +1937,9 @@
  morning NN
  ! .
  Have VB
-@@ -1929,7 +1929,7 @@
+ a DT
+-Good NNP
++Good JJ
  day NN
  :) UH
  from IN
@@ -2098,7 +2087,8 @@
 +cereal NN
  is VBZ
  up RP
- next JJ
+-next IN
++next JJ
  http://hjv.dw.tc/Q0t2R URL
  
  NHL NNP
@@ -2300,7 +2290,7 @@
  
  NO UH
  Saints NNP
--R NN
+-R NNP
 +R VBP
  . .
  Buch NNP
@@ -2340,11 +2330,13 @@
  , ,
  20 CD
  ? .
-@@ -2345,7 +2345,7 @@
+@@ -2344,8 +2344,8 @@
+ first JJ
  time NN
  home NN
- buyer NN
--incentives NN
+-buyer IN
+-incentives NNP
++buyer NN
 +incentives NNS
  in IN
  Temecula NNP
@@ -2487,7 +2479,7 @@
  ... :
  
 -Good UH
--start VB
+-start VBP
 +Good JJ
 +start NN
  for IN
@@ -2561,7 +2553,7 @@
  on IN
  a DT
  Saturday NNP
--though NN
+-though NNP
 +though RB
  . .
 -So UH
@@ -2591,9 +2583,9 @@
 +morning UH
 +tweeps NNS
  . .
--have VBP
-+have VB
- 'll MD
+ have VB
+-'ll PRP
++'ll MD
  a DT
 -fabulous NN
 +fabulous JJ
@@ -2623,8 +2615,7 @@
 -tho NN
 +tho RB
  loser NN
--so RB
-+so IN
+ so IN
  I PRP
 -tweeted VBN
 +tweeted VBD
@@ -2863,9 +2854,8 @@
 +ThAnK VB
  gOd NNP
 -ItS NNP
--fRiDaY NN
 +ItS PRP
-+fRiDaY NNP
+ fRiDaY NNP
  !! .
  
  http://bit.ly/aTTQYq URL
@@ -2977,12 +2967,13 @@
 -barang NNP
 -aja NNP
 -maen NNP
+-nitip NNP
+-".. .
+-Hahaha NNP
 +barang VBG
 +aja JJ
 +maen NN
- nitip NN
--".. .
--Hahaha NNP
++nitip NN
 +".. O
 +Hahaha UH
  .. :
