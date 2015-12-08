@@ -133,7 +133,7 @@ if __name__ == "__main__":
 	logPenalties = parsePenalties("transition_2nd_order.txt")
 	regexFeatures = parse_feature_probs(FEATURE_PROB_IN)
 	logEmissions = parseFile("part5_emission_testing.txt", 1.0)
-	logTransitions = parseFile("transition.txt", 0.65) #0.65
+	logTransitions = parseFile("transition.txt", 0.8) #0.65
 	compiled = {}
 	for regex in regexFeatures:
 		compiled[regex] = re.compile(regex)
@@ -171,7 +171,6 @@ if __name__ == "__main__":
 				endMaxChoice = dpEntry
 		endingState = endMaxChoice.transit("__END", None)
 		outputs.append(endingState)
-		# print endingState.logProbability
 	viterbiTagger(outputs, "../dev.in", "p5_viterbi_2nd_order.txt")
 	os.system("diff -u " + "p5_viterbi_2nd_order.txt " + "../dev.out" + "> difference_2nd_order.txt")
 	print accuracy("p5_viterbi_2nd_order.txt", "../dev.out")

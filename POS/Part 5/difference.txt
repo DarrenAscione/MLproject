@@ -70,7 +70,7 @@
  Not RB
 -long JJ
 -ago IN
-+long RBde
++long RB
 +ago RB
  I PRP
 -responded NN
