@@ -1113,7 +1113,7 @@ lol UH
 . .
 
 ahaha UH
-that RB
+that DT
 just RB
 made VBD
 my PRP$
@@ -1519,7 +1519,7 @@ We PRP
 're VBP
 having VBG
 crazy JJ
-drink NNP
+drink IN
 Specials NNP
 too RB
 .. :
@@ -1771,7 +1771,7 @@ more RBR
 accurate NN
 . .
 Wasnt NNP
-brought NNP
+brought NN
 up RP
 here RB
 though NN

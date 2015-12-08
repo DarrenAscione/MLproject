@@ -130,10 +130,10 @@ if __name__ == "__main__":
 	FEATURE_PROB_IN = "regularised_feature_probs.txt"
 	START = "__START"
 	# model parameters
-	logPenalties = parsePenalties("transition_2nd_order.txt", 0.01) #0.01
-	regexFeatures = parse_feature_probs(FEATURE_PROB_IN, 0.9) #0.9
+	logPenalties = parsePenalties("transition_2nd_order.txt", 0.008) #0.01
+	regexFeatures = parse_feature_probs(FEATURE_PROB_IN, 0.90) #0.9
 	logEmissions = parseFile("part5_emission_testing.txt", 0.9) #0.9
-	logTransitions = parseFile("transition.txt", 0.72) #0.75
+	logTransitions = parseFile("transition.txt", 0.72) #0.72
 	compiled = {}
 	for regex in regexFeatures:
 		compiled[regex] = re.compile(regex)

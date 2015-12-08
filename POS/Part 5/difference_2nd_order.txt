@@ -1,4 +1,4 @@
---- p5_viterbi_2nd_order.txt	2015-12-08 20:33:10.000000000 +0800
+--- p5_viterbi_2nd_order.txt	2015-12-08 20:39:03.000000000 +0800
 +++ ../dev.out	2015-12-08 17:55:01.000000000 +0800
 @@ -1,5 +1,5 @@
 -Gotta NN
@@ -1113,13 +1113,7 @@
  to TO
  get VB
  going VBG
-@@ -1113,12 +1113,12 @@
- . .
- 
- ahaha UH
--that RB
-+that DT
- just RB
+@@ -1118,7 +1118,7 @@
  made VBD
  my PRP$
  day NN
@@ -1524,7 +1518,7 @@
  're VBP
  having VBG
  crazy JJ
--drink NNP
+-drink IN
 -Specials NNP
 +drink NN
 +Specials NNS
@@ -1781,7 +1775,7 @@
 +accurate JJ
  . .
 -Wasnt NNP
--brought NNP
+-brought NN
 +Wasnt VBD
 +brought VBN
  up RP
