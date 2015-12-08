@@ -1,4 +1,4 @@
---- p5_viterbi_2nd_order.txt	2015-12-08 22:13:28.000000000 +0800
+--- p5_viterbi_2nd_order.txt	2015-12-08 22:16:24.000000000 +0800
 +++ ../dev.out	2015-12-08 17:55:01.000000000 +0800
 @@ -1,5 +1,5 @@
 -Gotta NN
@@ -583,7 +583,13 @@
  . .
  
  RT RT
-@@ -594,12 +594,12 @@
+@@ -589,17 +589,17 @@
+ . .
+ The DT
+ day NN
+-@owlcity NN
++@owlcity USR
+ went VBD
  on IN
  an DT
  Emporer NNP
@@ -1135,13 +1141,11 @@
  I PRP
  have VBP
  seen VBN
-@@ -1148,15 +1148,15 @@
- so RB
+@@ -1149,14 +1149,14 @@
  good JJ
  . .
--And NNP
+ And CC
 -do VBP
-+And CC
 +do VB
  n't RB
 -worry IN
@@ -1427,17 +1431,6 @@
  when WRB
  he PRP
  's VBZ
-@@ -1441,8 +1441,8 @@
- what WP
- he PRP
- has VBZ
--2 CD
--do VBP
-+2 TO
-+do VB
- 2 TO
- make VB
- it PRP
 @@ -1450,8 +1450,8 @@
  this DT
  world NN
@@ -2232,10 +2225,9 @@
  may MD
  be VB
 -banned JJ
--.. .
--because VB
 +banned VBN
-+.. :
+ .. :
+-because VB
 +because IN
  it PRP
  causes VBZ

@@ -3,7 +3,7 @@ import copy, math, string
 START = "__START"
 END = "__END"
 transmissionFileName = "POS/transition.txt"
-emissionsFileName = "POS/emission_testing.txt"
+emissionsFileName = "POS/Part 3/emission_testing.txt"
 sequenceFileName = "POS/dev.in"
 outputFileFormat = "POS/Part 4/p4_viterbi_{0}.txt"
 
@@ -110,7 +110,6 @@ if __name__ == "__main__":
 		def reset(self):
 			self.queuePointer = 0
 	
-
 	# model parameters
 	transmissions = parseFile(transmissionFileName)
 	emissions = parseFile(emissionsFileName)
@@ -135,7 +134,7 @@ if __name__ == "__main__":
 
 	# output sequences corresponding to input sequences
 	outputs = []
-
+	progress = 0
 	for sequence in sequences:
 		firstDpEntry = ViterbiNodeList()
 		firstDpEntry.push(ViterbiSequence(START))
@@ -170,6 +169,8 @@ if __name__ == "__main__":
 				else:
 					break
 			dpEntry.reset()
+		progress += 1
+		print progress
 		outputs.append(lastNodeList)
 		if len(lastNodeList.nodeList) != 10:
 			print len(lastNodeList.nodeList)
