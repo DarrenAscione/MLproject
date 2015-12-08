@@ -585,7 +585,7 @@ RT RT
 . .
 6 CD
 . .
-2011 UH
+2011 CD
 . .
 The DT
 day NN
@@ -693,7 +693,7 @@ low JJ
 interest NN
 rates NN
 , ,
-2011 NNP
+2011 CD
 is VBZ
 proving NN
 to TO
@@ -2340,7 +2340,7 @@ Jeez NNP
 man UH
 ... :
 
-2011 UH
+2011 CD
 first JJ
 time NN
 home NN

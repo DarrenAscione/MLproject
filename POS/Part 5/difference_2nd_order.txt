@@ -1,4 +1,4 @@
---- p5_viterbi_2nd_order.txt	2015-12-08 14:35:47.000000000 +0800
+--- p5_viterbi_2nd_order.txt	2015-12-08 14:41:39.000000000 +0800
 +++ ../dev.out	2015-12-07 20:46:31.000000000 +0800
 @@ -1,5 +1,5 @@
 -Gotta NNP
@@ -604,15 +604,6 @@
  . .
  
  RT RT
-@@ -585,7 +585,7 @@
- . .
- 6 CD
- . .
--2011 UH
-+2011 CD
- . .
- The DT
- day NN
 @@ -593,18 +593,18 @@
  went VBD
  on IN
@@ -721,8 +712,7 @@
 -rates NN
 +rates NNS
  , ,
--2011 NNP
-+2011 CD
+ 2011 CD
  is VBZ
 -proving NN
 +proving VBG
@@ -2351,7 +2341,7 @@
  @xHangmanx USR
  !!! .
  He PRP
-@@ -2331,61 +2331,61 @@
+@@ -2331,12 +2331,12 @@
  20 CD
  today NN
  ! .
@@ -2367,9 +2357,7 @@
  man UH
  ... :
  
--2011 UH
-+2011 CD
- first JJ
+@@ -2345,47 +2345,47 @@
  time NN
  home NN
  buyer NN
