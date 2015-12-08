@@ -589,7 +589,7 @@ RT RT
 . .
 The DT
 day NN
-@owlcity NN
+@owlcity USR
 went VBD
 on IN
 an DT
@@ -1148,7 +1148,7 @@ So RB
 so RB
 good JJ
 . .
-And CC
+And NNP
 do VBP
 n't RB
 worry IN
@@ -1441,8 +1441,8 @@ doin VBG
 what WP
 he PRP
 has VBZ
-2 TO
-do VB
+2 CD
+do VBP
 2 TO
 make VB
 it PRP
@@ -2254,7 +2254,7 @@ which WDT
 may MD
 be VB
 banned JJ
-.. :
+.. .
 because VB
 it PRP
 causes VBZ
