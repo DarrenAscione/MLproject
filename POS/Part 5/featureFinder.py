@@ -25,7 +25,6 @@ REGEXES = [
 		r'^@\S+$',
 		r'^#.+$',
 		r'^http://.+$',
-		r'^[a-zA-Z0-9]+\.[a-zA-Z0-9]+$',
 		r'^(?!\.\.\.)[.!?;,\'"]+$',
 		r'^[A-Z][a-z]+$',
 		r'^[a-zA-Z]+[iI][nN][gG]$',
@@ -35,9 +34,14 @@ REGEXES = [
 		r'^[a-zA-Z]+[iI][tT][yY]$',
 		r'^[0-9]+[pPaA][mM]$',
 		r'^[0-9]+$',
-		r'^.+[sS]$',
+		r'^.+(?!\')[sS]$',
 		r'^[a-zA-Z]+$',
 		r'^:.+$',
+		r'^=.+$',
+		r'^[lL][oO][lL]$',
+		r'^.+[fF][uU][lL]$',
+		r'^.*\'[sS]$',
+		r'^[(one)(two)(three)(four)(five)(six)(seven)(eight)(nine)(ten)]$',
 ]
 ALL = "ALL"
 COMPILED = [re.compile(regex) for regex in REGEXES]
@@ -67,7 +71,7 @@ def regularise(prob_dict, regularisation_strength = 0.01):
 	allPOS_file.close()
 	for regex in prob_dict:
 		num_missing = len(allPOS) - len(prob_dict[regex].keys())
-		regularised_prob = regularisation_strength / num_missing
+		regularised_prob = (regularisation_strength / num_missing) ** 2
 		fitting_factor = 1 - num_missing * regularised_prob
 		for POS in allPOS:
 			if not POS in prob_dict[regex]:
@@ -90,7 +94,7 @@ with open(out_file, "w") as out_fileF:
 			out_fileF.write("{0} {1} {2}\n".format(regex, tag, prob_dict[regex][tag]))	
 
 with open("regularised_" + out_file, "w") as out_fileF:
-	regularised_dict = regularise(prob_dict, 1e-30)
+	regularised_dict = regularise(prob_dict, 1e-4)
 	for regex in regularised_dict:
 		for tag in regularised_dict[regex]:
 			out_fileF.write("{0} {1} {2}\n".format(regex, tag, prob_dict[regex][tag]))	

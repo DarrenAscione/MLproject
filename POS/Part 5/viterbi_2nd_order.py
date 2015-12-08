@@ -1,5 +1,5 @@
 import copy, math, string, re, os
-def parseFile(fileName):
+def parseFile(fileName, weighting=1.0):
 	valueDict = {}
 	inFile = open(fileName, "r")
 	fileLines = inFile.readlines()
@@ -8,7 +8,7 @@ def parseFile(fileName):
 		splitList = line.split(" ")
 		if not splitList[0] in valueDict:
 			valueDict[splitList[0]] = {}
-		valueDict[splitList[0]][splitList[1]] = float(splitList[2])
+		valueDict[splitList[0]][splitList[1]] = math.log(float(splitList[2])) * weighting
 	return valueDict
 
 def parsePenalties(fileName, weighting=0):
@@ -129,30 +129,18 @@ if __name__ == "__main__":
 	# model parameters
 	logPenalties = parsePenalties("transition_2nd_order.txt")
 	regexFeatures = parse_feature_probs(FEATURE_PROB_IN)
-	emissions = parseFile("part5_emission_testing.txt")
-	transitions = parseFile("transition.txt")
+	logEmissions = parseFile("part5_emission_testing.txt", 1.0)
+	logTransitions = parseFile("transition.txt", 0.65) #0.65
 	compiled = {}
 	for regex in regexFeatures:
 		compiled[regex] = re.compile(regex)
 
 	# list of all tags
-	allTags = emissions.keys()
+	allTags = logEmissions.keys()
 
 	# list of sequences
 	# each sequence is a Python list containing the words in the sequence
 	sequences = parseSequences("../dev.in")
-
-	logEmissions = {}
-	for key1 in emissions:
-		logEmissions[key1] = {}
-		for key2 in emissions[key1]:
-			logEmissions[key1][key2] = math.log(emissions[key1][key2])
-	
-	logTransitions = {}
-	for key1 in transitions:
-		logTransitions[key1] = {}
-		for key2 in transitions[key1]:
-			logTransitions[key1][key2] = math.log(transitions[key1][key2])
 
 	# output sequences corresponding to input sequences
 	outputs = []
@@ -182,5 +170,5 @@ if __name__ == "__main__":
 		outputs.append(endingState)
 		# print endingState.logProbability
 	viterbiTagger(outputs, "../dev.in", "p5_viterbi_2nd_order.txt")
-	os.system("diff -u " + "p5_viterbi_test.txt " + "../dev.out" + "> difference_2nd_order.txt")
+	os.system("diff -u " + "p5_viterbi_2nd_order.txt " + "../dev.out" + "> difference_2nd_order.txt")
 	print accuracy("p5_viterbi_2nd_order.txt", "../dev.out")

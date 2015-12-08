@@ -16,7 +16,7 @@ out RP
 in IN
 15 CD
 . .
-Mom PRP
+Mom NNP
 took VBD
 the DT
 antenna NN
@@ -34,7 +34,7 @@ finally RB
 QUAKE NN
 : :
 Mag NNP
-4.5 NN
+4.5 NNP
 , ,
 Saturday NNP
 , ,
@@ -44,11 +44,11 @@ September NNP
 at IN
 10:03 PRP
 am VBP
-( UH
-NZST) NNP
+( (
+NZST) NN
 , ,
-20 NNP
-km NNP
+20 CD
+km NN
 south-west NN
 of IN
 Christchurch NNP
@@ -61,7 +61,7 @@ Not RB
 long JJ
 ago IN
 I PRP
-responded VBP
+responded NN
 to TO
 a DT
 angry JJ
@@ -100,9 +100,9 @@ Mood NNP
 : :
 excited JJ
 !! .
-GOO NNP
-WB NNP
-WILDCATS NNP
+GOO NN
+WB NN
+WILDCATS NN
 ! .
 
 good JJ
@@ -137,13 +137,13 @@ go VB
 back RB
 live VBP
 on IN
-Ustream NN
+Ustream NNP
 later RB
 tonight NN
 
 Lingerie NNP
-football NNP
-league NNP
+football NN
+league NN
 come VB
 on IN
 tonight NN
@@ -209,7 +209,7 @@ week NN
 anything NN
 that IN
 i PRP
-loved NN
+loved VBD
 is VBZ
 now RB
 gone VBN
@@ -257,9 +257,9 @@ http://tumblr.com/xmciuda0t URL
 
 Driving NN
 , ,
-driving NNP
+driving NN
 , ,
-driving NNP
+driving NN
 away NN
 to TO
 Phil NNP
@@ -295,7 +295,7 @@ people NNS
 do VBP
 shit JJ
 like IN
-that RB
+that DT
 
 It PRP
 was VBD
@@ -382,10 +382,10 @@ Rep NNP
 Bono NNP
 Mack NN
 to TO
-criticize NNP
-fellow NNP
-desert NNP
-dweller NNP
+criticize NN
+fellow NN
+desert NN
+dweller IN
 Barbara NNP
 Boxer NNP
 at IN
@@ -404,7 +404,7 @@ could MD
 work NN
 I PRP
 might MD
-stick VB
+stick NN
 with IN
 SD2 NN
 for IN
@@ -414,7 +414,7 @@ while NN
 that DT
 saves NN
 me PRP
-3 UH
+3 CD
 or CC
 4 CD
 steps NN
@@ -451,8 +451,8 @@ it PRP
 been VBN
 interesting JJ
 but CC
-excruciatingly NNP
-painful NN
+excruciatingly RB
+painful JJ
 !! .
 
 RT RT
@@ -462,7 +462,7 @@ PG&lt;E DT
 donated NN
 35G NN
 to TO
-state DT
+state NN
 committe NN
 chairman NN
 investigating NN
@@ -485,9 +485,9 @@ yo UH
 , ,
 too RB
 many NNS
-kidz RB
+kidz NN
 be VB
-gettin DT
+gettin NN
 high NN
 all IN
 the DT
@@ -504,7 +504,7 @@ that DT
 's VBZ
 what WP
 we PRP
-call NN
+call VB
 fakin IN
 the DT
 funk NN
@@ -544,7 +544,7 @@ it PRP
 's VBZ
 Friday NNP
 today NN
-=) .
+=) UH
 
 Sleep NNP
 . .
@@ -589,7 +589,7 @@ RT RT
 . .
 The NNP
 day NN
-@owlcity NN
+@owlcity USR
 went VBD
 on IN
 an DT
@@ -604,7 +604,7 @@ twitter NNP
 xD UH
 
 @OrionCards USR
-there UH
+there RB
 will MD
 be VB
 , ,
@@ -668,7 +668,7 @@ again RB
 
 @hime8644 USR
 LOL UH
-theres PRP
+theres NNP
 always RB
 some DT
 good JJ
@@ -680,7 +680,7 @@ before IN
 like IN
 this DT
 one NN
-XD NNP
+XD NN
 --- SYM
 &gt; SYM
 http://www.youtube.com/watch?v=8zJKZJ7TGlU URL
@@ -760,7 +760,7 @@ Great NN
 #COACHING HT
 - :
 Mike NNP
-McCarthy NNP
+McCarthy NN
 had VBD
 Green NNP
 Bay NNP
@@ -779,7 +779,7 @@ Great NN
 RT RT
 @ItsTheTeenLife USR
 : :
-The DT
+The NNP
 exact NN
 day NN
 that IN
@@ -827,7 +827,7 @@ that IN
 23 CD
 days NNS
 of IN
-rehab PRP
+rehab NN
 did VBD
 n't RB
 work NN
@@ -840,7 +840,7 @@ bath NN
 but CC
 do VB
 n't RB
-have VB
+have VBP
 a DT
 bath NN
 , ,
@@ -860,7 +860,7 @@ be VB
 round NN
 at IN
 10am CD
-so CC
+so RB
 go VB
 away IN
 you PRP
@@ -892,8 +892,8 @@ here RB
 http://bit.ly/cNOeyS URL
 
 @yourjessica USR
-'ll PRP
-do VBP
+'ll MD
+do VB
 it PRP
 tomorrow NN
 . .
@@ -995,7 +995,7 @@ Tour NNP
 MONTCLAIR NNP
 N.J. NNP
 ...: :
-The DT
+The NNP
 all DT
 day NN
 event NN
@@ -1024,9 +1024,9 @@ Every NNP
 year NN
 , ,
 i PRP
-realize VBP
+realize NN
 how WRB
-lame PRP
+lame NN
 i PRP
 was VBD
 last JJ
@@ -1093,7 +1093,7 @@ tunes NN
 I PRP
 need VBP
 to TO
-draw DT
+draw NN
 FASTER NN
 . .
 I PRP
@@ -1108,7 +1108,7 @@ doodles NN
 to TO
 get VB
 going VBG
-, .
+, ,
 lol UH
 . .
 
@@ -1173,9 +1173,9 @@ sweepstakes NN
 lets VBZ
 hope VBP
 it PRP
-works VBP
+works NN
 out RP
-=D .
+=D UH
 
 @BexsterBexster USR
 @shinobi32768 USR
@@ -1190,7 +1190,7 @@ week NN
 do VB
 n't RB
 really RB
-have VB
+have VBP
 a DT
 favourite NN
 . .
@@ -1198,7 +1198,7 @@ It PRP
 's VBZ
 starting NN
 to TO
-taste DT
+taste NN
 pretty NN
 much RB
 the DT
@@ -1237,13 +1237,13 @@ month NN
 anniversary NN
 to TO
 my PRP$
-wonderful NN
+wonderful JJ
 wife NN
-@lizwoodring NN
+@lizwoodring USR
 !!! .
 
 @JoshRamsayArmy USR
-Kay NN
+Kay NNP
 sorry JJ
 ... :
 Well UH
@@ -1272,14 +1272,14 @@ STILL VB
 remember VB
 that IN
 ... :
-=/ URL
+=/ UH
 
 Man UH
 gets VBZ
 20 CD
 years NNS
 in IN
-murder DT
+murder NN
 plot NN
 against IN
 judge NN
@@ -1291,7 +1291,7 @@ Into IN
 Something NN
 Tonight NNP
 
-CHILLIN RT
+CHILLIN NN
 @LIVE USR
 TONIGHT NN
 ! .
@@ -1306,7 +1306,7 @@ it PRP
 goin VBG
 off RP
 at IN
-liquids DT
+liquids NNP
 tomorrow NN
 i PRP
 might MD
@@ -1335,13 +1335,13 @@ working NN
 together RB
 . .
 The NNP
-film NNP
-'s POS
+film NN
+'s VBZ
 releasing NN
 on IN
 Feb NNP
 . .
-4th UH
+4th NN
 . .
 It PRP
 's VBZ
@@ -1362,7 +1362,7 @@ http://t.co/JfGm0uH URL
 
 every DT
 year NN
-your PRP
+your PRP$
 " ''
 bestfriend NN
 " ''
@@ -1370,7 +1370,7 @@ get VB
 yo UH
 ass JJ
 in IN
-trouble DT
+trouble NN
 smdh NN
 #doinme HT
 
@@ -1523,7 +1523,7 @@ drink NN
 Specials NN
 too RB
 .. :
-tex DT
+tex NN
 980-333-3923 NN
 to TO
 get VB
@@ -1568,7 +1568,7 @@ an DT
 image NN
 today NN
 through IN
-@shutterstock NN
+@shutterstock USR
 ! .
 My PRP$
 gallery NN
@@ -1643,13 +1643,13 @@ look VB
 at IN
 ! .
 - :
-. URL
+. .
 - :
 @_Rhiann USR
 
 when WRB
 did VBD
-@thecodysimpson NN
+@thecodysimpson USR
 last JJ
 tweet NN
 ,? .
@@ -1665,7 +1665,7 @@ with IN
 evry NN
 week NN
 'll MD
-compete VB
+compete NN
 with IN
 sum NNP
 hawt NNP
@@ -1716,21 +1716,21 @@ HAVE IN
 MY PRP$
 EARPHONES NN
 I PRP
-GUESS VBP
+GUESS NN
 I PRP
-WO IN
-N'T DT
+WO NN
+N'T NN
 B NN
 TALKING NN
 AND CC
 DRIVING NN
 TODAY NN
-LOL NN
+LOL UH
 .... :
 Excuses NNP
 Excuses NNP
 Excuses NNP
-SMH NNP
+SMH NN
 
 I PRP
 just RB
@@ -1756,7 +1756,7 @@ and CC
 got VBD
 : :
 Part NN
-7 UH
+7 CD
 ! .
 Try VB
 it PRP
@@ -1780,7 +1780,7 @@ Wrawby NNP
 is VBZ
 where WRB
 I PRP
-spent VBP
+spent NN
 18 CD
 years NNS
 of IN
@@ -1788,7 +1788,7 @@ my PRP$
 life NN
 . .
 
-y'all DT
+y'all NN
 care NN
 if IN
 I PRP
@@ -1854,7 +1854,7 @@ http://dlvr.it/5Rh4w URL
 @Elinor_Althani USR
 ahhhh PRP
 reading VBG
-, .
+, ,
 still RB
 i PRP
 did VBD
@@ -1983,7 +1983,7 @@ mean VB
 I PRP
 will MD
 - :
-all IN
+all DT
 the DT
 time NN
 . .
@@ -1993,25 +1993,25 @@ Something NN
 New NNP
 In NNP
 Bed NNP
-( UH
+( (
 You PRP
 Game NN
 ? .
 ) )
 : :
 Someone NNP
-wrote IN
+wrote NN
 me PRP
 last JJ
 week NN
 about IN
 wanting NN
 to TO
-role DT
+role NN
 play NN
 . .
 Her NNP
-husband NNP
+husband NN
 is VBZ
 a DT
 ... :
@@ -2026,7 +2026,7 @@ read NN
 about IN
 Linkin NNP
 Park NNP
-being NN
+being VBG
 classified NN
 under IN
 ' ''
@@ -2048,9 +2048,9 @@ For IN
 code NN
 I PRP
 've VBP
-written DT
-since NN
-Sept NN
+written NN
+since IN
+Sept NNP
 ' ''
 09 NNP
 , ,
@@ -2063,7 +2063,7 @@ SCM NN
 and CC
 running NN
 on IN
-customer DT
+customer NN
 hardware NN
 has VBZ
 been VBN
@@ -2088,7 +2088,7 @@ these DT
 days NNS
 ... :
 Bacon NNP
-cereal NNP
+cereal NN
 is VBZ
 up RP
 next IN
@@ -2121,16 +2121,16 @@ the DT
 http://bit.ly/gw8oSb URL
 
 ok UH
-so UH
+so RB
 , ,
 can MD
 someone NN
 make VB
 me PRP
-Steelers NN
+Steelers NNP
 ( (
 Happy JJ
-) UH
+) )
 gifs NNP
 from IN
 last JJ
@@ -2166,7 +2166,7 @@ tonight NN
 
 fckn NNP
 emily NNP
-rodriguez NNP
+rodriguez NN
 did VBD
 n't RB
 bring VBG
@@ -2185,8 +2185,8 @@ Today NN
 is VBZ
 my PRP$
 main NN
-goonie NN
-@bobbyboutit NN
+goonie IN
+@bobbyboutit USR
 birthday NN
 #teamchino HT
 ca MD
@@ -2201,7 +2201,7 @@ him PRP
 some DT
 shouts NN
 !! .
-While VB
+While NN
 he PRP
 's VBZ
 ... :
@@ -2209,7 +2209,7 @@ he PRP
 ; :
 I PRP
 can MD
-upgrade VB
+upgrade NN
 to TO
 a DT
 BlackBerry NN
@@ -2231,7 +2231,7 @@ come VBP
 Bday NN
 party NN
 for IN
-@SILVRSCREENSTAR NN
+@SILVRSCREENSTAR USR
 then IN
 hp6 NN
 with IN
@@ -2266,7 +2266,7 @@ students NN
 
 @christinamarks_ USR
 u PRP
-try VBP
+try NN
 to TO
 be VB
 like IN
@@ -2283,19 +2283,19 @@ Everyone NNP
 can MD
 never RB
 be VB
-taken DT
+taken NN
 away NN
 ... :
 go VB
 follow VB
-your PRP
+your PRP$
 #dreams HT
 
 NO UH
 Saints NNP
 R NN
 . .
-Buch PRP
+Buch NNP
 might MD
 come VB
 back RB
@@ -2307,7 +2307,7 @@ on IN
 Sunday NNP
 ?? .
 
-@YnYrTheOne NN
+@YnYrTheOne USR
 what WP
 time NN
 is VBZ
@@ -2322,9 +2322,9 @@ to TO
 my PRP$
 not RB
 so RB
-little JJ
-brother NN
-@xHangmanx NN
+little NN
+brother IN
+@xHangmanx USR
 !!! .
 He PRP
 's VBZ
@@ -2332,11 +2332,11 @@ He PRP
 today NN
 ! .
 Holy NNP
-crap NNP
+crap NN
 , ,
 20 CD
 ? .
-Jeez UH
+Jeez NNP
 man UH
 ... :
 
@@ -2348,14 +2348,14 @@ buyer NN
 incentives NN
 in IN
 Temecula NNP
-CA NNP
+CA NN
 : :
 2011 CD
 First JJ
 Time NN
 Home NN
-Buyer NN
-Incentives NN
+Buyer NNP
+Incentives NNP
 in IN
 Temecula NNP
 CA NNP
@@ -2370,20 +2370,20 @@ yours PRP$
 truly JJ
 tonight NN
 at IN
-frat DT
+frat NN
 house NN
 Hattiesburg NN
 on IN
 the DT
 1s NN
 n CC
-2s NN
+2s NNP
 !! .
 
 Monsters NNP
 , ,
 tweet NN
-@defpenradio NN
+@defpenradio USR
 and CC
 ask VBP
 them PRP
@@ -2400,17 +2400,17 @@ about IN
 RT RT
 @JordanCenter USR
 : :
-LIL NNP
-WAYNE NNP
-/ NNP
-NICKI NNP
-MINAJ NNP
+LIL NN
+WAYNE NN
+/ NN
+NICKI NN
+MINAJ NN
 - :
 March NNP
 30 CD
 - :
-SOLD NNP
-OUT.....'nuff NNP
+SOLD NN
+OUT.....'nuff NN
 said VBD
 . .
 
@@ -2422,7 +2422,7 @@ Lions NNP
 The NNP
 Jason NNP
 Garrett NNP
-era NNP
+era NN
 got VBD
 off RP
 to TO
@@ -2434,9 +2434,9 @@ week NN
 . .
 Now RB
 the DT
-Cowboys NN
+Cowboys NNP
 will MD
-try VB
+try NN
 to TO
 snap VB
 a DT
@@ -2464,7 +2464,7 @@ tonight NN
 RT RT
 @JasonKingYahoo USR
 : :
-Eventful NNP
+Eventful JJ
 morning NN
 for IN
 Oklahoma NNP
@@ -2473,10 +2473,10 @@ State NNP
 Darrell NNP
 Williams NNP
 . .
-Won NN
+Won NNP
 Big JJ
-12 IN
-Rookie NNP
+12 CD
+Rookie NN
 of IN
 the DT
 Week NN
@@ -2486,22 +2486,22 @@ and CC
 got VBD
 charged NN
 with IN
-f NN
+f PRP
 ... :
 
 Good NNP
 start VB
 for IN
-sharks DT
+sharks NNP
 tonight NN
 can MD
 only JJ
 get VBP
 better RB
 . .
-Played NN
+Played NNP
 with IN
-short DT
+short NN
 bench NN
 tonight NN
 . .
@@ -2543,7 +2543,7 @@ are VBP
 beginning NN
 to TO
 look VB
-up NN
+up RP
 
 @mfeige USR
 it PRP
@@ -2564,10 +2564,10 @@ Pick VB
 up RP
 here RB
 . .
-Deliver NN
+Deliver NNP
 on IN
 Dayton NNP
-NJ NNP
+NJ NN
 tomorrow NN
 (@ IN
 Ball NNP
@@ -2580,14 +2580,14 @@ morning NN
 tweeps NN
 . .
 have VB
-'ll PRP
+'ll MD
 a DT
 fabulous NN
 day NN
 .... :
 
 Who WP
-loves VBZ
+loves DT
 Friday NNP
 ? .
 At IN
@@ -2595,7 +2595,7 @@ the DT
 gym NN
 now RB
 ! .
-Excited NN
+Excited NNP
 for IN
 weekend NN
 plans NN
@@ -2664,9 +2664,9 @@ sorting NN
 pope NN
 visit NN
 to TO
-birmingham DT
+birmingham NN
 stuff NN
-out IN
+out RP
 ..... :
 hope VBP
 it PRP
@@ -2718,15 +2718,15 @@ last JJ
 night NN
 did VBD
 n't RB
-have VB
+have VBP
 no DT
 hot NN
 water NN
 uggghh NN
 
 @Yeweezii USR
-Jst NN
-lock IN
+Jst NNP
+lock NN
 her PRP
 outside IN
 4 CD
@@ -2786,20 +2786,20 @@ When WRB
 Your NNP
 Crush NNP
 Is VBZ
-Taken NN
+Taken NNP
 : :
 http://yhoo.it/aFG5Ue URL
 
 RT RT
 @cstatus USR
 : :
-pet DT
+pet NN
 peeve NN
 when WRB
 niggas PRP
 do VBP
 n't RB
-tag JJ
+tag NN
 albums NN
 right RB
 ... :
@@ -2809,9 +2809,9 @@ names NNP
 and CC
 shit NN
 
-ThAnK NNP
-gOd NNP
-ItS NNP
+ThAnK NN
+gOd NN
+ItS NN
 fRiDaY NN
 !! .
 
@@ -2823,7 +2823,7 @@ ring NN
 usually RB
 confirm NN
 to TO
-, .
+, ,
 winning NN
 a DT
 Nokia NNP
@@ -2844,7 +2844,7 @@ Jan NNP
 . .
 22 CD
 , ,
-4:30 PRP
+4:30 NN
 to TO
 ??. .
 Contact NNP
@@ -2910,7 +2910,7 @@ on IN
 Sunday NNP
 ? .
 
-Dude NN
+Dude NNP
 in IN
 my PRP$
 group NN
@@ -2931,8 +2931,8 @@ HATE VBP
 IT PRP
 WHEN NN
 THEY NN
-KNOW IN
-I'M DT
+KNOW NN
+I'M NN
 PAGAN NN
 AND CC
 INVITE NN
@@ -2944,18 +2944,18 @@ ANGER NN
 Jiaaah NNP
 .. :
 Ky NNP
-barang NNP
-aja NNP
-maen NNP
+barang NN
+aja NN
+maen NN
 nitip NN
 ".. .
 Hahaha NNP
 .. :
 Udh NNP
-jul NNP
+jul NN
 .. :
 Galakin NNP
-aja NNP
+aja NN
 .. :
 Wkwkwk NNP
 RT RT
@@ -2977,7 +2977,7 @@ Manchester NNP
 tomorrow NN
 on IN
 BA NNP
-2910 NNP
+2910 CD
 and CC
 fly JJ
 to TO
@@ -2990,7 +2990,7 @@ http://twitpic.com/3xgdng URL
 - :
 sign IN
 me PRP
-up NN
+up RP
 , ,
 just RB
 did VBD
