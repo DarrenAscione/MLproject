@@ -1341,7 +1341,7 @@ releasing NN
 on IN
 Feb NNP
 . .
-4th NN
+4th NNP
 . .
 It PRP
 's VBZ
