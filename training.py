@@ -1,4 +1,4 @@
-# Structure of the count_word = {tag: {word: count, word: count}, tag:{word, count}}
+#Structure of the count_word = {tag: {word: count, word: count}, tag:{word, count}}
 # training.py outputs 2 file: bjo file and count file
 
 from output_printer import output_to_file
@@ -33,7 +33,6 @@ def gen_bjo(word_count):
 		for words in word_count[key].keys():
 			dict[key][words] = word_count[key][words]*1.0 / state_count[key]
 	return dict
-
 
 training = "POS/train"
 word_count = count_word(training)
