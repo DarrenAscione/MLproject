@@ -35,7 +35,8 @@ REGEXES = [
 		r'^[a-zA-Z]+[eE][rR]$',
 		r'^[0-9]+[pPaA][mM]$',
 		r'^[0-9]+$',
-		r'^[0-9]+.+$',
+		r'^[0-9]+.*[0-9]+$',
+		# r'^[0-9]+.+$',
 		r'^[0-9]{4}$',
 		r'^.+(?!\')[sS]$',
 		r'^:.+$',
@@ -46,6 +47,9 @@ REGEXES = [
 		r'^[(one)(two)(three)(four)(five)(six)(seven)(eight)(nine)(ten)]$',
 		r'^[tT][hH][eE]$',
 		r'^[dD][oO]$',
+		r'^[sS][oO]$',
+		r'^[vV][sS]$',
+		r'^[A-Z].+[sS]$',
 ]
 ALL = "ALL"
 COMPILED = [re.compile(regex) for regex in REGEXES]

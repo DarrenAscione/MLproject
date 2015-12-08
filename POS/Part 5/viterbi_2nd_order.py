@@ -11,7 +11,7 @@ def parseFile(fileName, weighting=1.0):
 		valueDict[splitList[0]][splitList[1]] = math.log(float(splitList[2])) * weighting
 	return valueDict
 
-def parsePenalties(fileName, weighting=0):
+def parsePenalties(fileName, weighting=0.05):
 	valueDict = {}
 	inFile = open(fileName, "r")
 	fileLines = inFile.readlines()
@@ -109,8 +109,11 @@ class ViterbiSequence:
 		if nextEmission == None:
 			return self.logProbability + logTransitions[lastTag][nextTag]	
 		else:
+			testEmission = nextEmission
+			if lastTag == START:
+				testEmission = nextEmission.lower()
 			for regex in regexFeatures:
-				if compiled[regex].match(nextEmission):
+				if compiled[regex].match(testEmission):
 					probabilityChain += regexFeatures[regex][nextTag]
 			if not nextEmission in logEmissions[nextTag]:
 				return None
@@ -125,12 +128,12 @@ class ViterbiSequence:
 
 if __name__ == "__main__":
 	FEATURE_PROB_IN = "regularised_feature_probs.txt"
-	START = "START"
+	START = "__START"
 	# model parameters
-	logPenalties = parsePenalties("transition_2nd_order.txt")
-	regexFeatures = parse_feature_probs(FEATURE_PROB_IN)
-	logEmissions = parseFile("part5_emission_testing.txt", 1.0)
-	logTransitions = parseFile("transition.txt", 0.65) #0.65
+	logPenalties = parsePenalties("transition_2nd_order.txt", 0.01) #0.01
+	regexFeatures = parse_feature_probs(FEATURE_PROB_IN, 0.9) #0.9
+	logEmissions = parseFile("part5_emission_testing.txt", 0.9) #0.9
+	logTransitions = parseFile("transition.txt", 0.75) #0.75
 	compiled = {}
 	for regex in regexFeatures:
 		compiled[regex] = re.compile(regex)
@@ -168,7 +171,6 @@ if __name__ == "__main__":
 				endMaxChoice = dpEntry
 		endingState = endMaxChoice.transit("__END", None)
 		outputs.append(endingState)
-		# print endingState.logProbability
 	viterbiTagger(outputs, "../dev.in", "p5_viterbi_2nd_order.txt")
 	os.system("diff -u " + "p5_viterbi_2nd_order.txt " + "../dev.out" + "> difference_2nd_order.txt")
 	print accuracy("p5_viterbi_2nd_order.txt", "../dev.out")
