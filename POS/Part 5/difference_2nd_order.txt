@@ -1,4 +1,4 @@
---- p5_viterbi_2nd_order.txt	2015-12-08 14:41:39.000000000 +0800
+--- p5_viterbi_2nd_order.txt	2015-12-08 14:45:31.000000000 +0800
 +++ ../dev.out	2015-12-07 20:46:31.000000000 +0800
 @@ -1,5 +1,5 @@
 -Gotta NNP
@@ -39,7 +39,7 @@
  QUAKE NN
  : :
 -Mag NNP
--4.5 NNP
+-4.5 NN
 +Mag NN
 +4.5 CD
  , ,
@@ -49,7 +49,7 @@
  18 CD
  2010 CD
  at IN
--10:03 PRP
+-10:03 NN
 -am VBP
 +10:03 CD
 +am NN
@@ -2050,7 +2050,7 @@
  I PRP
  hope VBP
  he PRP
-@@ -2038,30 +2038,30 @@
+@@ -2038,17 +2038,17 @@
  n't RB
  mean VB
  ' ''
@@ -2073,8 +2073,7 @@
  since IN
  Sept NNP
  ' ''
--09 NNP
-+09 CD
+@@ -2056,12 +2056,12 @@
  , ,
  the DT
  delay NN
@@ -2404,7 +2403,7 @@
 -1s NN
 +1s CD
  n CC
--2s NNP
+-2s NN
 +2s CD
  !! .
  

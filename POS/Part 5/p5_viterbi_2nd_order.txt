@@ -34,7 +34,7 @@ finally RB
 QUAKE NN
 : :
 Mag NNP
-4.5 NNP
+4.5 NN
 , ,
 Saturday NNP
 , ,
@@ -42,7 +42,7 @@ September NNP
 18 CD
 2010 CD
 at IN
-10:03 PRP
+10:03 NN
 am VBP
 ( (
 NZST) NN
@@ -2052,7 +2052,7 @@ written NN
 since IN
 Sept NNP
 ' ''
-09 NNP
+09 CD
 , ,
 the DT
 delay NN
@@ -2377,7 +2377,7 @@ on IN
 the DT
 1s NN
 n CC
-2s NNP
+2s NN
 !! .
 
 Monsters NNP
