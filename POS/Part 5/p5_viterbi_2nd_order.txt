@@ -1,4 +1,4 @@
-Gotta NNP
+Gotta NN
 call NN
 mom NN
 2 TO
@@ -85,7 +85,7 @@ did VBD
 it PRP
 + .
 
-Football NNP
+Football NN
 game NN
 tonight NN
 with IN
@@ -108,7 +108,7 @@ WILDCATS NNP
 good JJ
 afternoon NN
 
-Good NNP
+Good JJ
 day NN
 looking VBG
 for IN
@@ -141,7 +141,7 @@ Ustream NNP
 later RB
 tonight NN
 
-Lingerie NNP
+Lingerie NN
 football NN
 league .
 come VB
@@ -324,7 +324,7 @@ __AND__ CC
 advice NN
 ... :
 
-Someone NNP
+Someone PRP
 just RB
 started VBD
 following VBG
@@ -546,7 +546,7 @@ Friday NNP
 today NN
 =) UH
 
-Sleep NNP
+Sleep NN
 . .
 Tomorrow NN
 is VBZ
@@ -756,7 +756,7 @@ see VB
 you PRP
 tomorrow NN
 
-Great NNP
+Great NN
 #COACHING HT
 - :
 Mike NNP
@@ -1020,7 +1020,7 @@ nice JJ
 outside IN
 today NN
 
-Every NNP
+Every NN
 year NN
 , ,
 i PRP
@@ -1533,7 +1533,7 @@ guest NN
 list NN
 ! .
 
-Stephen NNP
+Stephen NN
 , ,
 the DT
 Intellectual NN
@@ -1708,7 +1708,7 @@ me PRP
 ASAP NN
 ! .
 
-Ugh NNP
+Ugh USR
 I PRP
 DO VB
 N'T NN
@@ -1806,7 +1806,7 @@ no DT
 26 CD
 days NNS
 
-Kfc NNP
+Kfc NN
 ! .
 my PRP$
 mom NN
@@ -2489,7 +2489,7 @@ with IN
 f PRP
 ... :
 
-Good NNP
+Good UH
 start VB
 for IN
 sharks DT
@@ -2676,7 +2676,7 @@ on IN
 sunday NNP
 !! .
 
-Wow NNP
+Wow NN
 , ,
 i PRP
 feel VBP
@@ -2706,7 +2706,7 @@ a DT
 night NN
 :\ UH
 
-Shower NNP
+Shower NN
 time NN
 the DT
 flyin NN
@@ -2765,7 +2765,7 @@ for IN
 that DT
 . .
 
-Got NN
+Got IN
 the DT
 stuff NN
 to TO
@@ -2830,7 +2830,7 @@ Nokia NNP
 5800 CD
 ? .
 
-Cruisers NNP
+Cruisers USR
 meet VB
 at IN
 Norfolk NNP
@@ -2910,7 +2910,7 @@ on IN
 Sunday NNP
 ? .
 
-Dude NNP
+Dude NN
 in IN
 my PRP$
 group NN
@@ -2941,7 +2941,7 @@ ME NN
 ANGER NN
 . .
 
-Jiaaah NNP
+Jiaaah USR
 .. :
 Ky NNP
 barang NNP

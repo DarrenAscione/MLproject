@@ -109,8 +109,11 @@ class ViterbiSequence:
 		if nextEmission == None:
 			return self.logProbability + logTransitions[lastTag][nextTag]	
 		else:
+			testEmission = nextEmission
+			if lastTag == START:
+				testEmission = nextEmission.lower()
 			for regex in regexFeatures:
-				if compiled[regex].match(nextEmission):
+				if compiled[regex].match(testEmission):
 					probabilityChain += regexFeatures[regex][nextTag]
 			if not nextEmission in logEmissions[nextTag]:
 				return None
@@ -119,17 +122,13 @@ class ViterbiSequence:
 			return self.logProbability + logTransitions[lastTag][nextTag] + logEmissions[nextTag][nextEmission] + logPenalties[secondLastTag][lastTag][nextTag] + probabilityChain
 	def transit(self, nextTag, nextEmission):
 		nextStep = copy.deepcopy(self)
-		# if nextEmission is not None:
-			# if compiled[r'^.+(?!\')[sS]$'].match(nextEmission):
-			# 	if nextTag == "NN" or nextTag == "NNP":
-			# 		nextTag = "NNS"
 		nextStep.logProbability = nextStep.probTransmission(nextTag, nextEmission)
 		nextStep.sequence.append(nextTag)
 		return nextStep
 
 if __name__ == "__main__":
 	FEATURE_PROB_IN = "regularised_feature_probs.txt"
-	START = "START"
+	START = "__START"
 	# model parameters
 	logPenalties = parsePenalties("transition_2nd_order.txt")
 	regexFeatures = parse_feature_probs(FEATURE_PROB_IN)

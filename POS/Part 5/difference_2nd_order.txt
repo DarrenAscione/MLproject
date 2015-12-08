@@ -1,7 +1,7 @@
---- p5_viterbi_2nd_order.txt	2015-12-08 17:09:48.000000000 +0800
+--- p5_viterbi_2nd_order.txt	2015-12-08 17:23:25.000000000 +0800
 +++ ../dev.out	2015-12-07 20:46:31.000000000 +0800
 @@ -1,5 +1,5 @@
--Gotta NNP
+-Gotta NN
 -call NN
 +Gotta VBP
 +call VB
@@ -89,15 +89,14 @@
  venom NN
  to TO
  the DT
-@@ -83,44 +83,44 @@
+@@ -83,30 +83,30 @@
  I PRP
  did VBD
  it PRP
 -+ .
 ++ SYM
  
--Football NNP
-+Football NN
+ Football NN
  game NN
  tonight NN
  with IN
@@ -126,10 +125,9 @@
 +good UH
 +afternoon UH
  
--Good NNP
-+Good JJ
+ Good JJ
  day NN
- looking VBG
+@@ -114,13 +114,13 @@
  for IN
  software NN
  n CC
@@ -146,7 +144,7 @@
  http://twitpic.com/2pdvtr URL
  
  RT RT
-@@ -135,20 +135,20 @@
+@@ -135,7 +135,7 @@
  to TO
  go VB
  back RB
@@ -155,10 +153,9 @@
  on IN
  Ustream NNP
  later RB
- tonight NN
+@@ -143,12 +143,12 @@
  
--Lingerie NNP
-+Lingerie NN
+ Lingerie NN
  football NN
 -league .
 +league NN
@@ -326,7 +323,7 @@
  advice NN
  ... :
  
--Someone NNP
+-Someone PRP
 +Someone NN
  just RB
  started VBD
@@ -571,7 +568,7 @@
  today NN
  =) UH
  
--Sleep NNP
+-Sleep NN
 +Sleep VB
  . .
  Tomorrow NN
@@ -744,7 +741,7 @@
  you PRP
  tomorrow NN
  
--Great NNP
+-Great NN
 +Great JJ
  #COACHING HT
  - :
@@ -1023,7 +1020,7 @@
  outside IN
  today NN
  
--Every NNP
+-Every NN
 +Every DT
  year NN
  , ,
@@ -1552,8 +1549,12 @@
  to TO
  get VB
  on IN
-@@ -1536,26 +1536,26 @@
- Stephen NNP
+@@ -1533,29 +1533,29 @@
+ list NN
+ ! .
+ 
+-Stephen NN
++Stephen NNP
  , ,
  the DT
 -Intellectual NN
@@ -1734,7 +1735,7 @@
 +ASAP RB
  ! .
  
--Ugh NNP
+-Ugh USR
 +Ugh UH
  I PRP
 -DO VB
@@ -1828,7 +1829,7 @@
  if IN
  I PRP
  do VBP
-@@ -1801,7 +1801,7 @@
+@@ -1801,37 +1801,37 @@
  ? .
  ok UH
  , ,
@@ -1837,7 +1838,9 @@
  ? .
  26 CD
  days NNS
-@@ -1810,28 +1810,28 @@
+ 
+-Kfc NN
++Kfc NNP
  ! .
  my PRP$
  mom NN
@@ -2496,7 +2499,7 @@
 +f NN
  ... :
  
--Good NNP
+-Good UH
 -start VB
 +Good JJ
 +start NN
@@ -2707,7 +2710,7 @@
  sunday NNP
  !! .
  
--Wow NNP
+-Wow NN
 +Wow UH
  , ,
  i PRP
@@ -2734,12 +2737,8 @@
  summer NNP
  , ,
  and CC
-@@ -2706,11 +2706,11 @@
- night NN
- :\ UH
- 
--Shower NNP
-+Shower NN
+@@ -2709,8 +2709,8 @@
+ Shower NN
  time NN
  the DT
 -flyin NN
@@ -2817,7 +2816,7 @@
  that DT
  . .
  
--Got NN
+-Got IN
 +Got VBD
  the DT
  stuff NN
@@ -2899,7 +2898,7 @@
  5800 CD
  ? .
  
--Cruisers NNP
+-Cruisers USR
 -meet VB
 +Cruisers NNS
 +meet VBP
@@ -2956,16 +2955,7 @@
  http://tumblr.com/xt21gcptqr URL
  
  @Kristi_Taylor USR
-@@ -2910,7 +2910,7 @@
- Sunday NNP
- ? .
- 
--Dude NNP
-+Dude NN
- in IN
- my PRP$
- group NN
-@@ -2922,21 +2922,21 @@
+@@ -2922,47 +2922,47 @@
  me PRP
  to TO
  an DT
@@ -2998,8 +2988,9 @@
  . .
  ANGER NN
  . .
-@@ -2944,25 +2944,25 @@
- Jiaaah NNP
+ 
+-Jiaaah USR
++Jiaaah NNP
  .. :
  Ky NNP
 -barang NNP
