@@ -47,6 +47,8 @@ REGEXES = [
 		r'^[(one)(two)(three)(four)(five)(six)(seven)(eight)(nine)(ten)]$',
 		r'^[tT][hH][eE]$',
 		r'^[dD][oO]$',
+		r'^[sS][oO]$',
+		r'^[vV][sS]$',
 		r'^[A-Z].+[sS]$',
 ]
 ALL = "ALL"

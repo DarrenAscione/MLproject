@@ -330,7 +330,7 @@ started VBD
 following VBG
 me PRP
 today NN
-so IN
+so RB
 I PRP
 better JJR
 post NN
@@ -1143,7 +1143,7 @@ seen VBN
 all DT
 year NN
 . .
-So UH
+So RB
 , ,
 so RB
 good JJ
@@ -1898,7 +1898,7 @@ ntake VB
 all DT
 day NN
 lol UH
-so UH
+so RB
 id .
 be VB
 cutting VBG
@@ -2121,7 +2121,7 @@ the DT
 http://bit.ly/gw8oSb URL
 
 ok UH
-so UH
+so RB
 , ,
 can MD
 someone NN
@@ -2553,7 +2553,7 @@ a DT
 Saturday NNP
 though NN
 . .
-So UH
+So RB
 that WDT
 's VBZ
 a DT
@@ -2610,7 +2610,7 @@ pandora NNP
 today NN
 tho NN
 loser NN
-so IN
+so RB
 I PRP
 tweeted VBN
 it PRP
@@ -2687,8 +2687,8 @@ after IN
 working VBG
 out RP
 :) UH
-so UH
-worth .
+so RB
+worth VB
 it PRP
 . .
 

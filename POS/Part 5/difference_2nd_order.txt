@@ -1,4 +1,4 @@
---- p5_viterbi_2nd_order.txt	2015-12-08 20:07:57.000000000 +0800
+--- p5_viterbi_2nd_order.txt	2015-12-08 20:17:41.000000000 +0800
 +++ ../dev.out	2015-12-08 17:55:01.000000000 +0800
 @@ -1,5 +1,5 @@
 -Gotta DT
@@ -313,7 +313,7 @@
  old JJ
  lady NN
  for IN
-@@ -324,7 +324,7 @@
+@@ -324,19 +324,19 @@
  advice NN
  ... :
  
@@ -322,9 +322,10 @@
  just RB
  started VBD
  following VBG
-@@ -332,11 +332,11 @@
+ me PRP
  today NN
- so IN
+-so RB
++so IN
  I PRP
 -better JJR
 -post NN
@@ -1124,7 +1125,7 @@
  !!!! .
  
  @JaeChartaye USR
-@@ -1128,35 +1128,35 @@
+@@ -1128,15 +1128,15 @@
  next JJ
  week NN
  
@@ -1143,13 +1144,7 @@
  I PRP
  have VBP
  seen VBN
- all DT
- year NN
- . .
--So UH
-+So RB
- , ,
- so RB
+@@ -1149,14 +1149,14 @@
  good JJ
  . .
  And CC
@@ -1909,8 +1904,9 @@
  all DT
  day NN
  lol UH
- so UH
+-so RB
 -id .
++so UH
 +id PRP
  be VB
  cutting VBG
@@ -2100,15 +2096,6 @@
  for IN
  hockey NN
  as IN
-@@ -2121,7 +2121,7 @@
- http://bit.ly/gw8oSb URL
- 
- ok UH
--so UH
-+so RB
- , ,
- can MD
- someone NN
 @@ -2131,11 +2131,11 @@
  ( (
  Happy JJ
@@ -2544,9 +2531,8 @@
 -though NN
 +though RB
  . .
--So UH
+ So RB
 -that WDT
-+So RB
 +that DT
  's VBZ
  a DT
@@ -2603,7 +2589,8 @@
 -tho NN
 +tho RB
  loser NN
- so IN
+-so RB
++so IN
  I PRP
 -tweeted VBN
 +tweeted VBD
@@ -2681,13 +2668,11 @@
  , ,
  i PRP
  feel VBP
-@@ -2687,16 +2687,16 @@
- working VBG
+@@ -2688,15 +2688,15 @@
  out RP
  :) UH
--so UH
--worth .
-+so RB
+ so RB
+-worth VB
 +worth JJ
  it PRP
  . .
