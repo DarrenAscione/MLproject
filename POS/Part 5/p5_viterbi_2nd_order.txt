@@ -1,4 +1,4 @@
-Gotta DT
+Gotta NN
 call NN
 mom NN
 2 TO
@@ -85,7 +85,7 @@ did VBD
 it PRP
 + .
 
-Football DT
+Football NN
 game NN
 tonight NN
 with IN
@@ -141,7 +141,7 @@ Ustream NNP
 later RB
 tonight NN
 
-Lingerie DT
+Lingerie NN
 football NN
 league .
 come VB
@@ -259,7 +259,7 @@ Driving NN
 , ,
 driving NNP
 , ,
-driving NNP
+driving NN
 away NN
 to TO
 Phil NNP
@@ -749,7 +749,7 @@ sleep VB
 , ,
 not RB
 feeling VBG
-very IN
+very NN
 well RB
 , ,
 see VB
@@ -979,7 +979,7 @@ it PRP
 's VBZ
 as IN
 bad JJ
-down IN
+down RP
 there RB
 . .
 
@@ -1020,7 +1020,7 @@ nice JJ
 outside IN
 today NN
 
-Every DT
+Every NN
 year NN
 , ,
 i PRP
@@ -1519,7 +1519,7 @@ We PRP
 're VBP
 having VBG
 crazy JJ
-drink IN
+drink NNP
 Specials NNP
 too RB
 .. :
@@ -1788,7 +1788,7 @@ my PRP$
 life NN
 . .
 
-y'all DT
+y'all NN
 care NN
 if IN
 I PRP
@@ -2580,7 +2580,7 @@ morning NN
 tweeps NN
 . .
 have VB
-'ll PRP
+'ll MD
 a DT
 fabulous NN
 day NN

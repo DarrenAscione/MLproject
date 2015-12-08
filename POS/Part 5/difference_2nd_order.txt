@@ -1,7 +1,7 @@
---- p5_viterbi_2nd_order.txt	2015-12-08 20:17:41.000000000 +0800
+--- p5_viterbi_2nd_order.txt	2015-12-08 20:33:10.000000000 +0800
 +++ ../dev.out	2015-12-08 17:55:01.000000000 +0800
 @@ -1,5 +1,5 @@
--Gotta DT
+-Gotta NN
 -call NN
 +Gotta VBP
 +call VB
@@ -92,8 +92,7 @@
 -+ .
 ++ SYM
  
--Football DT
-+Football NN
+ Football NN
  game NN
  tonight NN
  with IN
@@ -141,7 +140,7 @@
  http://twitpic.com/2pdvtr URL
  
  RT RT
-@@ -135,20 +135,20 @@
+@@ -135,7 +135,7 @@
  to TO
  go VB
  back RB
@@ -150,10 +149,9 @@
  on IN
  Ustream NNP
  later RB
- tonight NN
+@@ -143,12 +143,12 @@
  
--Lingerie DT
-+Lingerie NN
+ Lingerie NN
  football NN
 -league .
 +league NN
@@ -270,7 +268,7 @@
 -driving NNP
 +driving VBG
  , ,
--driving NNP
+-driving NN
 -away NN
 +driving VBG
 +away RB
@@ -733,7 +731,7 @@
  , ,
  not RB
  feeling VBG
--very IN
+-very NN
 +very RB
  well RB
  , ,
@@ -978,7 +976,8 @@
 -as IN
 +as RB
  bad JJ
- down IN
+-down RP
++down IN
  there RB
  . .
  
@@ -1009,7 +1008,7 @@
  http://tinyurl.com/28hd9fu URL
  #fb HT
  
-@@ -1015,7 +1015,7 @@
+@@ -1015,18 +1015,18 @@
  the DT
  weather NN
  is VBZ
@@ -1018,7 +1017,11 @@
  nice JJ
  outside IN
  today NN
-@@ -1026,7 +1026,7 @@
+ 
+-Every NN
++Every DT
+ year NN
+ , ,
  i PRP
  realize VBP
  how WRB
@@ -1521,7 +1524,7 @@
  're VBP
  having VBG
  crazy JJ
--drink IN
+-drink NNP
 -Specials NNP
 +drink NN
 +Specials NNS
@@ -1800,7 +1803,7 @@
  life NN
  . .
  
--y'all DT
+-y'all NN
 -care NN
 +y'all PRP
 +care VBP
@@ -2558,8 +2561,7 @@
 +tweeps NNS
  . .
  have VB
--'ll PRP
-+'ll MD
+ 'll MD
  a DT
 -fabulous NN
 +fabulous JJ

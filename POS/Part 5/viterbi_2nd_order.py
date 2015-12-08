@@ -133,7 +133,7 @@ if __name__ == "__main__":
 	logPenalties = parsePenalties("transition_2nd_order.txt", 0.01) #0.01
 	regexFeatures = parse_feature_probs(FEATURE_PROB_IN, 0.9) #0.9
 	logEmissions = parseFile("part5_emission_testing.txt", 0.9) #0.9
-	logTransitions = parseFile("transition.txt", 0.75) #0.75
+	logTransitions = parseFile("transition.txt", 0.72) #0.75
 	compiled = {}
 	for regex in regexFeatures:
 		compiled[regex] = re.compile(regex)
