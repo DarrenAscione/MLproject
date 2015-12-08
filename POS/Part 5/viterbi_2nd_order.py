@@ -127,13 +127,19 @@ class ViterbiSequence:
 		return nextStep
 
 if __name__ == "__main__":
-	FEATURE_PROB_IN = "regularised_feature_probs.txt"
 	START = "__START"
+	END = "__END"
+	FEATURE_PROB_IN = "regularised_feature_probs.txt"
+	TRANSITION_PENALTY = "transition_2nd_order.txt"
+	EMISSIONS = "part5_emission_testing.txt"
+	TRANSITIONS = "transition.txt"
+	OUTPUT_FILE = "p5_viterbi_2nd_order.txt"
+	TESTING_FILE = "../dev.in"
 	# model parameters
-	logPenalties = parsePenalties("transition_2nd_order.txt", 0.008) #0.01
-	regexFeatures = parse_feature_probs(FEATURE_PROB_IN, 0.90) #0.9
-	logEmissions = parseFile("part5_emission_testing.txt", 0.9) #0.9
-	logTransitions = parseFile("transition.txt", 0.72) #0.72
+	logPenalties = parsePenalties(TRANSITION_PENALTY, 0.008) #0.008
+	regexFeatures = parse_feature_probs(FEATURE_PROB_IN, 0.9) #0.9
+	logEmissions = parseFile(EMISSIONS, 0.9) #0.9
+	logTransitions = parseFile(TRANSITIONS, 0.72) #0.72
 	compiled = {}
 	for regex in regexFeatures:
 		compiled[regex] = re.compile(regex)
@@ -143,13 +149,13 @@ if __name__ == "__main__":
 
 	# list of sequences
 	# each sequence is a Python list containing the words in the sequence
-	sequences = parseSequences("../dev.in")
+	sequences = parseSequences(TESTING_FILE)
 
 	# output sequences corresponding to input sequences
 	outputs = []
 
 	for sequence in sequences:
-		dpTable = [ViterbiSequence("__START", "__START")]
+		dpTable = [ViterbiSequence(START, START)]
 		for i in range(-1, len(sequence) -1):
 			newDpTable= []
 			for tag in allTags:
@@ -165,12 +171,12 @@ if __name__ == "__main__":
 		endingMax = None
 		endMaxChoice = None
 		for dpEntry in dpTable:
-			piValue = dpEntry.probTransmission("__END", None)
+			piValue = dpEntry.probTransmission(END, None)
 			if piValue >= endingMax:
 				endingMax = piValue
 				endMaxChoice = dpEntry
-		endingState = endMaxChoice.transit("__END", None)
+		endingState = endMaxChoice.transit(END, None)
 		outputs.append(endingState)
-	viterbiTagger(outputs, "../dev.in", "p5_viterbi_2nd_order.txt")
-	os.system("diff -u " + "p5_viterbi_2nd_order.txt " + "../dev.out" + "> difference_2nd_order.txt")
-	print accuracy("p5_viterbi_2nd_order.txt", "../dev.out")
+	viterbiTagger(outputs, TESTING_FILE, OUTPUT_FILE)
+	os.system("diff -u " + OUTPUT_FILE + " " + "../dev.out" + "> difference_2nd_order.txt")
+	print accuracy(OUTPUT_FILE, "../dev.out")

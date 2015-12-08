@@ -2375,9 +2375,9 @@ house NN
 Hattiesburg NN
 on IN
 the DT
-1s NN
+1s CD
 n CC
-2s NNP
+2s CD
 !! .
 
 Monsters NNP
