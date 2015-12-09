@@ -135,6 +135,7 @@ if __name__ == "__main__":
 	TRANSITIONS = "transition.txt"
 	OUTPUT_FILE = "p5_viterbi_2nd_order.txt"
 	TESTING_FILE = "../dev.in"
+	GOLD_STANDARD = "../dev.out"
 	# model parameters
 	logPenalties = parsePenalties(TRANSITION_PENALTY, 0.008) #0.008
 	regexFeatures = parse_feature_probs(FEATURE_PROB_IN, 0.9) #0.9
@@ -179,4 +180,4 @@ if __name__ == "__main__":
 		outputs.append(endingState)
 	viterbiTagger(outputs, TESTING_FILE, OUTPUT_FILE)
 	os.system("diff -u " + OUTPUT_FILE + " " + "../dev.out" + "> difference_2nd_order.txt")
-	print accuracy(OUTPUT_FILE, "../dev.out")
+	print accuracy(OUTPUT_FILE, GOLD_STANDARD)
