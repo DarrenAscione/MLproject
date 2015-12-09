@@ -1,6 +1,6 @@
 #50.007 Machine Learning Design Project
 
-	Darren Ng 1000568, Glen Choo 1000472, Kim Cuong Vu
+	Darren Ng 1000568, Glen Choo 1000472, Kim Cuong Vu 1000646
 
 [TOC]
 ##Part II
@@ -110,7 +110,7 @@ In the code, we use a self-maintaining priority queue of maximum length $10$ for
 
 ###Code List
 
-###viterbiModified.py
+####viterbiModified.py
 `viterbiModified.py` runs the modified Viterbi algorithm and writes the outputs to `POS/Part 4/p4_viterbi_<rank>.txt`. Each of this files corresponds to the testing file tagged with a top 10 best sequence, starting from <rank>=0 to <rank>=9. The lower the value of <rank>, the better the sequence. Thus the tagged file with the $10^{th}$ best sequence is `p4_viterbi_9.txt`.
 
 `viterbiModified.py` requires the following file names to be defined
@@ -122,7 +122,6 @@ In the code, we use a self-maintaining priority queue of maximum length $10$ for
 ###Instructions
 
 ###Accuracy Findings
-
 
 
 ##Part V
@@ -143,7 +142,7 @@ The following list are examples of common regular expressions used in the revise
 - starts with `':'`
 - Regular expression to catch consonant
 
-The full list of REGEX parameters can be found in the file [regularised_feature_probs.txt](https://github.com/glencbz/MLproject/blob/master/POS/Part%205/regularised_feature_probs.txt).
+The full list of REGEX parameters can be found in the file [featureFinder.py](https://github.com/glencbz/MLproject/blob/master/POS/Part%205/featureFinder.py).
 
 Parameters used in the modified viterbi with REGEX hence becomes:
 
@@ -182,6 +181,22 @@ In the actual implementation, the parameters were not worked with directly due t
 
 ###Code List
 
+The set of code for part 5 can be found under the POS/Part 5/LogitQ5 folder.
+
+####featureFinder.py
+
+`featureFinder.py` contains a regex collection for capturing specific (english) language constructs. It has been modified to suit the unique linguistic structure found in tweets. It searches regexes and calculates the probability that a word matches the tag given that the word matches the regex and outputs to `feature_probs.text`.
+
+####
+
 ###Instructions
 
+- Run the `featureFinder.py` to generate the probabilities associated with each REGEX pattern. The probabilities are stored in `feature_probs.text`
+- Run `Run.py`
+
 ###Accuracy Findings
+
+$$Accuracy(Part 5)  = 0.7886$$
+
+The modified algorithm was designed with the following decisions in mind; a better way of regularisation and identifying common patterns and word constructs to yield better accuracy results. Through the test sample provided, the modified viterbi with REGEX algorithm yielded better accuracy results. This shows that with the modification of the regularisation method and the inclusion of the REGEX parameters, Term by term weighting and the Second Order penalty, the modified algorithm provides a more accurate way of determining the hidden states in a given test dataset. 
+
