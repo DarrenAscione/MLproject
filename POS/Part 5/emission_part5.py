@@ -10,7 +10,7 @@ def gen_bjos(state_count, filetest, emission_count):
 	with open(state_count, "r") as file:
 		data = file.readlines()
 		for line in data:
-			words = line.rstrip("\n").split(" ")
+			words = line.strip().split(" ")
 			states[words[0]] = float(words[1])
 	for i in states.keys(): dict[i] = {}
 	all_state_count = sum([states[tags] for tags in states])
@@ -29,7 +29,7 @@ def gen_bjos(state_count, filetest, emission_count):
 			temp = 0
 			argtemp = ""
 			for tags in states.keys():
-				dict[tags][words] = 1 / 43 #states[tags] / all_state_count 
+				dict[tags][words] = 1.0 / 43 #states[tags] / all_state_count 
 				if dict[tags][words] > temp:
 					temp = dict[tags][words]
 					argtemp = tags
@@ -42,7 +42,7 @@ def testing_splitter(filename, mode):
 		with open(filename) as file:
 			data = file.readlines()
 			for line in data:
-				words = line.rstrip("\n")
+				words = line.strip()
 				if len(words) != 0:
 					one_dataset.append(words)
 				else:
@@ -54,7 +54,7 @@ def testing_splitter(filename, mode):
 		with open(filename) as file:
 			data = file.readlines()
 			for line in data:
-				words = line.rstrip("\n")
+				words = line.strip()
 				if words != " " and words not in data_set:
 					data_set.append(words)
 		return data_set
@@ -64,7 +64,7 @@ def check(filename, word):
 	with open(filename) as file:
 		data = file.readlines()
 		for line in data:
-			words = line.rstrip("\n").split(" ")
+			words = line.strip().split(" ")
 			if word == words[1]:
 				dict[words[0]] = float(words[2])
 	return dict

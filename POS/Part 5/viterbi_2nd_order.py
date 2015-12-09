@@ -141,6 +141,7 @@ if __name__ == "__main__":
 	regexFeatures = parse_feature_probs(FEATURE_PROB_IN, 0.9) #0.9
 	logEmissions = parseFile(EMISSIONS, 0.9) #0.9
 	logTransitions = parseFile(TRANSITIONS, 0.72) #0.72
+
 	compiled = {}
 	for regex in regexFeatures:
 		compiled[regex] = re.compile(regex)
