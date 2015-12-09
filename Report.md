@@ -1,6 +1,6 @@
 #50.007 Machine Learning Design Project
 
-	Darren Ng 1000568, Glen Choo 1000472, Kim Cuong Vu
+	Darren Ng 1000568, Glen Choo 1000472, Vu Xuan Kim Cuong 1000646
 
 [TOC]
 ##Part II
@@ -74,6 +74,8 @@ The implementation of the transition parameters, Viterbi algorithm from the esti
 
 ####viterbi.py
 
+`viterbi.py` computes the vibteri algorithm using the transition parameters and the emission parameters computed before and outputs out to the file `p3_viterbi_train.txt`.
+
 
 ###Instructions
 
@@ -128,6 +130,8 @@ In the code, we use a self-maintaining priority queue of maximum length $10$ for
 
 $$Accuracy(POS)  = 0.5784$$
 
+As expected the $10^{th}$ best is worst than the original viterbi algorithm used in part 4.
+
 ##Part V
 
 ###Algorithm
@@ -150,6 +154,7 @@ An example is shown below:
 	@whitemandancing is not seen in training data but seen in testing and will be treated as unseen word
 	REGEX checks if @whitemandancing has the underlying structure that describes a username
 
+However, it is important to note that if there are a lot of regular expressions used, the model might overfit. Therefore, it is imperative to only use REGEX that captures the common linguistic structure and for cases when features correlates strongly to the tag and not for everything.
 
 The following list are examples of common regular expressions used in the revised viterbi algorithm:
 
