@@ -57,6 +57,7 @@ The accuracy findings for the both POS and NPC files are as follows:
 $$Accuracy(POS) = \frac{23161}{33087} = 0.70000302\\
 Accuracy(NPC) = \frac{1709}{2844} = 0.60091420$$
 
+These accuracy findings are based on the naive POS tagger, where the state of the words are determined only by the emission parameters implemented in Part 2.
 
 ##Part III
 
@@ -94,8 +95,10 @@ Each iteration of the algorithm writes a `ViterbiSequence` to the DP table for e
 
 The accuracy findings for the both POS and NPC files are as follows:
 
-$$Accuracy(POS)  = 0.59\\
-Accuracy(NPC) = 0.$$
+$$Accuracy(POS)  = 0.5928\\
+Accuracy(NPC) = 0.776$$
+
+Based on the accuracy findings shown above, the accuracy score for POS dropped significantly. This may be due to the fact that the relative frequency between the tags are higher, therefore resulting in a possible overfitting of the model. As compared to the NPC accuracy findings, the accuracy score greatly improved with the use of the viterbi algorithm as all tags in NPC occur in relatively high frequencies. Therefore, the model does not suffer from an overfitting of the data.
 
 
 ##Part IV
@@ -123,11 +126,14 @@ In the code, we use a self-maintaining priority queue of maximum length $10$ for
 
 ###Accuracy Findings
 
-
+$$Accuracy(POS)  = 0.5784$$
 
 ##Part V
 
 ###Algorithm
+
+One of the key observation from using the suggested regularisation method in Part 2 for unseen words is that each unseen word will be tagged the lowest count tag found in the training data. This in fact is not a very good regularisation method. With this observation in mind, the revised algorithm is implemented with the following changes:  
+
 **Regularisation**
 Using the MLE parameters from the training set without regularisation can lead to unexpected results. For instance, if at state $k$, one can only transit to the tags $PRP$ and $NN$ but the word at state $k+1$  can only be emitted by the tag $CD$, one ends up in a situation where the maximum probability of a sequence of length $k+1$ is $0$. This affects all predictions from $k+1$ onwards as all probabilities from then on will have probability $0$. This can be solved by adding a regularisation factor to the transition parameters such that any tag can transit to any other tag with a small probability even if the transition was not observed in the training data.
 
@@ -135,6 +141,15 @@ Modifying the regularisation for unseen words by assuming that words correspond 
 
 **REGEX**
 A better design for developing an improved POS tagger for tweets could be to modify the viterbi algorithm by adding an additional regular expression check to patterns found in the training dataset. Common word patterns such as number and address patterns often imply a particular tag (*For example $234=$ CD, cardinal number*). By searching through the training dataset for these patterns and computing their associated probabilities, we can use these REGEX to capture these patterns to better estimate the hidden states in a given testing dataset.
+
+The key motivation behind using REGEX to identify underlying linguistic structures is the fact that certain word types such as username and numbers are in reality, infinite. It is not possible for the training data to see/capture every single username. As such, an unseen username will be tagged with high inaccuracy. This however, can be avoided if an additional REGEX parameter is weighted when interpreting the hidden labels. This will lead to higher accuracies than before. 
+
+An example is shown below:
+
+	@blackmanwalking is seen in training data
+	@whitemandancing is not seen in training data but seen in testing and will be treated as unseen word
+	REGEX checks if @whitemandancing has the underlying structure that describes a username
+
 
 The following list are examples of common regular expressions used in the revised viterbi algorithm:
 
@@ -203,3 +218,9 @@ In the actual implementation, the parameters were not worked with directly due t
 4. The code will perform automatic checking of the accuracy and output a `diff` in `difference_2nd_order.txt`.
 
 ###Accuracy Findings
+
+$$Accuracy(Part 5)  = 0.7974$$
+
+The modified algorithm was designed with the following decisions in mind; a better way of regularisation and identifying common patterns and word constructs to yield better accuracy results. Through the test sample provided, the modified viterbi with REGEX algorithm yielded better accuracy results. This shows that with the modification of the regularisation method and the inclusion of the REGEX parameters, Term by term weighting and the Second Order penalty, the modified algorithm provides a more accurate way of determining the hidden states in a given test dataset. 
+
+
