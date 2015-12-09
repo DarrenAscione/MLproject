@@ -130,7 +130,7 @@ In the code, we use a self-maintaining priority queue of maximum length $10$ for
 
 $$Accuracy(POS)  = 0.5784$$
 
-As expected the $10^{th}$ best is worst than the original viterbi algorithm used in part 4.
+As expected the $10^{th}$ best is worse than the original viterbi algorithm used in part 4.
 
 ##Part V
 
