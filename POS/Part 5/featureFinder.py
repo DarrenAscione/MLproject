@@ -86,7 +86,10 @@ def regularise(prob_dict, regularisation_strength = 0.01):
 	allPOS_file.close()
 	for regex in prob_dict:
 		num_missing = len(allPOS) - len(prob_dict[regex].keys())
-		regularised_prob = (regularisation_strength / num_missing) ** 2
+		if num_missing == 0:
+			regularised_prob = 0
+		else:
+			regularised_prob = (regularisation_strength / num_missing) ** 2
 		fitting_factor = 1 - num_missing * regularised_prob
 		for POS in allPOS:
 			if not POS in prob_dict[regex]:

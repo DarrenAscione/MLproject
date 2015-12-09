@@ -73,12 +73,11 @@ def argmax(alist):
 		if alist[key] == min(alist.values()):
 			return key
 
-testing = "POS/dev.in"
-emission_count = "POS/Part 3/emission_train_count.txt"
-state_count = "POS/Part 3/emission_count.txt"
+testing = "POS/Part 5/test.in"
+emission_count = "POS/Part 5/emission_train_count.txt"
+state_count = "POS/Part 5/emission_count.txt"
 filetest = testing_splitter(testing, mode="unique")
-# bjos, predicts = gen_bjos(state_count, filetest, emission_count)
-# output_to_file(bjos, "NPC/emission_testing.txt")
-# tagger(predicts, "NPC/emission_testing_tags.txt")
+bjos, predicts = gen_bjos(state_count, filetest, emission_count)
+output_to_file(bjos, "POS/Part 5/emission_testing.txt")
+tagger(predicts, "POS/Part 5/emission_testing_tags.txt")
 
-print check(emission_count, "call")
