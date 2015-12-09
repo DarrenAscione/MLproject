@@ -1,4 +1,4 @@
---- p5_viterbi_2nd_order.txt	2015-12-09 14:59:14.000000000 +0800
+--- p5_viterbi_2nd_order.txt	2015-12-09 15:07:28.000000000 +0800
 +++ ../dev.out	2015-12-08 17:55:01.000000000 +0800
 @@ -1,13 +1,13 @@
 -Gotta USR
@@ -594,9 +594,9 @@
 +short JJ
 +experience NN
  ( (
--double IN
--entendre DT
--intended) NN
+-double NNP
+-entendre NNP
+-intended) NNP
 +double JJ
 +entendre NN
 +intended) VBD
@@ -1530,13 +1530,11 @@
  " ''
  tonight NN
  ! .
-@@ -1615,12 +1615,12 @@
- about IN
+@@ -1616,11 +1616,11 @@
  a DT
  great JJ
--improv IN
--comedy DT
-+improv NN
+ improv NN
+-comedy IN
 +comedy NN
  night NN
  with IN
@@ -1951,8 +1949,7 @@
 +to'. TO
  
  For IN
--code WRB
-+code NN
+ code NN
  I PRP
  've VBP
 -written VBG

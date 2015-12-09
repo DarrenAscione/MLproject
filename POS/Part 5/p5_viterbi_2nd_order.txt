@@ -648,9 +648,9 @@ a DT
 short NN
 experience .
 ( (
-double IN
-entendre DT
-intended) NN
+double NNP
+entendre NNP
+intended) NNP
 . .
 
 @IzzieZac USR
@@ -1615,8 +1615,8 @@ How WRB
 about IN
 a DT
 great JJ
-improv IN
-comedy DT
+improv NN
+comedy IN
 night NN
 with IN
 the DT
@@ -2045,7 +2045,7 @@ listens NNS
 to'. .
 
 For IN
-code WRB
+code NN
 I PRP
 've VBP
 written VBG
