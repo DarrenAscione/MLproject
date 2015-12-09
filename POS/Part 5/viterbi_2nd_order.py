@@ -137,7 +137,7 @@ if __name__ == "__main__":
 	TESTING_FILE = "../dev.in"
 	GOLD_STANDARD = "../dev.out"
 	# model parameters
-	logPenalties = parsePenalties(TRANSITION_PENALTY, 0.0085) #0.0085
+	logPenalties = parsePenalties(TRANSITION_PENALTY, 0.0087) #0.0087
 	regexFeatures = parse_feature_probs(FEATURE_PROB_IN, 0.9) #0.9
 	logEmissions = parseFile(EMISSIONS, 0.9) #0.9
 	logTransitions = parseFile(TRANSITIONS, 0.72) #0.72

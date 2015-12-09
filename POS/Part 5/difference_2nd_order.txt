@@ -1,4 +1,4 @@
---- p5_viterbi_2nd_order.txt	2015-12-09 15:07:28.000000000 +0800
+--- p5_viterbi_2nd_order.txt	2015-12-09 15:09:07.000000000 +0800
 +++ ../dev.out	2015-12-08 17:55:01.000000000 +0800
 @@ -1,13 +1,13 @@
 -Gotta USR
@@ -1003,15 +1003,15 @@
  the DT
  show NN
  : :
--JUST PRP
+-JUST NNP
+-LANDED NNP
+-BACK NNP
+-FROM NNP
 +JUST RB
- LANDED VBD
--BACK DT
--FROM NN
--JAMAICA IN
++LANDED VBD
 +BACK RB
 +FROM IN
-+JAMAICA NNP
+ JAMAICA NNP
  Badness NNP
  in IN
  the DT
