@@ -1,6 +1,6 @@
---- p5_viterbi_2nd_order.txt	2015-12-09 15:09:07.000000000 +0800
+--- p5_viterbi_2nd_order.txt	2015-12-09 15:25:25.000000000 +0800
 +++ ../dev.out	2015-12-08 17:55:01.000000000 +0800
-@@ -1,13 +1,13 @@
+@@ -1,25 +1,25 @@
 -Gotta USR
 +Gotta VBP
  call VB
@@ -16,8 +16,10 @@
 +almost RB
  3 CD
  . .
- Yli NNP
-@@ -16,10 +16,10 @@
+-Yli PRP
++Yli NNP
+ gets VBZ
+ out RP
  in IN
  15 CD
  . .
@@ -100,14 +102,14 @@
  game NN
  tonight NN
  with IN
-@@ -94,13 +94,13 @@
+@@ -94,19 +94,19 @@
  sarah NNP
  , ,
  and CC
 -brittany NN
 +brittany NNP
  ! .
--Mood NNP
+-Mood UH
 +Mood NN
  : :
  excited JJ
@@ -117,6 +119,14 @@
  WB NNP
  WILDCATS NNP
  ! .
+ 
+-good JJ
+-afternoon .
++good UH
++afternoon UH
+ 
+ Good JJ
+ day NN
 @@ -114,13 +114,13 @@
  for IN
  software NN
@@ -212,7 +222,7 @@
  Cleaners NNP
  , ,
  they PRP
-@@ -224,57 +224,57 @@
+@@ -224,43 +224,43 @@
  my PRP$
  pants NNS
  too RB
@@ -267,9 +277,7 @@
  to TO
  Phil NNP
  . .
--Tasty NNP
-+Tasty JJ
- dinner NN
+@@ -269,12 +269,12 @@
  tonight NN
  with IN
  the DT
@@ -319,7 +327,7 @@
  . .
  
  tomorrow NN
-@@ -348,34 +348,34 @@
+@@ -348,44 +348,44 @@
  I PRP
  'm VBP
  so RB
@@ -364,8 +372,10 @@
  
  Rep NNP
  . .
-@@ -383,9 +383,9 @@
- Mack NNP
+-Bono JJ
+-Mack NN
++Bono NNP
++Mack NNP
  to TO
  criticize VB
 -fellow IN
@@ -533,15 +543,6 @@
  . .
  Tomorrow NN
  is VBZ
-@@ -563,7 +563,7 @@
- have VBP
- work NN
- . .
--Ugh NNP
-+Ugh UH
- . .
- I PRP
- have VBP
 @@ -575,7 +575,7 @@
  am VBP
  doing VBG
@@ -571,7 +572,7 @@
  last JJ
  night NN
  . .
--Dointhemost NNP
+-Dointhemost UH
 -. .
 +Dointhemost URL
 +. URL
@@ -743,7 +744,7 @@
 -fetch RB
 +fetch JJ
  . .
--Quick NNP
+-Quick UH
 +Quick RB
  , ,
  let VB
@@ -833,23 +834,17 @@
  next JJ
  week NN
  ! .
-@@ -897,12 +897,12 @@
- it PRP
- tomorrow NN
+@@ -899,8 +899,8 @@
  . .
--Possibly NNP
-+Possibly RB
+ Possibly RB
  . .
 -Most JJS
 -likely NNP
 +Most RBS
 +likely RB
  . .
--Hopefully NNP
-+Hopefully RB
+ Hopefully RB
  . .
- Maybe RB
- :) UH
 @@ -913,7 +913,7 @@
  that DT
  last JJ
@@ -1003,16 +998,17 @@
  the DT
  show NN
  : :
--JUST NNP
--LANDED NNP
--BACK NNP
--FROM NNP
+-JUST PRP
 +JUST RB
-+LANDED VBD
+ LANDED VBD
+-BACK DT
+-FROM NN
+-JAMAICA .
+-Badness NNS
 +BACK RB
 +FROM IN
- JAMAICA NNP
- Badness NNP
++JAMAICA NNP
++Badness NNP
  in IN
  the DT
 -studio JJ
@@ -1079,9 +1075,10 @@
 -do VBP
 +do VB
  n't RB
--worry IN
+-worry .
+-Ben UH
 +worry VB
- Ben NNP
++Ben NNP
  , ,
  we PRP
  already RB
@@ -1427,8 +1424,9 @@
  to TO
  St NNP
  . .
- Patty NNP
--'s POS
+-Patty PRP
+-'s VBZ
++Patty NNP
 +'s NNP
  Day NNP
 -Party NNP
@@ -1440,10 +1438,9 @@
  're VBP
  having VBG
  crazy JJ
--drink IN
--Specials NNP
+-drink .
 +drink NN
-+Specials NNS
+ Specials NNS
  too RB
  .. :
 -tex NNP
@@ -2104,7 +2101,7 @@
  he PRP
  's VBZ
  ... :
-@@ -2212,11 +2212,11 @@
+@@ -2212,16 +2212,16 @@
  upgrade VB
  to TO
  a DT
@@ -2113,11 +2110,18 @@
  in IN
  November NNP
  !! .
--Yesss NNP
+-Yesss NNS
 +Yesss UH
  . .
  &lt; UH
  3 UH
+-BB .
+-Bold UH
++BB NNP
++Bold NNP
+ , ,
+ here RB
+ I PRP
 @@ -2233,7 +2233,7 @@
  for IN
  @SILVRSCREENSTAR USR
@@ -2186,7 +2190,8 @@
 -R NNP
 +R VBP
  . .
- Buch NNP
+-Buch PRP
++Buch NNP
  might MD
  come VB
  back RB
@@ -2217,8 +2222,8 @@
  20 CD
  today NN
  ! .
--Holy NNP
--crap NNP
+-Holy RB
+-crap JJ
 +Holy UH
 +crap UH
  , ,
@@ -2346,7 +2351,7 @@
  Darrell NNP
  Williams NNP
  . .
--Won NNP
+-Won .
 -Big JJ
 -12 CD
 -Rookie NNP
@@ -2370,7 +2375,7 @@
  ... :
  
 -Good UH
--start VBP
+-start VB
 +Good JJ
 +start NN
  for IN
@@ -2384,7 +2389,7 @@
 +get VB
  better JJR
  . .
--Played NNP
+-Played JJ
 +Played VBD
  with IN
 -short DT
@@ -2456,7 +2461,7 @@
  up RP
  here RB
  . .
--Deliver NNP
+-Deliver NN
 +Deliver VB
  on IN
  Dayton NNP
@@ -2472,24 +2477,14 @@
  tweeps NNS
  . .
 -have VBP
--'ll PRP
 +have VB
-+'ll MD
+ 'll MD
  a DT
 -fabulous NN
 +fabulous JJ
  day NN
  .... :
  
-@@ -2595,7 +2595,7 @@
- gym NN
- now RB
- ! .
--Excited NNP
-+Excited JJ
- for IN
- weekend NN
- plans NNS
 @@ -2603,41 +2603,41 @@
  
  @Exclusively_T USR
@@ -2856,24 +2851,28 @@
 -aja NNP
 -maen NNP
 -nitip NNP
--".. ,
--Hahaha NNP
+-".. .
 +barang VBG
 +aja JJ
 +maen NN
 +nitip NN
 +".. O
-+Hahaha UH
- .. :
- Udh NNP
--jul NNP
+ Hahaha UH
+-.. .
+-Udh UH
+-jul UH
+-.. .
+-Galakin UH
++.. :
++Udh NNP
 +jul NN
- .. :
- Galakin NNP
--aja NNP
-+aja UH
- .. :
- Wkwkwk NNP
++.. :
++Galakin NNP
+ aja UH
+-.. .
+-Wkwkwk UH
++.. :
++Wkwkwk NNP
  RT RT
  @riesranty USR
  : :

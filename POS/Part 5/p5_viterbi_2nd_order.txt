@@ -10,7 +10,7 @@ it PRP
 almost DT
 3 CD
 . .
-Yli NNP
+Yli PRP
 gets VBZ
 out RP
 in IN
@@ -96,7 +96,7 @@ sarah NNP
 and CC
 brittany NN
 ! .
-Mood NNP
+Mood UH
 : :
 excited JJ
 !! .
@@ -105,8 +105,8 @@ WB NNP
 WILDCATS NNP
 ! .
 
-good UH
-afternoon UH
+good JJ
+afternoon .
 
 Good JJ
 day NN
@@ -264,7 +264,7 @@ away RP
 to TO
 Phil NNP
 . .
-Tasty NNP
+Tasty JJ
 dinner NN
 tonight NN
 with IN
@@ -379,8 +379,8 @@ so RB
 
 Rep NNP
 . .
-Bono NNP
-Mack NNP
+Bono JJ
+Mack NN
 to TO
 criticize VB
 fellow IN
@@ -563,7 +563,7 @@ I PRP
 have VBP
 work NN
 . .
-Ugh NNP
+Ugh UH
 . .
 I PRP
 have VBP
@@ -630,7 +630,7 @@ smh UH
 last JJ
 night NN
 . .
-Dointhemost NNP
+Dointhemost UH
 . .
 com URL
 
@@ -813,7 +813,7 @@ So RB
 not RB
 fetch RB
 . .
-Quick NNP
+Quick UH
 , ,
 let VB
 's VBZ
@@ -897,12 +897,12 @@ do VB
 it PRP
 tomorrow NN
 . .
-Possibly NNP
+Possibly RB
 . .
 Most JJS
 likely NNP
 . .
-Hopefully NNP
+Hopefully RB
 . .
 Maybe RB
 :) UH
@@ -1075,12 +1075,12 @@ on IN
 the DT
 show NN
 : :
-JUST NNP
-LANDED NNP
-BACK NNP
-FROM NNP
-JAMAICA NNP
-Badness NNP
+JUST PRP
+LANDED VBD
+BACK DT
+FROM NN
+JAMAICA .
+Badness NNS
 in IN
 the DT
 studio JJ
@@ -1151,8 +1151,8 @@ good JJ
 And CC
 do VBP
 n't RB
-worry IN
-Ben NNP
+worry .
+Ben UH
 , ,
 we PRP
 already RB
@@ -1509,8 +1509,8 @@ Way NNP
 to TO
 St NNP
 . .
-Patty NNP
-'s POS
+Patty PRP
+'s VBZ
 Day NNP
 Party NNP
 Tonight NNP
@@ -1519,8 +1519,8 @@ We PRP
 're VBP
 having VBG
 crazy JJ
-drink IN
-Specials NNP
+drink .
+Specials NNS
 too RB
 .. :
 tex NNP
@@ -2216,12 +2216,12 @@ BlackBerry NN
 in IN
 November NNP
 !! .
-Yesss NNP
+Yesss NNS
 . .
 &lt; UH
 3 UH
-BB NNP
-Bold NNP
+BB .
+Bold UH
 , ,
 here RB
 I PRP
@@ -2295,7 +2295,7 @@ NO UH
 Saints NNP
 R NNP
 . .
-Buch NNP
+Buch PRP
 might MD
 come VB
 back RB
@@ -2331,8 +2331,8 @@ He PRP
 20 CD
 today NN
 ! .
-Holy NNP
-crap NNP
+Holy RB
+crap JJ
 , ,
 20 CD
 ? .
@@ -2473,7 +2473,7 @@ State NNP
 Darrell NNP
 Williams NNP
 . .
-Won NNP
+Won .
 Big JJ
 12 CD
 Rookie NNP
@@ -2490,7 +2490,7 @@ f PRP
 ... :
 
 Good UH
-start VBP
+start VB
 for IN
 sharks DT
 tonight NN
@@ -2499,7 +2499,7 @@ only JJ
 get VBP
 better JJR
 . .
-Played NNP
+Played JJ
 with IN
 short DT
 bench JJ
@@ -2564,7 +2564,7 @@ Pick VB
 up RP
 here RB
 . .
-Deliver NNP
+Deliver NN
 on IN
 Dayton NNP
 NJ NNP
@@ -2580,7 +2580,7 @@ morning NN
 tweeps NNS
 . .
 have VBP
-'ll PRP
+'ll MD
 a DT
 fabulous NN
 day NN
@@ -2595,7 +2595,7 @@ the DT
 gym NN
 now RB
 ! .
-Excited NNP
+Excited JJ
 for IN
 weekend NN
 plans NNS
@@ -2948,16 +2948,16 @@ barang NNP
 aja NNP
 maen NNP
 nitip NNP
-".. ,
-Hahaha NNP
-.. :
-Udh NNP
-jul NNP
-.. :
-Galakin NNP
-aja NNP
-.. :
-Wkwkwk NNP
+".. .
+Hahaha UH
+.. .
+Udh UH
+jul UH
+.. .
+Galakin UH
+aja UH
+.. .
+Wkwkwk UH
 RT RT
 @riesranty USR
 : :

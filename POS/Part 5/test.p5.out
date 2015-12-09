@@ -129,7 +129,7 @@ bbt DT
 aintree JJ
 today NN
 . .
-Played JJ
+Played NNP
 table NN
 tennis NNS
 on IN
@@ -3052,7 +3052,7 @@ or CC
 round NN
 . .
 
-People WDT
+People USR
 who WP
 tweet NN
 to TO
